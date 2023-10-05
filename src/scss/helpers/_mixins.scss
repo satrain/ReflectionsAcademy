@@ -26,22 +26,13 @@
 }
 
 @mixin h-1 {
-    font-size: 40px;
-    line-height: 48px;
-    font-weight: 700;
-    letter-spacing: -0.88px;
-    @include media($custom_1440) {
-      font-size: 36px;
-      line-height: 44px; /* 122.222% */
-      letter-spacing: -0.792px;
-    }
-    @include media($custom_1280) {
-      font-size: 38px;
-      letter-spacing: -0.836px;
-    }
+    font-size: 200px;
+    line-height: 175.5px;
+    font-weight: 500;
+    letter-spacing: -5px;
     @include media($custom_375) {
-      font-size: 36px;
-      letter-spacing: -0.792px;
+      font-size: 180px;
+      letter-spacing: -4.5px;
     }
 }
 
