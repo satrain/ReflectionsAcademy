@@ -5,7 +5,7 @@
 }
 
 html {
-    // scroll-behavior: smooth; - Mess up with Scroll To Top, also prevents scrolling with mouse3 button, commented for now
+    scroll-behavior: smooth; // can mess up with Scroll To Top, also prevents scrolling with mouse3 button, comment it out if needed
 }
 
 body {
