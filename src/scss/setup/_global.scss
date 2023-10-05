@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // scroll-behavior: smooth; - Mess up with Scroll To Top, also prevents scrolling with mouse3 button, commented for now
+}
+
+body {
+    color: $text-dark;
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 0 60px;
+    @include media($custom_1440) {
+        padding: 0 56px;
+    }
+    @include media(lg) {
+        padding: 0 20px;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
