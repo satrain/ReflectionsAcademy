@@ -1,0 +1,148 @@
+@mixin media($break-point) {
+    @if $break-point== $custom_1440 {
+      @media (max-width: $custom_1440) { @content }
+    }
+    @if $break-point== $custom_1280 {
+      @media (max-width: $custom_1280) { @content }
+    }
+    @if $break-point== $custom_1200 {
+      @media (max-width: $custom_1200) { @content }
+    }
+    @if $break-point== $custom_500 {
+      @media (max-width: $custom_500) { @content }
+    }
+    @if $break-point== $custom_375 {
+      @media (max-width: $custom_375) { @content }
+    }
+    @if $break-point== lg {
+      @media (max-width: $lg) { @content }
+    }
+    @if $break-point== md {
+      @media (max-width: $md) { @content }
+    }
+    @if $break-point== sm {
+      @media (max-width: $sm) { @content }
+    }
+}
+
+@mixin h-1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: -0.88px;
+    @include media($custom_1440) {
+      font-size: 36px;
+      line-height: 44px; /* 122.222% */
+      letter-spacing: -0.792px;
+    }
+    @include media($custom_1280) {
+      font-size: 38px;
+      letter-spacing: -0.836px;
+    }
+    @include media($custom_375) {
+      font-size: 36px;
+      letter-spacing: -0.792px;
+    }
+}
+
+@mixin h-2 {
+    font-size: 60px;
+    line-height: 53px;
+    font-weight: 500;
+    letter-spacing: -0.6px;
+    @include media($custom_1440) {
+      font-size: 50px;
+      line-height: 45px;
+    }
+    @include media($custom_1280) {
+      font-size: 40px;
+      line-height: 36px;
+    }
+    @include media($custom_375) {
+      font-size: 30px;
+      line-height: 28px;
+    }
+}
+
+@mixin h-3 {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50.654px;
+    letter-spacing: -1.5px;
+    @include media($custom_1440) {
+      font-size: 45px;
+      line-height: 45px;
+      letter-spacing: -1px;
+    }
+    @include media($custom_1280) {
+      font-size: 36px;
+      line-height: 36px;
+      letter-spacing: -0.6;
+    }
+    @include media($custom_375) {
+      font-size: 30px;
+      line-height: 29.154px;
+      letter-spacing: -0.6px;
+    }
+}
+
+@mixin h-4 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44.654px;
+    @include media($custom_1440) {
+      font-size: 36px;
+      line-height: 36px;
+    }
+    @include media($custom_1280) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+    @include media($custom_375) {
+      font-size: 30px;
+      line-height: 29.154px;
+    }
+}
+
+@mixin p-1 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.696px;
+    letter-spacing: -0.2px;
+    @include media($custom_1440) {
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.176px;
+    }
+    @include media($custom_1280) {
+        font-size: 17px;
+    }
+    @include media($custom_375) {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.176px;
+    }
+  
+    &.semi-bold {
+        font-weight: 600;
+    }
+  }
+  
+  @mixin p-2 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: -0.36px;
+    @include media($custom_1280) {
+      font-size: 16px;
+      line-height: 23px;
+    }
+    @include media($custom_375) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  
+    &.semi-bold {
+      font-weight: 600;
+    }
+}
