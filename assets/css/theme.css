@@ -415,6 +415,139 @@ header {
     .they-talk-about-us .brand-logos-wrapper img {
       width: auto; }
 
+.about-reflections-homepage .dream-outcome {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 47px; }
+  .about-reflections-homepage .dream-outcome .copy-block {
+    padding-bottom: 73px; }
+    .about-reflections-homepage .dream-outcome .copy-block .p-above-title {
+      max-width: 126px;
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18.196px;
+      letter-spacing: -0.2px;
+      margin-bottom: 37px; }
+    .about-reflections-homepage .dream-outcome .copy-block h2 {
+      font-size: 60px;
+      line-height: 53px;
+      font-weight: 500;
+      letter-spacing: -0.6px;
+      color: #0D0D17;
+      text-transform: uppercase;
+      max-width: 553px; }
+      @media (max-width: 1440px) {
+        .about-reflections-homepage .dream-outcome .copy-block h2 {
+          font-size: 50px;
+          line-height: 45px; } }
+      @media (max-width: 1280px) {
+        .about-reflections-homepage .dream-outcome .copy-block h2 {
+          font-size: 40px;
+          line-height: 36px; } }
+      @media (max-width: 375px) {
+        .about-reflections-homepage .dream-outcome .copy-block h2 {
+          font-size: 30px;
+          line-height: 28px; } }
+      .about-reflections-homepage .dream-outcome .copy-block h2 span {
+        color: #FF0000; }
+    .about-reflections-homepage .dream-outcome .copy-block p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20.696px;
+      letter-spacing: -0.2px;
+      margin-top: 17px;
+      margin-bottom: 47px;
+      max-width: 447px; }
+      @media (max-width: 1440px) {
+        .about-reflections-homepage .dream-outcome .copy-block p {
+          letter-spacing: -0.176px; } }
+      @media (max-width: 1280px) {
+        .about-reflections-homepage .dream-outcome .copy-block p {
+          font-size: 17px; } }
+      @media (max-width: 375px) {
+        .about-reflections-homepage .dream-outcome .copy-block p {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: -0.176px; } }
+      .about-reflections-homepage .dream-outcome .copy-block p.semi-bold {
+        font-weight: 600; }
+    .about-reflections-homepage .dream-outcome .copy-block a {
+      text-transform: unset; }
+      .about-reflections-homepage .dream-outcome .copy-block a.dream-outcome-btn-light {
+        border: 1px solid #000;
+        color: #000; }
+      .about-reflections-homepage .dream-outcome .copy-block a.dream-outcome-btn-dark {
+        background: #000;
+        border: 1px solid #000;
+        color: #FCFCFC;
+        margin-left: 25px; }
+  .about-reflections-homepage .dream-outcome .image-block {
+    width: 50%; }
+    .about-reflections-homepage .dream-outcome .image-block img {
+      filter: grayscale(1); }
+.about-reflections-homepage .decade-of-building {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 47px;
+  margin-top: -5px; }
+  .about-reflections-homepage .decade-of-building .copy-block {
+    padding-bottom: 73px; }
+    .about-reflections-homepage .decade-of-building .copy-block h2 {
+      font-size: 60px;
+      line-height: 53px;
+      font-weight: 500;
+      letter-spacing: -0.6px;
+      color: #0D0D17;
+      text-transform: uppercase;
+      max-width: 599px; }
+      @media (max-width: 1440px) {
+        .about-reflections-homepage .decade-of-building .copy-block h2 {
+          font-size: 50px;
+          line-height: 45px; } }
+      @media (max-width: 1280px) {
+        .about-reflections-homepage .decade-of-building .copy-block h2 {
+          font-size: 40px;
+          line-height: 36px; } }
+      @media (max-width: 375px) {
+        .about-reflections-homepage .decade-of-building .copy-block h2 {
+          font-size: 30px;
+          line-height: 28px; } }
+      .about-reflections-homepage .decade-of-building .copy-block h2 span {
+        color: #FF0000; }
+    .about-reflections-homepage .decade-of-building .copy-block p {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 20.696px;
+      letter-spacing: -0.2px;
+      margin-top: 17px;
+      margin-bottom: 47px;
+      max-width: 487px; }
+      @media (max-width: 1440px) {
+        .about-reflections-homepage .decade-of-building .copy-block p {
+          letter-spacing: -0.176px; } }
+      @media (max-width: 1280px) {
+        .about-reflections-homepage .decade-of-building .copy-block p {
+          font-size: 17px; } }
+      @media (max-width: 375px) {
+        .about-reflections-homepage .decade-of-building .copy-block p {
+          font-size: 16px;
+          line-height: 19px;
+          letter-spacing: -0.176px; } }
+      .about-reflections-homepage .decade-of-building .copy-block p.semi-bold {
+        font-weight: 600; }
+    .about-reflections-homepage .decade-of-building .copy-block a {
+      text-transform: unset; }
+      .about-reflections-homepage .decade-of-building .copy-block a.dream-outcome-btn-dark {
+        background: #000;
+        border: 1px solid #000;
+        color: #FCFCFC; }
+  .about-reflections-homepage .decade-of-building .image-block {
+    width: 50%; }
+
 .money-back-guarantee {
   padding-top: 100px;
   padding-bottom: 94px;

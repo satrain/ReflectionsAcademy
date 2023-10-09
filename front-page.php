@@ -34,22 +34,26 @@
 
 <div class="about-reflections-homepage">
     <div class="dream-outcome">
-        <div class="copy-block">
+        <div class="copy-block container">
             <p class="p-above-title">Dream outcome by Danilo&Sharon</p>
             <h2>From <span>amateur to professional</span> in fashion photography.</h2>
             <p>At Reflections  our goal is to deliver a distinctive skill set to provide photographers with the ability to make their own style at industry standard.</p>
-            <a href="#" class="btn btn-primary">Enrollment Open</a>
-            <a href="#" class="btn btn-secondary">Check more about</a>
+            <a href="#" class="btn btn-primary dream-outcome-btn-light">Enrollment Open</a>
+            <a href="#" class="btn btn-secondary dream-outcome-btn-dark">Check more about</a>
         </div>
-        <div class="mock-block">
+        <div class="image-block">
             <img src="/wp-content/uploads/2023/10/about-reflections-image-1-min-scaled.jpeg" alt="About reflections image">
         </div>
     </div>
     <div class="decade-of-building">
-        <div class="copy-block">
-
+        <div class="copy-block container">
+            <h2>A decade of building <span>distinctive aesthetic.</span></h2>
+            <p>Danilo and Sharon became a recognised brand, known for its defined aesthetic approach and bespoke photography services.Influenced by previous fashion and advertising work, Danilo and Sharon nourished a photographic style that seduces modern brides worldwide.</p>
+            <a href="#" class="btn btn-secondary dream-outcome-btn-dark">Check more about</a>
         </div>
-        <div class="mock-block"></div>
+        <div class="image-block">
+            <img src="/wp-content/uploads/2023/10/about-reflections-image-2.png" alt="About reflections image">
+        </div>
     </div>
 </div>
 
