@@ -8,6 +8,12 @@ header {
         justify-content: space-between;
         align-items: center;
 
+        .header-navigation {
+            .btn-header-menu {
+                margin-left: 20px;
+            }
+        }
+
     }
 
 }

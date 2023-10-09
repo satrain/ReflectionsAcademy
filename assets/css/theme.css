@@ -208,6 +208,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    header .header-wrapper .header-navigation .btn-header-menu {
+      margin-left: 20px; }
 
 #colophon {
   padding-top: 100px;

@@ -15,7 +15,7 @@
                 </div>
                 <div class="header-navigation">
                     <a class="btn btn-primary" href="#">Academy</a>
-                    <a class="btn btn-secondary" href="#">Menu</a>
+                    <a class="btn btn-secondary btn-header-menu" href="#">Menu</a>
                 </div>
             </div>
         </header>
