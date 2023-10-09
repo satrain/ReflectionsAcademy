@@ -32,6 +32,27 @@
     </div>
 </div>
 
+<div class="about-reflections-homepage">
+    <div class="dream-outcome">
+        <div class="copy-block">
+            <p class="p-above-title">Dream outcome by Danilo&Sharon</p>
+            <h2>From <span>amateur to professional</span> in fashion photography.</h2>
+            <p>At Reflections  our goal is to deliver a distinctive skill set to provide photographers with the ability to make their own style at industry standard.</p>
+            <a href="#" class="btn btn-primary">Enrollment Open</a>
+            <a href="#" class="btn btn-secondary">Check more about</a>
+        </div>
+        <div class="mock-block">
+            <img src="/wp-content/uploads/2023/10/about-reflections-image-1-min-scaled.jpeg" alt="About reflections image">
+        </div>
+    </div>
+    <div class="decade-of-building">
+        <div class="copy-block">
+
+        </div>
+        <div class="mock-block"></div>
+    </div>
+</div>
+
 <div class="money-back-guarantee">
     <div class="container money-back-guarantee-container">
         <a class="btn btn-primary">21 Day refund policy</a>
