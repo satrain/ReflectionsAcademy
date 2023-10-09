@@ -22,6 +22,13 @@
     </div>
 </div>
 
+<div class="they-talk-about-us">
+    <img src="" alt="Brand logo">
+    <img src="" alt="Brand logo">
+    <img src="" alt="Brand logo">
+    <img src="" alt="Brand logo">
+</div>
+
 <div class="money-back-guarantee">
     <div class="container money-back-guarantee-container">
         <a class="btn btn-primary">21 Day refund policy</a>

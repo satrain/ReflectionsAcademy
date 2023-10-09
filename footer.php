@@ -77,11 +77,11 @@
                 <div class="notices">
                     <p>2020 Wireframe LLC. All rights reserved. Wireframe, the Wireframe logo, the tag design, Wireframe, and Wireframe.com are trademarks of Wireframe and its affiliated companies. info@Wireframe.com</p>
                     <div class="social-media-links">
-                        <a class="facebook-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/facebook.svg" alt="Facebook icon"></a>
-                        <a class="twitter-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/twitter.svg" alt="Twitter icon"></a>
-                        <a class="instagram-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/instagram.svg" alt="Instagram icon"></a>
-                        <a class="m-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/m.svg" alt="M icon"></a>
-                        <a class="linkedin-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/linkedin.svg" alt="LinkedIn icon"></a>
+                        <a class="facebook-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/icons/facebook.svg" alt="Facebook icon"></a>
+                        <a class="twitter-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/icons/twitter.svg" alt="Twitter icon"></a>
+                        <a class="instagram-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/icons/instagram.svg" alt="Instagram icon"></a>
+                        <a class="m-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/icons/m.svg" alt="M icon"></a>
+                        <a class="linkedin-icon" href="#" target="_blank"><img src="<?= get_template_directory_uri() ?>/assets/images/icons/linkedin.svg" alt="LinkedIn icon"></a>
                     </div>
                     <div class="privacy">
                         <a href="#">Terms of Service</a>
