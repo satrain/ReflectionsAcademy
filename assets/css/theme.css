@@ -331,6 +331,57 @@ header {
         font-weight: 400;
         line-height: 14px; }
 
+.homepage-hero {
+  padding-top: 65px;
+  padding-bottom: 54px;
+  background-color: #FF0000;
+  background: url("/wp-content/uploads/2023/10/hero-background-image.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .homepage-hero .sliding-text-container p {
+    color: #FFFFFF; }
+  .homepage-hero .homepage-hero-container .sliding-text-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; }
+    .homepage-hero .homepage-hero-container .sliding-text-navigation p {
+      max-width: 203px;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: -0.085px;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+      .homepage-hero .homepage-hero-container .sliding-text-navigation p:nth-child(2) {
+        max-width: 155px;
+        text-align: right; }
+  .homepage-hero .homepage-hero-container .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px; }
+    .homepage-hero .homepage-hero-container .hero-content .hero-copy h2 {
+      font-size: 60px;
+      line-height: 53px;
+      font-weight: 500;
+      letter-spacing: -0.6px;
+      color: #FFFFFF;
+      margin-bottom: 33px;
+      max-width: 427px; }
+      @media (max-width: 1440px) {
+        .homepage-hero .homepage-hero-container .hero-content .hero-copy h2 {
+          font-size: 50px;
+          line-height: 45px; } }
+      @media (max-width: 1280px) {
+        .homepage-hero .homepage-hero-container .hero-content .hero-copy h2 {
+          font-size: 40px;
+          line-height: 36px; } }
+      @media (max-width: 375px) {
+        .homepage-hero .homepage-hero-container .hero-content .hero-copy h2 {
+          font-size: 30px;
+          line-height: 28px; } }
+
 .money-back-guarantee {
   padding-top: 100px;
   padding-bottom: 94px;

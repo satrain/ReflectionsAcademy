@@ -1,0 +1,63 @@
+.homepage-hero {
+    padding-top: 65px;
+    padding-bottom: 54px;
+    background-color: $primary;
+    background: url('/wp-content/uploads/2023/10/hero-background-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .sliding-text-container {
+        p {
+            color: $text-light;
+        }
+    }
+
+    .homepage-hero-container {
+
+        .sliding-text-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            p {
+                max-width: 203px;
+
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 18px;
+                letter-spacing: -0.085px;
+                text-transform: uppercase;
+                color: $text-light;
+
+                &:nth-child(2) {
+                    max-width: 155px;
+                    text-align: right;
+                }
+            }
+
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 200px;
+
+            .hero-copy {
+                h2 {
+                    @include h-2;
+                    color: $text-light;
+                    margin-bottom: 33px;
+                    max-width: 427px;
+                }
+            }
+
+            .hero-mock {
+
+            }
+
+        }
+
+    }
+
+}
