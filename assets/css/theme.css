@@ -391,7 +391,8 @@ header {
     font-weight: 400;
     line-height: 20.696px;
     letter-spacing: -0.2px;
-    color: #FCFCFC; }
+    color: #FCFCFC;
+    text-align: center; }
     @media (max-width: 1440px) {
       .they-talk-about-us h2 {
         letter-spacing: -0.176px; } }
@@ -409,7 +410,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 104px; }
+    gap: 104px;
+    margin-top: 40px; }
     .they-talk-about-us .brand-logos-wrapper img {
       width: auto; }
 

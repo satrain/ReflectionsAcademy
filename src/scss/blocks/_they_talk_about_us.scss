@@ -6,6 +6,7 @@
     h2 {
         @include p-1;
         color: $bg-light;
+        text-align: center;
     }
 
     .brand-logos-wrapper {
@@ -13,6 +14,7 @@
         justify-content: center;
         align-items: center;
         gap: 104px;
+        margin-top: 40px;
         img {
             width: auto;
         }
