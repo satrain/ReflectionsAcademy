@@ -23,10 +23,13 @@
 </div>
 
 <div class="they-talk-about-us">
-    <img src="" alt="Brand logo">
-    <img src="" alt="Brand logo">
-    <img src="" alt="Brand logo">
-    <img src="" alt="Brand logo">
+    <h2>They talk about us</h2>
+    <div class="brand-logos-wrapper">
+        <img src="<?= get_template_directory_uri() ?>/assets/images/logos/vogue-logo.svg" alt="Brand logo">
+        <img src="<?= get_template_directory_uri() ?>/assets/images/logos/elle-logo.svg" alt="Brand logo">
+        <img src="<?= get_template_directory_uri() ?>/assets/images/logos/lane-bryant-logo.svg" alt="Brand logo">
+        <img src="<?= get_template_directory_uri() ?>/assets/images/logos/brides-logo.svg" alt="Brand logo">
+    </div>
 </div>
 
 <div class="money-back-guarantee">

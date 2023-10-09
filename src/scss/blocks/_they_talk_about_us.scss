@@ -1,0 +1,21 @@
+.they-talk-about-us {
+    background: $bg-dark;
+    padding-top: 58px;
+    padding-bottom: 73px;
+
+    h2 {
+        @include p-1;
+        color: $bg-light;
+    }
+
+    .brand-logos-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 104px;
+        img {
+            width: auto;
+        }
+    }
+
+}

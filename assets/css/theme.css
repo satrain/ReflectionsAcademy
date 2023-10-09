@@ -382,6 +382,13 @@ header {
           font-size: 30px;
           line-height: 28px; } }
 
+.they-talk-about-us {
+  background: #151515;
+  padding-top: 58px;
+  padding-bottom: 73px; }
+  .they-talk-about-us img {
+    width: auto; }
+
 .money-back-guarantee {
   padding-top: 100px;
   padding-bottom: 94px;
