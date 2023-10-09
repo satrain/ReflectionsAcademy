@@ -386,8 +386,32 @@ header {
   background: #151515;
   padding-top: 58px;
   padding-bottom: 73px; }
-  .they-talk-about-us img {
-    width: auto; }
+  .they-talk-about-us h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.696px;
+    letter-spacing: -0.2px;
+    color: #FCFCFC; }
+    @media (max-width: 1440px) {
+      .they-talk-about-us h2 {
+        letter-spacing: -0.176px; } }
+    @media (max-width: 1280px) {
+      .they-talk-about-us h2 {
+        font-size: 17px; } }
+    @media (max-width: 375px) {
+      .they-talk-about-us h2 {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: -0.176px; } }
+    .they-talk-about-us h2.semi-bold {
+      font-weight: 600; }
+  .they-talk-about-us .brand-logos-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 104px; }
+    .they-talk-about-us .brand-logos-wrapper img {
+      width: auto; }
 
 .money-back-guarantee {
   padding-top: 100px;
