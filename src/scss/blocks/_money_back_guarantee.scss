@@ -1,0 +1,21 @@
+.money-back-guarantee {
+    padding-top: 100px;
+    padding-bottom: 94px;
+    background: $primary;
+
+    .money-back-guarantee-container {
+
+        a {
+            text-transform: unset;
+        }
+
+        h2 {
+            @include h-3;
+            max-width: 538px;
+            margin-top: 33px;
+            color: $text-light;
+        }
+
+    }
+
+}

@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@keyframes slideText {
+    0% {
+      transform: translateX(0); 
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
 html {
     scroll-behavior: smooth; // can mess up with Scroll To Top, also prevents scrolling with mouse3 button, comment it out if needed
 }
@@ -26,4 +35,35 @@ body {
 img {
     width: 100%;
     height: auto;
+}
+
+.btn {
+    @include p-2;
+
+    padding: 5px 21px;
+    border-radius: $radius-1;
+    border: 1px solid $primary-border;
+
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    color: $text-light;
+}
+
+.btn-secondary {
+    background: $bg;
+    color: $text-dark;
+}
+
+.sliding-text-container {
+    width: 100%;
+    overflow: hidden;
+    .sliding-text {
+        @include h-1;
+        text-transform: uppercase;
+        white-space: pre;
+        animation: slideText 30s linear infinite;
+    }
 }

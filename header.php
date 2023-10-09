@@ -9,6 +9,14 @@
 <body>
     <div id="page" class="site">
         <header id="masthead" class="site-header">
-            
+            <div class="header-wrapper">
+                <div class="reflections-logo">
+                    <a class="btn btn-primary">Reflections</a>
+                </div>
+                <div class="header-navigation">
+                    <a class="btn btn-primary" href="#">Academy</a>
+                    <a class="btn btn-secondary" href="#">Menu</a>
+                </div>
+            </div>
         </header>
     <div id="main" class="site-main">

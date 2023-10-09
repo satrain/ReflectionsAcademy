@@ -101,8 +101,6 @@
     line-height: 20.696px;
     letter-spacing: -0.2px;
     @include media($custom_1440) {
-        font-size: 16px;
-        line-height: 24px; /* 150% */
         letter-spacing: -0.176px;
     }
     @include media($custom_1280) {
