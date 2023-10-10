@@ -548,6 +548,106 @@ header {
   .about-reflections-homepage .decade-of-building .image-block {
     width: 50%; }
 
+.our-story {
+  padding-top: 119px;
+  padding-bottom: 80px;
+  background: #FF0000; }
+  .our-story .our-story-container h2 {
+    max-width: 134px;
+    margin-bottom: 18px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.196px;
+    letter-spacing: -0.2px; }
+  .our-story .our-story-container p {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 50.654px;
+    letter-spacing: -1.5px;
+    color: #FFFFFF; }
+    @media (max-width: 1440px) {
+      .our-story .our-story-container p {
+        font-size: 45px;
+        line-height: 45px;
+        letter-spacing: -1px; } }
+    @media (max-width: 1280px) {
+      .our-story .our-story-container p {
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: -0.6; } }
+    @media (max-width: 375px) {
+      .our-story .our-story-container p {
+        font-size: 30px;
+        line-height: 29.154px;
+        letter-spacing: -0.6px; } }
+  .our-story .our-story-container .our-story-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 138px; }
+    .our-story .our-story-container .our-story-list .as-featured-in {
+      max-width: 568px; }
+      .our-story .our-story-container .our-story-list .as-featured-in p {
+        margin-top: 34px;
+        color: #FFFFFF;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.154px;
+        letter-spacing: -0.5px;
+        text-transform: uppercase; }
+    .our-story .our-story-container .our-story-list .previous-destinations {
+      max-width: 546px; }
+      .our-story .our-story-container .our-story-list .previous-destinations p {
+        margin-top: 34px;
+        color: #FFFFFF;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25.154px;
+        letter-spacing: -0.5px;
+        text-transform: uppercase; }
+
+.online-lessons {
+  background: #151515;
+  padding-top: 170px;
+  padding-bottom: 53px; }
+  .online-lessons .online-lessons-container h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130px;
+    letter-spacing: -1.6px;
+    text-transform: uppercase; }
+    .online-lessons .online-lessons-container h2 span {
+      color: #FF0000; }
+    .online-lessons .online-lessons-container h2 img {
+      width: auto;
+      vertical-align: bottom;
+      cursor: pointer;
+      transform: scale(1.25); }
+  .online-lessons .online-lessons-container p {
+    max-width: 592px;
+    margin: 73px auto 41px;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.196px;
+    letter-spacing: -0.2px; }
+  .online-lessons .online-lessons-container .online-lessons-btn {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    color: #FFFFFF;
+    background: #FF0000;
+    border: 1px solid #FF0000;
+    text-transform: unset; }
+
 .money-back-guarantee {
   padding-top: 100px;
   padding-bottom: 94px;

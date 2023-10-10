@@ -1,0 +1,52 @@
+.online-lessons {
+    background: $bg-dark;
+    padding-top: 170px;
+    padding-bottom: 53px;
+
+    .online-lessons-container {
+
+        h2 {
+            color: $text-light;
+            text-align: center;
+            font-size: 160px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130px;
+            letter-spacing: -1.6px;
+            text-transform: uppercase;
+            span {
+                color: $primary;
+            }
+            img {
+                width: auto;
+                vertical-align: bottom;
+                cursor: pointer;
+                transform: scale(1.25);
+            }
+        }
+
+        p {
+            max-width: 592px;
+            margin: 73px auto 41px;
+            color: $text-light;
+            text-align: center;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25.196px;
+            letter-spacing: -0.2px;
+        }
+
+        .online-lessons-btn {
+            margin: 0 auto;
+            display: block;
+            width: fit-content;
+            color: $text-light;
+            background: $primary;
+            border: 1px solid $primary;
+            text-transform: unset;
+        }
+
+    }
+
+}
