@@ -5,24 +5,9 @@
     .container {
 
         .sliding-text-navigation {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
+            @include sliding-text-navigation;
             p {
-                max-width: 203px;
-
-                font-size: 17px;
-                font-weight: 500;
-                line-height: 18px;
-                letter-spacing: -0.085px;
-                text-transform: uppercase;
                 color: $text-dark;
-
-                &:nth-child(2) {
-                    max-width: 155px;
-                    text-align: right;
-                }
             }
 
         }

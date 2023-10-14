@@ -1,0 +1,75 @@
+.faqs {
+    padding-top: 138px;
+    padding-bottom: 51px;
+    background: $bg-dark;
+
+    .faqs-container {
+
+        h2 {
+            @include h-3;
+            color: $text-light;
+            text-transform: unset;
+            text-align: center;
+            max-width: 549px;
+            margin: 0 auto;
+        }
+
+        .accordion-wrapper {
+            margin-top: 77px;
+
+            .item {
+                padding-top: 23px;
+                margin-bottom: 20px;
+                border-top: 1px solid $text-light;
+
+                .title {
+                    position: relative;
+                    color: $text-light;
+
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 18.196px;
+                    letter-spacing: -0.2px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+
+                    &::after {
+                        content: '+';
+                        position: absolute;
+                        right: 0;
+                    }
+                }
+
+                .content {
+                    @include p-1;
+                    color: $text-light;
+                }
+
+                &.active {
+                    .title {
+                        &::after {
+                            content: '-';
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .text-us-p {
+            color: $text-light;
+            font-size: 21px;
+            font-weight: 400;
+            line-height: 25.154px;
+            letter-spacing: -1px;
+            text-align: center;
+            max-width: 420px;
+            margin: 65px auto 0;
+        }
+
+    }
+
+}

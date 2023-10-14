@@ -1,0 +1,58 @@
+.newsletter {
+    background: $primary;
+    padding-top: 65px;
+
+    .newsletter-container {
+        display: flex;
+        justify-content: flex-start;
+        gap: 81px;
+
+        .newsletter-copy {
+            margin-top: 70px;
+
+            h2 {
+                @include h-4;
+                text-transform: uppercase;
+                color: $text-light;
+                max-width: 579px;
+                margin-bottom: 34px;
+            }
+
+            form {
+                display: flex;
+
+                input {
+                    color: $text-light;
+                    background: transparent;
+                    padding: 2px 22px;
+
+                    font-size: 21px;
+                    font-weight: 400;
+                    line-height: 25.2px;
+                    letter-spacing: -0.36px;
+                    border-radius: 40px;
+                    border: 1px solid $text-light;
+                    outline: none;
+
+                    &::placeholder {
+                        color: $text-light;
+                    }
+                }
+
+                button {
+                    cursor: pointer;
+                    text-transform: unset;
+                    margin-left: 27.5px;
+                }
+
+            }
+
+        }
+
+        img {
+            max-width: 506px;
+        }
+
+    }
+
+}
