@@ -799,7 +799,8 @@ header {
   .courses .courses-container .courses-cards-wrapper {
     display: flex;
     justify-content: center;
-    gap: 97px; }
+    gap: 97px;
+    margin-top: 86px; }
     .courses .courses-container .courses-cards-wrapper .card {
       position: relative;
       padding: 31px 20px 39px;
