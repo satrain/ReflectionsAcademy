@@ -128,11 +128,11 @@
                         </div>
                         <div class="item">
                             <p class="title">Growth Phase</p>
-                            <!-- <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p> -->
+                            <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
                         </div>
                         <div class="item">
                             <p class="title">Maturity Phase</p>
-                            <!-- <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p> -->
+                            <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
                         </div>
                     </div>
                     <div class="buttons-wrapper">
@@ -237,25 +237,25 @@
     <div class="container faqs-container">
         <h2>Got a question? Here you will find the answer.</h2>
         <div class="accordion-wrapper">
-            <div class="item active">
+            <div class="item">
                 <p class="title">Is this an online or live masterclass?</p>
                 <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
             </div>
             <div class="item">
                 <p class="title">Is it pre-recorded content or a live presentation?</p>
-                <!-- <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p> -->
+                <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
             </div>
             <div class="item">
                 <p class="title">Who is this masterclass for?</p>
-                <!-- <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p> -->
+                <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
             </div>
             <div class="item">
                 <p class="title">When will it be available for watching?</p>
-                <!-- <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p> -->
+                <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
             </div>
             <div class="item">
                 <p class="title">What can I expect after I finish the masterclass?</p>
-                <!-- <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p> -->
+                <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
             </div>
         </div>
         <p class="text-us-p">If you have any more questions, please don't hesistate to text us at info@reflections.com</p>

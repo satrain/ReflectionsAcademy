@@ -1,13 +1,15 @@
 .video-n-accordion {
     position: relative;
 
-    .video-holder {}
+    .video-holder {
+        position: relative;
+    }
 
     .play-btn {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -150%);
+        transform: translate(-50%, -50%);
         cursor: pointer;
     }
 
@@ -77,6 +79,7 @@
                                 letter-spacing: -0.2px;
                                 margin-bottom: 20px;
                                 cursor: pointer;
+                                transition: .5s;
 
                                 &::after {
                                     content: '+';
@@ -88,6 +91,9 @@
                             .content {
                                 @include p-1;
                                 color: $text-light;
+                                opacity: 0;
+                                max-height: 0;
+                                transition: all .5s, max-height .3s linear;
                             }
 
                             &.active {
@@ -97,6 +103,13 @@
                                         position: absolute;
                                         right: 0;
                                     }
+                                }
+
+                                .content {
+                                    visibility: visible;
+                                    opacity: 1;
+                                    max-height: 200px;
+                                    transition: all .5s linear;
                                 }
                             }
 

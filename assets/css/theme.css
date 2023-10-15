@@ -652,11 +652,13 @@ header {
 
 .video-n-accordion {
   position: relative; }
+  .video-n-accordion .video-holder {
+    position: relative; }
   .video-n-accordion .play-btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -50%);
     cursor: pointer; }
   .video-n-accordion .accordion-holder {
     padding: 0 60px 83px; }
@@ -725,7 +727,8 @@ header {
               line-height: 18.196px;
               letter-spacing: -0.2px;
               margin-bottom: 20px;
-              cursor: pointer; }
+              cursor: pointer;
+              transition: .5s; }
               .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title::after {
                 content: '+';
                 position: absolute;
@@ -735,7 +738,10 @@ header {
               font-weight: 400;
               line-height: 20.696px;
               letter-spacing: -0.2px;
-              color: #FFFFFF; }
+              color: #FFFFFF;
+              opacity: 0;
+              max-height: 0;
+              transition: all .5s, max-height .3s linear; }
               @media (max-width: 1440px) {
                 .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
                   letter-spacing: -0.176px; } }
@@ -753,6 +759,11 @@ header {
               content: '-';
               position: absolute;
               right: 0; }
+            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item.active .content {
+              visibility: visible;
+              opacity: 1;
+              max-height: 200px;
+              transition: all .5s linear; }
         .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
           margin-top: 206px;
           display: flex;
@@ -1055,7 +1066,8 @@ header {
         line-height: 18.196px;
         letter-spacing: -0.2px;
         margin-bottom: 20px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: .5s; }
         .faqs .faqs-container .accordion-wrapper .item .title::after {
           content: '+';
           position: absolute;
@@ -1065,7 +1077,10 @@ header {
         font-weight: 400;
         line-height: 20.696px;
         letter-spacing: -0.2px;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        opacity: 0;
+        max-height: 0;
+        transition: all .5s, max-height .3s linear; }
         @media (max-width: 1440px) {
           .faqs .faqs-container .accordion-wrapper .item .content {
             letter-spacing: -0.176px; } }
@@ -1083,6 +1098,11 @@ header {
         content: '-';
         position: absolute;
         right: 0; }
+      .faqs .faqs-container .accordion-wrapper .item.active .content {
+        visibility: visible;
+        opacity: 1;
+        max-height: 200px;
+        transition: all .5s linear; }
   .faqs .faqs-container .text-us-p {
     color: #FFFFFF;
     font-size: 21px;
