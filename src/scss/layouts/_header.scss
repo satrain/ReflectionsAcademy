@@ -1,16 +1,44 @@
 header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     padding: 31px 60px 20px;
+
+    @include media(lg) {
+        padding: 25px 20px;
+    }
     .header-wrapper {
 
         display: flex;
         justify-content: space-between;
         align-items: center;
 
+        .reflections-logo {
+
+            a {
+                @include media(lg) {
+                    padding: 3px 12px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+
+        }
+
         .header-navigation {
+
             .btn-header-menu {
                 margin-left: 20px;
+                @include media(lg) {
+                    margin-left: 10px;
+                }
+            }
+
+            a {
+                @include media(lg) {
+                    padding: 3px 12px;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
             }
         }
 

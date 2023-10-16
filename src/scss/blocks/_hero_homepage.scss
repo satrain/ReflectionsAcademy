@@ -5,6 +5,7 @@
     background: url('/wp-content/uploads/2023/10/hero-background-image.png');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 
     .sliding-text-container {
         p {
@@ -30,6 +31,12 @@
                     color: $text-light;
                     margin-bottom: 33px;
                     max-width: 427px;
+                }
+            }
+
+            .hero-mock {
+                @include media(lg) {
+                    display: none;
                 }
             }
 

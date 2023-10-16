@@ -12,6 +12,9 @@
         right: -200px;
         border-radius: 370px;
         background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(255, 0, 0, 0.50) 0%, rgba(255, 89, 0, 0.00) 70%);
+        @include media(lg) {
+            display: none;
+        }
     }
 
     .radial-background-2 {
@@ -22,6 +25,9 @@
         left: -550px;
         border-radius: 370px;
         background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(255, 0, 0, 0.50) 0%, rgba(255, 89, 0, 0.00) 70%);
+        @include media(lg) {
+            display: none;
+        }
     }
 
     .where-do-you-fit-container {
@@ -50,6 +56,11 @@
             margin-top: 190px;
             display: flex;
             gap: 252px;
+            @include media(lg) {
+                margin-top: 60px;
+                flex-direction: column;
+                gap: 30px;
+            }
 
             .course {
                 max-width: 445px;
