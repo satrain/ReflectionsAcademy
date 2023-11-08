@@ -1,13 +1,47 @@
 .real-results {
     padding-top: 77px;
     padding-bottom: 116px;
+    @include media(lg) {
+        padding-top: 40px;
+        padding-bottom: 83px;
+    }
 
     .real-results-container {
+        @include media(lg) {
+            padding: 0;
+        }
+
+        span {
+            padding: 0 20px;
+            margin-bottom: 16px;
+            color: $text-dark;
+
+            font-family: 'Clash Display Medium', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            padding: 0 20px;
+            color: $text-dark;
+
+            font-family: 'Clash Display Medium', sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 35px;
+            letter-spacing: -0.8px;
+            text-transform: uppercase;
+        }
 
         .sliding-text-navigation {
             @include sliding-text-navigation;
             p {
                 color: $text-dark;
+                max-width: 176px;
             }
         }
 
@@ -16,20 +50,40 @@
             justify-content: space-between;
             gap: 27px;
             margin-top: 77px;
+            @include media(lg) {
+                margin-top: 59px;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                margin: 77px 0 0 20px;
+            }
 
             .item {
                 width: 24%;
+                @include media(lg) {
+                    width: 100%;
+                    flex: 0 0 92%;
+                    scroll-snap-align: start;
+                }
                 &:nth-child(1) {
+                    @include media(lg) {
+                        margin-right: -4%;
+                    }
                     .image {
                         background: url('/wp-content/uploads/2023/10/real-results-image-1.png');
                     }
                 }
                 &:nth-child(2) {
+                    @include media(lg) {
+                        margin-right: -4%;
+                    }
                     .image {
                         background: url('/wp-content/uploads/2023/10/real-results-image-2.png');
                     }
                 }
                 &:nth-child(3) {
+                    @include media(lg) {
+                        margin-right: -4%;
+                    }
                     .image {
                         background: url('/wp-content/uploads/2023/10/real-results-image-3.png');
                     }
@@ -37,6 +91,12 @@
                 &:nth-child(4) {
                     .image {
                         background: url('/wp-content/uploads/2023/10/real-results-image-4.png');
+                    }
+                }
+
+                &:last-child {
+                    @include media(lg) {
+                        margin-right: 20px;
                     }
                 }
 

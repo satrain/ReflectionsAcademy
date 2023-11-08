@@ -1,19 +1,20 @@
 <?php get_header() ?>
 
-<div class="hero homepage-hero">
+<div class="hero homepage-hero section" data-background="dark">
     <div class="sliding-text-container">
         <p class="sliding-text">distinctive©aestheticdistinctive©aestheticdistinctive©aestheticdistinctive©aesthetic</p>
     </div>
     <div class="container homepage-hero-container">
         <div class="sliding-text-navigation">
-            <p>Masterclass by Danilo&Sharon</p>
+            <p>Masterclass<br>by Danilo&Sharon</p>
             <p>Working worldwide</p>
         </div>
 
         <div class="hero-content">
             <div class="hero-copy">
+                <p class="hide-desktop">Masterclass by DANILO&SHARON</p>
                 <h2>Our masterclass will make the path of your flash mastery quick and easy.</h2>
-                <a href="#" class="btn btn-secondary">Enroll now ↗</a>
+                <a href="#" class="btn btn-secondary">Enroll now &#8599;</a>
             </div>
             <div class="hero-mock">
                 <img src="/wp-content/uploads/2023/10/hero-main-image.png" alt="Hero image">
@@ -22,8 +23,8 @@
     </div>
 </div>
 
-<div class="they-talk-about-us">
-    <h2>They talk about us</h2>
+<div class="they-talk-about-us section" data-background="dark">
+    <h2 class="hide-mobile">They talk about us</h2>
     <div class="brand-logos-wrapper">
         <img src="<?= get_template_directory_uri() ?>/assets/images/logos/vogue-logo.svg" alt="Brand logo">
         <img src="<?= get_template_directory_uri() ?>/assets/images/logos/elle-logo.svg" alt="Brand logo">
@@ -33,19 +34,19 @@
 </div>
 
 <div class="about-reflections-homepage">
-    <div class="dream-outcome">
+    <div class="dream-outcome section" data-background="light">
         <div class="copy-block container">
-            <p class="p-above-title">Dream outcome by Danilo&Sharon</p>
+            <p class="p-above-title hide-mobile">Dream outcome by Danilo&Sharon</p>
             <h2>From <span>amateur to professional</span> in fashion photography.</h2>
             <p>At Reflections  our goal is to deliver a distinctive skill set to provide photographers with the ability to make their own style at industry standard.</p>
-            <a href="#" class="btn btn-primary dream-outcome-btn-light">Enrollment Open</a>
+            <a href="#" class="btn btn-primary dream-outcome-btn-light hide-mobile">Enrollment Open</a>
             <a href="#" class="btn btn-secondary dream-outcome-btn-dark">Check more about</a>
         </div>
         <div class="image-block">
             <img src="/wp-content/uploads/2023/10/about-reflections-image-1-min-scaled.jpeg" alt="About reflections image">
         </div>
     </div>
-    <div class="decade-of-building">
+    <div class="decade-of-building section" data-background="light">
         <div class="copy-block container">
             <h2>A decade of building <span>distinctive aesthetic.</span></h2>
             <p>Danilo and Sharon became a recognised brand, known for its defined aesthetic approach and bespoke photography services.Influenced by previous fashion and advertising work, Danilo and Sharon nourished a photographic style that seduces modern brides worldwide.</p>
@@ -57,7 +58,7 @@
     </div>
 </div>
 
-<div class="our-story">
+<div class="our-story section" data-background="dark">
     <div class="container our-story-container">
         <h2>DANILO&SHARON Our story</h2>
         <p>Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.</p>
@@ -75,19 +76,21 @@
     </div>
 </div>
 
-<div class="online-lessons">
+<div class="online-lessons section" data-background="dark">
     <div class="container online-lessons-container">
-        <h2>Interactive
+        <h2 class="hide-mobile">Interactive
             <br>
             <span>online</span>
             <br>
             less<img src="<?= get_template_directory_uri() ?>/assets/images/online-lessons-danilo-cta.svg" alt="O">ns</h2>
+        <span class="hide-desktop">Courses</span>
+        <h2 class="hide-desktop">Interactive <span>online</span> lessons</h2>
         <p>Unlock your photography skills in a real-time & interactive classroom with your peers and your mentor.</p>
         <a class="btn online-lessons-btn" href="#">Check more about</a>
     </div>
 </div>
 
-<div class="video-n-accordion">
+<div class="video-n-accordion section" data-background="dark">
     <div class="video-holder">
         <video width="100%" poster="/wp-content/uploads/2023/10/video-n-accordion-video-thumbnail.jpeg">
             <source src="/wp-content/uploads/2023/10/video_placeholder.mp4" type="video/mp4">
@@ -118,7 +121,7 @@
             <div class="copy-block">
                 <div class="copy-block-left copy-block-text">
                     <h2>You just need a camera, and a <span>passion for photography</span> and learning.</h2>
-                    <p>Revolutionize photography education globally.</p>
+                    <p class="hide-mobile">Revolutionize photography education globally.</p>
                 </div>
                 <div class="copy-block-right copy-block-accordion">
                     <div class="accordion-wrapper">
@@ -145,7 +148,7 @@
     </div>
 </div>
 
-<div class="courses">
+<div class="courses section" data-background="dark">
     <div class="container courses-container">
         <p class="courses-subtitle">Courses</p>
         <h2>Our courses will make the path of your flash mastery quick and easy.</h2>
@@ -181,11 +184,13 @@
     </div>
 </div>
 
-<div class="real-results">
+<div class="real-results section" data-background="light">
     <div class="sliding-text-container">
-        <p class="sliding-text">real people, real results real people, real results real people, real results</p>
+        <p class="sliding-text hide-mobile">real people, real results real people, real results real people, real results</p>
     </div>
     <div class="container real-results-container">
+        <span class="hide-desktop">Our clients</span>
+        <h2 class="hide-desktop">Real people, real results.</h2>
         <div class="sliding-text-navigation">
             <p>Let's see what they have to say</p>
             <p>Our worldwide clients</p>
@@ -220,7 +225,7 @@
     </div>
 </div>
 
-<div class="newsletter">
+<div class="newsletter section" data-background="dark">
     <div class="container newsletter-container">
         <div class="newsletter-copy">
             <h2>Sign up for our newsletter and get 10% on your first purchase.</h2>
@@ -233,9 +238,10 @@
     </div>
 </div>
 
-<div class="faqs">
+<div class="faqs section" data-background="dark">
     <div class="container faqs-container">
-        <h2>Got a question? Here you will find the answer.</h2>
+        <span class="hide-desktop">FAQ</span>
+        <h2>Got a question?<br>Here you will find the answer.</h2>
         <div class="accordion-wrapper">
             <div class="item">
                 <p class="title">Is this an online or live masterclass?</p>
@@ -262,7 +268,7 @@
     </div>
 </div>
 
-<div class="where-do-you-fit">
+<div class="where-do-you-fit section" data-background="dark">
     <div class="radial-background-1"></div>
     <div class="radial-background-2"></div>
     <div class="container where-do-you-fit-container">
@@ -277,6 +283,7 @@
                     <a href="#" class="btn btn-secondary">Check more about</a>
                 </div>
             </div>
+            <div class="course-separator"></div>
             <div class="course">
                 <h3>Lorem ipsum text comes here now.</h3>
                 <p>An approachable way to learn web design & CSS in Squarespace, get up to speed on freelancing workflows (hourly rates, client contracts), and level up with 1on1 design critiques!</p>
@@ -289,13 +296,13 @@
     </div>
 </div>
 
-<div class="money-back-guarantee">
+<div class="money-back-guarantee section" data-background="dark">
     <div class="container money-back-guarantee-container">
         <a class="btn btn-primary">21 Day refund policy</a>
         <h2>We can guarantee that you will be fully satisfied with our courses.</h2>
         <?php if(wp_is_mobile()): ?>
-            <div class="radial-background"></div>
-            <a href="#" class="btn btn-secondary mobile-btn">Check more</a>
+            <div class="radial-background hide-desktop"></div>
+            <a href="#" class="btn btn-secondary mobile-btn hide-desktop">Check more</a>
         <?php endif; ?>
     </div>
 </div>

@@ -2,10 +2,18 @@
     padding-top: 119px;
     padding-bottom: 80px;
     background: $primary;
+    @include media(lg) {
+        padding-top: 42px;
+        padding-bottom: 47px;
+    }
 
     .our-story-container {
+        @include media(lg) {
+            padding: 0;
+        }
 
         h2 {
+            font-family: 'GeneralSans Regular', sans-serif;
             max-width: 134px;
             margin-bottom: 18px;
             color: $text-light;
@@ -14,22 +22,56 @@
             font-weight: 400;
             line-height: 18.196px;
             letter-spacing: -0.2px;
+            @include media(lg) {
+                padding: 0 20px;
+            }
         }
 
         p {
             @include h-3;
+            font-family: 'GeneralSans Regular', sans-serif;
             color: $text-light;
+            max-width: 1080px;
+            @include media(lg) {
+                padding: 0 20px;
+            }
         }
 
         .our-story-list {
             display: flex;
             justify-content: space-between;
             margin-top: 138px;
+            @include media(lg) {
+                margin-top: 70px;
+                margin: 70px 0 0 20px;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                gap: 17px;
+            }
 
             .as-featured-in {
                 max-width: 568px;
+                @include media(lg) {
+                    border-radius: 24px;
+                    border: 1px solid #FFF;
+                    padding: 24px 18px;
+                    flex: 0 0 93%;
+                    scroll-snap-align: start;
+                    margin-right: -1%;
+                }
+
+                a {
+                    font-family: 'GeneralSans Regular', sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.84px;
+                    padding: 1px 16px;
+                }
 
                 p {
+                    padding: 0;
                     margin-top: 34px;
                     color: $text-light;
                     font-size: 21px;
@@ -38,14 +80,36 @@
                     line-height: 25.154px;
                     letter-spacing: -0.5px;
                     text-transform: uppercase;
+                    @include media(lg) {
+                        margin-top: 94px;
+                    }
                 }
 
             }
 
             .previous-destinations {
                 max-width: 546px;
+                @include media(lg) {
+                    border-radius: 24px;
+                    border: 1px solid #FFF;
+                    padding: 24px 18px;
+                    flex: 0 0 93%;
+                    scroll-snap-align: start;
+                    margin-right: 20px;
+                }
+
+                a {
+                    font-family: 'GeneralSans Regular', sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.84px;
+                    padding: 1px 16px;
+                }
 
                 p {
+                    padding: 0;
                     margin-top: 34px;
                     color: $text-light;
                     font-size: 21px;
@@ -54,6 +118,9 @@
                     line-height: 25.154px;
                     letter-spacing: -0.5px;
                     text-transform: uppercase;
+                    @include media(lg) {
+                        margin-top: 94px;
+                    }
                 }
 
             }

@@ -2,6 +2,10 @@
     background: $bg-dark;
     padding-top: 127px;
     padding-bottom: 112px;
+    @include media(lg) {
+        padding-top: 59px;
+        padding-bottom: 79px;
+    }
 
     .courses-container {
 
@@ -13,15 +17,31 @@
             line-height: 50.654px;
             letter-spacing: -1px;
             margin-bottom: 7px;
-            text-align: center
+            text-align: center;
+            @include media(lg) {
+                font-family: 'Clash Display Regular', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px;
+                text-transform: uppercase;
+                letter-spacing: normal;
+                text-align: left;
+                margin-bottom: 27px;
+            }
         }
 
         h2 {
-           @include h-3;
+            @include h-3;
+            font-family: 'GeneralSans Regular', sans-serif;
            color: $text-light; 
-           max-width: 849px;
+           max-width: 825px;
            text-align: center;
            margin: 0 auto;
+           @include media(lg) {
+            margin: 0;
+            text-align: left;
+           }
         }
 
         .courses-cards-wrapper {
@@ -29,15 +49,27 @@
             justify-content: center;
             gap: 97px;
             margin-top: 86px;
+            @include media(lg) {
+                flex-direction: column;
+                gap: 50px;
+                margin-top: 63px;
+            }
 
             .card {
                 position: relative;
+                max-width: 465px;
                 padding: 31px 20px 39px;
                 border-radius: $radius-2;
                 min-height: 622px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                @include media(lg) {
+                    min-height: 512px;
+                    width: 100%;
+                    min-width: unset;
+                    border-radius: 15px;
+                }
                 
                 .subtitle {
                     text-transform: unset;
@@ -48,7 +80,6 @@
                     @include h-3;
                     text-transform: uppercase;
                     margin-top: 18px;
-                    max-width: 453px
                 }
 
                 p {
@@ -63,6 +94,9 @@
 
                     a {
                         text-transform: unset;
+                        @include media(md) {
+                            font-size: 13px;
+                        }
                     }
                 }
 
@@ -78,6 +112,9 @@
                         left: 0;
                         border-radius: 370px;
                         background: radial-gradient(70.71% 70.71% at 50% 50%, $primary 0%, rgba(255, 89, 0, 0.00) 70%);
+                        @include media(lg) {
+                            height: 68%;
+                        }
                     }
 
                     .subtitle {
@@ -87,6 +124,7 @@
 
                     h3 {
                         color: $primary;
+                        max-width: 390px
                     }
 
                     .card-lower {
@@ -106,6 +144,7 @@
                             }
                             &:nth-child(2) {
                                 background: #191819;
+                                font-family: 'GeneralSans Light', sans-serif;
                             }
                         }
                     }
@@ -117,6 +156,7 @@
 
                     h3 {
                         color: $text-light;
+                        max-width: 375px;
                     }
 
                     p {

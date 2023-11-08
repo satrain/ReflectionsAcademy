@@ -2,27 +2,62 @@
     padding-top: 138px;
     padding-bottom: 51px;
     background: $bg-dark;
+    @include media(lg) {
+        padding-top: 57px;
+        padding-bottom: 33px;
+    }
 
     .faqs-container {
 
+        span {
+            margin-bottom: 13px;
+            color: $text-light;
+
+            font-family: 'Clash Display Medium', sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+
         h2 {
             @include h-3;
+            font-family: 'GeneralSans Regular', sans-serif;
             color: $text-light;
             text-transform: unset;
             text-align: center;
-            max-width: 549px;
+            max-width: 555px;
             margin: 0 auto;
+            @include media(lg) {
+                max-width: 255px;
+                margin: 0;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30.5px;
+                letter-spacing: -0.6px;
+                text-align: left;
+            }
         }
 
         .accordion-wrapper {
             margin-top: 77px;
+            @include media(lg) {
+                margin-top: 41px;
+            }
 
             .item {
                 padding-top: 23px;
-                margin-bottom: 20px;
+                padding-bottom: 4px;
                 border-top: 1px solid $text-light;
+                @include media(lg) {
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
 
                 .title {
+                    font-family: 'GeneralSans Regular', sans-serif;
                     position: relative;
                     color: $text-light;
 
@@ -33,6 +68,15 @@
                     margin-bottom: 20px;
                     cursor: pointer;
                     transition: .5s;
+                    @include media(lg) {
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 25px;
+                        letter-spacing: -0.2px;
+                        padding-right: 4px;
+                        margin-bottom: 12px;
+                    }
 
                     &::after {
                         content: '+';
@@ -47,6 +91,9 @@
                     opacity: 0;
                     max-height: 0;
                     transition: all .5s, max-height .3s linear;
+                    @include media(lg) {
+                        font-size: 14px!important;
+                    }
                 }
 
                 &.active {
@@ -63,6 +110,7 @@
                         opacity: 1;
                         max-height: 200px;
                         transition: all .5s linear;
+                        margin-bottom: 12px;
                     }
                 }
 
@@ -71,6 +119,7 @@
         }
 
         .text-us-p {
+            font-family: 'GeneralSans Light', sans-serif;
             color: $text-light;
             font-size: 21px;
             font-weight: 400;
@@ -79,6 +128,14 @@
             text-align: center;
             max-width: 420px;
             margin: 65px auto 0;
+            @include media(lg) {
+                margin: 28px auto 0;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22.154px;
+                letter-spacing: -1px;
+            }
         }
 
     }

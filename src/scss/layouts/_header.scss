@@ -2,10 +2,36 @@ header {
     position: fixed;
     width: 100vw;
     padding: 31px 60px 20px;
+    z-index: 99;
 
     @include media(lg) {
         padding: 25px 20px;
     }
+
+    &.light {
+        a {
+            color: #fff!important;
+        }
+
+        .btn-header-menu {
+            background: #fff!important;
+            color: $text-dark!important;
+        }
+    }
+
+    &.dark {
+        a {
+            color: $text-dark!important;
+            border-color: $text-dark;
+        }
+
+        .btn-header-menu {
+            background: $text-dark!important;
+            color: #fff!important;
+            border-color: $text-dark;
+        }
+    }
+
     .header-wrapper {
 
         display: flex;
@@ -15,6 +41,8 @@ header {
         .reflections-logo {
 
             a {
+                text-transform: uppercase;
+                font-family: 'Clash Display Regular', sans-serif;
                 @include media(lg) {
                     padding: 3px 12px;
                     font-size: 14px;
@@ -34,6 +62,8 @@ header {
             }
 
             a {
+                text-transform: uppercase;
+                font-family: 'Clash Display Regular', sans-serif;
                 @include media(lg) {
                     padding: 3px 12px;
                     font-size: 14px;

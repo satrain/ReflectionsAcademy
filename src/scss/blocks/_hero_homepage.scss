@@ -17,6 +17,9 @@
 
         .sliding-text-navigation {
             @include sliding-text-navigation;
+            p {
+                font-family: 'Clash Display Regular', sans-serif;
+            }
         }
 
         .hero-content {
@@ -26,11 +29,31 @@
             margin-top: 200px;
 
             .hero-copy {
+                p {
+                    max-width: 203px;
+                    margin-bottom: 15px;
+                    color: $text-light;
+
+                    font-family: 'Clash Display Regular', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 14px;
+                    text-transform: uppercase;
+                }
                 h2 {
                     @include h-2;
+                    font-family: 'GeneralSans Regular', sans-serif;
+                    letter-spacing: -1px;
+                    line-height: 42px!important;
                     color: $text-light;
                     margin-bottom: 33px;
-                    max-width: 427px;
+                    max-width: 445px;
+                }
+
+                .btn {
+                    font-size: 21px;
+                    letter-spacing: -0.36px;
                 }
             }
 

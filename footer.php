@@ -1,6 +1,6 @@
 </div> <!-- #main --> 
 
-<footer id="colophon" class="site-footer">
+<footer id="colophon" class="site-footer section"  data-background="light">
     <div class="sliding-text-container">
         <p class="sliding-text">Let's talk Let's talk Let's talk Let's talk Let's talk</p>
     </div>

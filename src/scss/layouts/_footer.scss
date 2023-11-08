@@ -1,6 +1,10 @@
 #colophon {
     padding-top: 100px;
     padding-bottom: 30px;
+    @include media(lg) {
+        padding-top: 40px;
+        padding-bottom: 41px;
+    }
 
     .container {
 
@@ -8,6 +12,7 @@
             @include sliding-text-navigation;
             p {
                 color: $text-dark;
+                max-width: 176px;
             }
 
         }
@@ -18,12 +23,21 @@
             align-items: center;
             gap: 33px;
 
+            @include media(lg) {
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+            }
+
             margin: 67px 0;
             @include media(lg) {
                 margin: 13px 0 40px;
             }
 
             .post-item {
+                @include media(lg) {
+                    flex: 0 0 100%;
+                    scroll-snap-align: start;
+                }
 
                 img {
                     width: 100%;
@@ -121,6 +135,9 @@
                 padding-top: 52px;
                 display: flex;
                 justify-content: space-between;
+                @include media(lg) {
+                    flex-direction: column;
+                }
 
                 .shortcut-links {
                     display: flex;
@@ -143,6 +160,11 @@
 
                 .notices {
                     max-width: 213px;
+                    @include media(lg) {
+                        max-width: unset;
+                        width: 100%;
+                        margin-top: 26px;
+                    }
                     
                     p {
                         color: #616161;
@@ -155,10 +177,17 @@
                     .social-media-links {
                         margin-top: 45px;
                         margin-bottom: 16px;
+                        @include media(lg) {
+                            margin-top: 37px;
+                        }
 
                         a {
                             img {
                                 width: auto;
+                                @include media(lg) {
+                                    transform: scale(1.5);
+                                    margin-right: 15px;
+                                }
                             }
                         }
                     }

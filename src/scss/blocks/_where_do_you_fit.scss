@@ -3,6 +3,11 @@
     background: $bg-dark;
     padding-top: 63px;
     padding-bottom: 93px;
+    @include media(lg) {
+        margin-top: -2px;
+        padding-top: 59px;
+        padding-bottom: 79px;
+    }
 
     .radial-background-1 {
         width: 806px;
@@ -31,10 +36,12 @@
     }
 
     .where-do-you-fit-container {
-        padding-top: 25px;
-        border-top: 1px solid #D9D9D9;
 
         .subtitle {
+            padding-top: 25px;
+            border-top: 1px solid #d9d9d9;
+
+            font-family: 'GeneralSans Regular', sans-serif;
             color: $text-light;
 
             font-size: 16px;
@@ -42,24 +49,46 @@
             line-height: 18.196px;
             letter-spacing: -0.2px;
             margin-bottom: 25px;
+            @include media(lg) {
+                border: unset;
+                font-family: 'Clash Display Regular', sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 14px;
+                text-transform: uppercase;
+                margin-bottom: 27px;
+            }
         }
 
         h2 {
             @include h-2;
             color: $text-light;
             text-transform: uppercase;
-            max-width: 570px;
+            max-width: 450px;
+            @include media(lg) {
+                font-family: 'GeneralSans Regular', sans-serif;
+                margin: 0;
+                text-align: left;
+                text-transform: unset;
+            }
         }
 
         .courses-wrapper {
             position: relative;
             margin-top: 190px;
             display: flex;
-            gap: 252px;
+            gap: 130px;
             @include media(lg) {
                 margin-top: 60px;
                 flex-direction: column;
                 gap: 30px;
+            }
+
+            .course-separator {
+                width: 1px;
+                height: auto;
+                background: #d9d9d9;
             }
 
             .course {
@@ -69,6 +98,7 @@
                     @include h-4;
                     color: $text-light;
                     text-transform: uppercase;
+                    max-width: 315px;
                 }
 
                 p {
@@ -90,6 +120,12 @@
                             color: $text-light;
                             border: 1px solid $primary;
                         }
+                    }
+                }
+
+                &:nth-child(2) {
+                    h3 {
+                        max-width: 280px;
                     }
                 }
 

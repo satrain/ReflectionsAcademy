@@ -2,6 +2,10 @@
     background: $bg-dark;
     padding-top: 58px;
     padding-bottom: 73px;
+    @include media(lg) {
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
 
     h2 {
         @include p-1;
@@ -15,8 +19,16 @@
         align-items: center;
         gap: 104px;
         margin-top: 40px;
+        @include media(lg) {
+            // overflow: hidden;
+            // width: 100%; /* Ensure the container takes up the full width */
+        }
         img {
             width: auto;
+            @include media(lg) {
+                // flex: 0 0 100%; /* Each logo takes up the full width */
+                // transition: transform 0.3s ease-in-out; /* Smooth sliding transition */
+            }
         }
     }
 

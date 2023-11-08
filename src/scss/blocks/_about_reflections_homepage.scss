@@ -4,13 +4,21 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        gap: 47px;
+        @include media(lg) {
+            flex-direction: column-reverse;
+            gap: 40px;
+        }
 
         .copy-block {
+            width: 50%;
             padding-bottom: 73px;
+            @include media(lg) {
+                padding-bottom: 60px;
+                width: 100%;
+            }
             
             .p-above-title {
-                max-width: 126px;
+                max-width: 130px;
                 color: #000;
                 font-size: 16px;
                 font-weight: 400;
@@ -23,9 +31,15 @@
                 @include h-2;
                 color: $text-dark;
                 text-transform: uppercase;
-                max-width: 553px;
+                max-width: 370px;
                 span {
                     color: $primary;
+                }
+                @include media(lg) {
+                    font-size: 30px;
+                    line-height: 28px;
+                    letter-spacing: -0.6px;
+                    max-width: 270px;
                 }
             }
 
@@ -33,7 +47,10 @@
                 @include p-1;
                 margin-top: 17px;
                 margin-bottom: 47px;
-                max-width: 447px;
+                max-width: 440px;
+                @include media(lg) {
+                    margin-bottom: 27px;
+                }
             }
 
             a {
@@ -49,6 +66,9 @@
                     border: 1px solid #000;
                     color: $bg-light;
                     margin-left: 25px;
+                    @include media(lg) {
+                        margin-left: 0;
+                    }
                 }
             }
 
@@ -56,9 +76,17 @@
 
         .image-block {
             width: 50%;
+            @include media(lg) {
+                width: 100%;
+            }
 
             img {
                 filter: grayscale(1);
+                max-height: 650px;
+                object-fit: cover;
+                @include media(md) {
+                    height: 300px;
+                }
             }
         }
 
@@ -69,19 +97,34 @@
         flex-direction: row-reverse;
         justify-content: center;
         align-items: flex-end;
-        gap: 47px;
-        margin-top: -5px;
+        margin-top: -7px;
+        @include media(lg) {
+            flex-direction: column-reverse;
+            margin-top: 0;
+            gap: 40px;
+        }
 
         .copy-block {
-            padding-bottom: 73px;
+            width: 50%;
+            padding: 0 56px 73px 60px;
+            @include media(lg) {
+                padding: 0 20px;
+                padding-bottom: 60px;
+                width: 100%;
+            }
 
             h2 {
                 @include h-2;
                 color: $text-dark;
                 text-transform: uppercase;
-                max-width: 599px;
+                max-width: 400px;
                 span {
                     color: $primary;
+                }
+                @include media(lg) {
+                    font-size: 30px;
+                    line-height: 28px;
+                    letter-spacing: -0.6px;
                 }
             }
 
@@ -89,7 +132,10 @@
                 @include p-1;
                 margin-top: 17px;
                 margin-bottom: 47px;
-                max-width: 487px;
+                max-width: 485px;
+                @include media(lg) {
+                    margin-bottom: 27px;
+                }
             }
 
             a {
@@ -106,7 +152,18 @@
 
         .image-block {
             width: 50%;
-            
+            display: flex;
+            @include media(lg) {
+                width: 100%;
+            }
+
+            img {
+                object-fit: cover;
+                max-height: 650px;
+                @include media(md) {
+                    height: 300px;
+                }
+            }
         }
 
     }

@@ -11,7 +11,9 @@
 
     .money-back-guarantee-container {
         position: relative;
-        padding: 0 16px;
+        @include media(lg) {
+            padding: 0 16px;
+        }
 
         a {
             text-transform: unset;
@@ -24,6 +26,7 @@
             max-width: 538px;
             margin-top: 33px;
             color: $text-light;
+            font-family: 'GeneralSans Regular', sans-serif;
             @include media(lg) {
                 text-transform: uppercase;
             }

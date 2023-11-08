@@ -1,3 +1,63 @@
+@font-face {
+    font-family: "Clash Display Variable";
+    src: url("../fonts/ClashDisplay-Variable.woff");
+}
+
+@font-face {
+    font-family: "Clash Display Medium";
+    src: url("../fonts/ClashDisplay-Medium.woff");
+}
+
+@font-face {
+    font-family: "Clash Display Bold";
+    src: url("../fonts/ClashDisplay-Bold.woff");
+}
+
+@font-face {
+    font-family: "Clash Display Regular";
+    src: url("../fonts/ClashDisplay-Regular.woff");
+}
+
+@font-face {
+    font-family: 'Neue Montreal Regular';
+    src: url("../fonts/GeneralSans-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Neue Montreal Medium';
+    src: url("../fonts/NeueMontreal-Medium.otf");
+}
+
+@font-face {
+    font-family: 'Neue Montreal Light';
+    src: url("../fonts/NeueMontreal-Light.otf");
+}
+
+@font-face {
+    font-family: 'Neue Montreal Bold';
+    src: url("../fonts/NeueMontreal-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Neue Montreal Regular';
+    src: url("../fonts/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+    font-family: 'GeneralSans Light';
+    src: url("../fonts/GeneralSans-Light.woff");
+}
+
+@font-face {
+    font-family: 'GeneralSans Regular';
+    src: url("../fonts/GeneralSans-Regular.woff");
+}
+
+@font-face {
+    font-family: 'GeneralSans Medium';
+    src: url("../fonts/GeneralSans-Medium.otf");
+}
+
 body {
     font-family: $font-family;
 }
