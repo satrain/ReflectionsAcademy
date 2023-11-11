@@ -1,55 +1,61 @@
 .money-back-guarantee {
-    padding-top: 100px;
-    padding-bottom: 94px;
-    background: $primary;
-    @include media(lg) {
-        margin: 41px 20px 0;
-        padding-top: 31px;
-        padding-bottom: 31px;
-        border-radius: 24px;
-    }
+	padding-top: 117px;
+	padding-bottom: 83px;
+	background: $primary;
+	@include media(lg) {
+		margin: 41px 20px 0;
+		padding-top: 31px;
+		padding-bottom: 31px;
+		border-radius: 24px;
+	}
 
-    .money-back-guarantee-container {
-        position: relative;
-        @include media(lg) {
-            padding: 0 16px;
-        }
+	.money-back-guarantee-container {
+		position: relative;
+		@include media(lg) {
+			padding: 0 16px;
+		}
 
-        a {
-            text-transform: unset;
-        }
+		a {
+			text-transform: unset;
+			padding: 5px 20px;
+		}
 
-        h2 {
-            position: relative;
-            z-index: 1;
-            @include h-3;
-            max-width: 538px;
-            margin-top: 33px;
-            color: $text-light;
-            font-family: 'GeneralSans Regular', sans-serif;
-            @include media(lg) {
-                text-transform: uppercase;
-            }
-        }
+		h2 {
+			position: relative;
+			font-family: "Clash Display Medium", sans-serif;
+			font-weight: 400;
+			line-height: 44px;
+			font-size: 40px;
+			z-index: 1;
+			max-width: 488px;
+			margin-top: 27px;
+			color: $text-light;
+			font-family: "GeneralSans Regular", sans-serif;
+			@include media(lg) {
+				text-transform: uppercase;
+			}
+		}
 
-        .mobile-btn {
-            position: relative;
-            z-index: 1;
-            display: block;
-            width: fit-content;
-            margin-top: 144px;
-        }
+		.mobile-btn {
+			position: relative;
+			z-index: 1;
+			display: block;
+			width: fit-content;
+			margin-top: 144px;
+		}
 
-        .radial-background {
-            position: absolute;
-            bottom: 0;
-            right: 20px;
-            width: 258px;
-            height: 258px;
-            border-radius: 370px;
-            background: radial-gradient(70.71% 70.71% at 50% 50%, #FFF 0%, #F00 70%);
-        }
-
-    }
-
+		.radial-background {
+			position: absolute;
+			bottom: 0;
+			right: 20px;
+			width: 258px;
+			height: 258px;
+			border-radius: 370px;
+			background: radial-gradient(
+				70.71% 70.71% at 50% 50%,
+				#fff 0%,
+				#f00 70%
+			);
+		}
+	}
 }

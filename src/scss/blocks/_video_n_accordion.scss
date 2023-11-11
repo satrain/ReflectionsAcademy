@@ -1,174 +1,177 @@
 .video-n-accordion {
-    position: relative;
-    @include media(lg) {
-        margin-top: -2px;
-    }
+	position: relative;
+	@include media(lg) {
+		margin-top: -2px;
+	}
 
-    .video-holder {
-        position: relative;
-    }
+	.video-holder {
+		position: relative;
+	}
 
-    .play-btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-        @include media(lg) {
-            width: 102px;
-            height: 102px;
-        }
-        svg {
-            @include media(lg) {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
+	.play-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		cursor: pointer;
+		@include media(lg) {
+			width: 102px;
+			height: 102px;
+		}
+		svg {
+			@include media(lg) {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 
-    .accordion-holder {
-        padding: 0 60px 83px;
-        @include media(lg) {
-            padding: 0;
-        }
+	.accordion-holder {
+		padding: 0 50px 66px;
+		@include media(lg) {
+			padding: 0;
+		}
 
-        .video-n-accordion-container {
-            position: relative;
-            border-radius: $radius-2;
-            background: $primary;
-            padding: 40px;
-            margin-top: -85px;
-            z-index: 2;
-            @include media(lg) {
-                border-radius: 0;
-                margin-top: -8px;
-                padding: 41px 20px;
-            }
+		.video-n-accordion-container {
+			position: relative;
+			border-radius: $radius-2;
+			background: $primary;
+			padding: 15px;
+			margin-top: -100px;
+			z-index: 2;
+			@include media(lg) {
+				border-radius: 0;
+				margin-top: -8px;
+				padding: 41px 20px;
+			}
 
-            .copy-block {
-                display: flex;
-                justify-content: space-between;
-                gap: 160px;
-                @include media(lg) {
-                    flex-direction: column;
-                    gap: 48px;
-                }
+			.copy-block {
+				display: flex;
+				justify-content: space-between;
+				gap: 160px;
+				@include media(lg) {
+					flex-direction: column;
+					gap: 48px;
+				}
 
-                .copy-block-text {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+				.copy-block-text {
+					display: flex;
+					flex-direction: column;
+					// justify-content: space-between;
+					gap: 227px;
 
-                    h2 {
-                        @include h-3;
-                        font-weight: 500;
-                        line-height: 46px;
-                        letter-spacing: -0.5px;
-                        text-transform: uppercase;
-                        color: $text-light;
-                        max-width: 435px;
+					h2 {
+						font-family: "Clash Display Medium", sans-serif;
 
-                        span {
-                            color: $text-dark;
-                        }
-                    }
+						font-weight: 500;
+						line-height: 43px;
+						letter-spacing: -0.5px;
+						text-transform: uppercase;
+						color: $text-light;
+						max-width: 435px;
+						font-size: 45px;
+						margin-top: 35px;
+						margin-left: 20px;
 
-                    p {
-                        color: $text-light;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 18.196px;
-                        letter-spacing: -0.2px;
-                        max-width: 202px;
-                    }
+						span {
+							color: $text-dark;
+						}
+					}
 
-                }
+					p {
+						color: $text-light;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 18.196px;
+						letter-spacing: -0.2px;
+						max-width: 202px;
+						margin-left: 1.5rem;
+					}
+				}
 
-                .copy-block-accordion {
+				.copy-block-accordion {
+					.accordion-wrapper {
+						max-width: 520px;
+						margin-top: 2.5rem;
 
-                    .accordion-wrapper {
-                        max-width: 554px;
+						.item {
+							padding-top: 12px;
+							margin-bottom: 20px;
+							border-top: 1px solid $text-light;
 
-                        .item {
-                            padding-top: 12px;
-                            margin-bottom: 20px;
-                            border-top: 1px solid $text-light;
+							.title {
+								position: relative;
+								color: $text-light;
+								font-size: 21px;
+								font-style: normal;
+								font-weight: 400;
+								line-height: 18.196px;
+								letter-spacing: -0.2px;
+								margin-bottom: 20px;
+								cursor: pointer;
+								outline: none;
+								transition: 0.5s;
+								@include media(lg) {
+									font-size: 30px;
+									font-weight: 400;
+									line-height: 30px;
+									letter-spacing: -0.2px;
+								}
 
-                            .title {
-                                position: relative;
-                                color: $text-light;
-                                font-size: 21px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: 18.196px;
-                                letter-spacing: -0.2px;
-                                margin-bottom: 20px;
-                                cursor: pointer;
-                                outline: none;
-                                transition: .5s;
-                                @include media(lg) {
-                                    font-size: 30px;
-                                    font-weight: 400;
-                                    line-height: 30px;
-                                    letter-spacing: -0.2px;
-                                }
+								&::after {
+									content: "+";
+									position: absolute;
+									right: 0;
+								}
+							}
 
-                                &::after {
-                                    content: '+';
-                                    position: absolute;
-                                    right: 0;
-                                }
-                            }
+							.content {
+								font-family: "GeneralSans Light",
+									sans-serif;
+								color: $text-light;
+								opacity: 0;
+								max-height: 0;
+								transition: all 0.5s,
+									max-height 0.3s linear;
+								font-size: 15px;
+								line-height: 21px;
+							}
 
-                            .content {
-                                @include p-1;
-                                font-family: 'GeneralSans Light', sans-serif;
-                                color: $text-light;
-                                opacity: 0;
-                                max-height: 0;
-                                transition: all .5s, max-height .3s linear;
-                            }
+							&.active {
+								.title {
+									&::after {
+										content: "-";
+										position: absolute;
+										right: 0;
+									}
+								}
 
-                            &.active {
-                                .title {
-                                    &::after {
-                                        content: '-';
-                                        position: absolute;
-                                        right: 0;
-                                    }
-                                }
+								.content {
+									visibility: visible;
+									opacity: 1;
+									max-height: 200px;
+									transition: all 0.5s linear;
+								}
+							}
+						}
+					}
 
-                                .content {
-                                    visibility: visible;
-                                    opacity: 1;
-                                    max-height: 200px;
-                                    transition: all .5s linear;
-                                }
-                            }
+					.buttons-wrapper {
+						margin-top: 170px;
+						margin-bottom: 1.5rem;
+						display: flex;
+						gap: 36px;
 
-                        }
-
-                    }
-
-                    .buttons-wrapper {
-                        margin-top: 206px;
-                        display: flex;
-                        gap: 24px;
-
-                        a {
-                            text-transform: unset;
-                        }
-                        @include media(lg) {
-                            display: none;
-                        }
-                    }
-
-                }
-
-            }
-
-        }
-
-    }
-
+						a {
+							text-transform: unset;
+							font-size: 14px;
+						}
+						@include media(lg) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
 }

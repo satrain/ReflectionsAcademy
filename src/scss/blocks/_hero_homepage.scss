@@ -1,70 +1,78 @@
 .homepage-hero {
-    padding-top: 65px;
-    padding-bottom: 54px;
-    background-color: $primary;
-    background: url('/wp-content/uploads/2023/10/hero-background-image.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+	padding-top: 65px;
+	padding-bottom: 44px;
+	background-color: $primary;
+	background: url("/wp-content/uploads/2023/10/hero-background-image.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 
-    .sliding-text-container {
-        p {
-            color: $text-light;
-        }
-    }
+	.sliding-text-container {
+		p {
+			color: $text-light;
+		}
+	}
 
-    .homepage-hero-container {
+	.homepage-hero-container {
+		.sliding-text-navigation {
+			@include sliding-text-navigation;
+			p {
+				font-family: "Clash Display Regular", sans-serif;
+			}
+		}
 
-        .sliding-text-navigation {
-            @include sliding-text-navigation;
-            p {
-                font-family: 'Clash Display Regular', sans-serif;
-            }
-        }
+		.hero-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 200px;
 
-        .hero-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 200px;
+			.hero-copy {
+				p {
+					max-width: 203px;
+					margin-bottom: 15px;
+					color: $text-light;
 
-            .hero-copy {
-                p {
-                    max-width: 203px;
-                    margin-bottom: 15px;
-                    color: $text-light;
+					font-family: "Clash Display Regular", sans-serif;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 14px;
+					text-transform: uppercase;
+				}
+				h2 {
+					// @include h-2;
+					font-family: "GeneralSans Regular", sans-serif;
+					line-height: 46px !important;
+					color: $text-light;
+					margin-bottom: 33px;
+					margin-top: -2.2rem;
+					max-width: 475px;
+					font-size: 50px;
+					margin-left: -5px;
 
-                    font-family: 'Clash Display Regular', sans-serif;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 14px;
-                    text-transform: uppercase;
-                }
-                h2 {
-                    @include h-2;
-                    font-family: 'GeneralSans Regular', sans-serif;
-                    letter-spacing: -1px;
-                    line-height: 42px!important;
-                    color: $text-light;
-                    margin-bottom: 33px;
-                    max-width: 445px;
-                }
+					@include media($custom_1280) {
+						font-size: 42px;
+						max-width: 375px;
+					}
+				}
 
-                .btn {
-                    font-size: 21px;
-                    letter-spacing: -0.36px;
-                }
-            }
+				.btn {
+					font-size: 18px;
+					letter-spacing: -0.36px;
+					display: flex;
+					align-items: center;
+					width: max-content;
+				}
+			}
 
-            .hero-mock {
-                @include media(lg) {
-                    display: none;
-                }
-            }
-
-        }
-
-    }
-
+			.hero-mock {
+				width: 375px;
+				margin-top: -2rem;
+				@include media(lg) {
+					display: none;
+				}
+			}
+		}
+	}
 }

@@ -1,104 +1,114 @@
 .online-lessons {
-    background: $bg-dark;
-    padding-top: 170px;
-    padding-bottom: 53px;
-    @include media(lg) {
-        padding-top: 44px;
-        padding-bottom: 58px;
-    }
+	background: $bg-dark;
+	padding-top: 150px;
+	padding-bottom: 46px;
+	// @include media(lg) {
+	// 	padding-top: 44px;
+	// 	padding-bottom: 58px;
+	// }
 
-    .online-lessons-container {
-        
-        @include media(lg) {
-            span {
-                color: #FFF;
+	.online-lessons-container {
+		@include media(lg) {
+			span {
+				color: #fff;
 
-                font-family: 'Clash Display Regular', sans-serif;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 14px;
-                text-transform: uppercase;
-            }
-        }
+				font-family: "Clash Display Regular", sans-serif;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px;
+				text-transform: uppercase;
+			}
+		}
 
-        h2 {
-            color: $text-light;
-            text-align: center;
-            font-size: 160px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 130px;
-            letter-spacing: -1.6px;
-            text-transform: uppercase;
-            span {
-                color: $primary;
-            }
-            img {
-                width: auto;
-                vertical-align: bottom;
-                cursor: pointer;
-                transform: scale(1.25);
-            }
-            &.hide-desktop {
-                @include media(lg) {
-                    color: #FFF;
-                    margin-top: 19px;
+		h2 {
+			color: $text-light;
+			text-align: center;
+			font-size: 142px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 110px;
+			letter-spacing: -1.6px;
+			text-transform: uppercase;
+			span {
+				color: $primary;
+			}
+			.lessons {
+				margin-top: -13px;
+				margin-left: 10px;
+				color: white;
+				display: inline-block;
+				letter-spacing: -7px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			img {
+				width: auto;
+				vertical-align: bottom;
+				cursor: pointer;
+				transform: scale(0.85);
+				margin: 0 -10px 0 -4px;
+			}
+			&.hide-desktop {
+				@include media(lg) {
+					color: #fff;
+					margin-top: 19px;
 
-                    font-family: 'Clash Display Medium', sans-serif;
-                    font-size: 45px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 40px;
-                    letter-spacing: -0.9px;
-                    text-transform: uppercase;
-                    text-align: left;
-                    span {
-                        font-family: 'Clash Display Medium', sans-serif;
-                        font-size: 45px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 40px;
-                        letter-spacing: -0.9px;
-                        text-transform: uppercase;
-                        text-align: left;
-                    }
-                }
-            }
-        }
+					font-family: "Clash Display Medium", sans-serif;
+					font-size: 45px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 40px;
+					letter-spacing: -0.9px;
+					text-transform: uppercase;
+					text-align: left;
+					span {
+						font-family: "Clash Display Medium", sans-serif;
+						font-size: 45px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 40px;
+						letter-spacing: -0.9px;
+						text-transform: uppercase;
+						text-align: left;
+					}
+				}
+			}
+		}
 
-        p {
-            max-width: 592px;
-            margin: 73px auto 41px;
-            color: $text-light;
-            text-align: center;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 25.196px;
-            letter-spacing: -0.2px;
-            @include media(lg) {
-                margin: 28px auto;
-                text-align: left;
-                font-size: 30px;
-                line-height: 30.5px;
-                letter-spacing: -0.6px;
-            }
-        }
+		p {
+			max-width: 520px;
+			margin: 45px auto 41px;
+			color: $text-light;
+			text-align: center;
+			font-size: 21px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 25.196px;
+			letter-spacing: -0px;
+			@include media(lg) {
+				margin: 28px auto;
+				text-align: left;
+				font-size: 30px;
+				line-height: 30.5px;
+				letter-spacing: -0.6px;
+			}
+		}
 
-        .online-lessons-btn {
-            margin: 0 auto;
-            display: block;
-            width: fit-content;
-            color: $text-light;
-            background: $primary;
-            border: 1px solid $primary;
-            text-transform: unset;
-            @include media(lg) {
-                margin: 0;
-            }
-        }
-
-    }
-
+		.online-lessons-btn {
+			margin: -0.3rem auto 0;
+			display: block;
+			width: fit-content;
+			color: $text-light;
+			background: $primary;
+			border: 1px solid $primary;
+			text-transform: unset;
+			font-size: 14px;
+			padding: 3px 21px;
+			@include media(lg) {
+				margin: 0;
+			}
+		}
+	}
 }

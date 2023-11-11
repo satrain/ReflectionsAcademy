@@ -37,7 +37,7 @@
                     ) );
                 ?>
                 <div class="footer-search">
-                    <input type="search" name="footer-search" placeholder="Search"> <svg class="search-input-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                    <input type="search" name="footer-search" placeholder="Search"> <svg class="search-input-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 22 20" fill="none">
 <circle cx="9.71422" cy="9.10094" r="8.10094" stroke="black" stroke-width="2"/>
 <line x1="16.6095" y1="14.582" x2="20.9779" y2="18.9504" stroke="black" stroke-width="2"/>
 </svg>

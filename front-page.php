@@ -6,18 +6,18 @@
     </div>
     <div class="container homepage-hero-container">
         <div class="sliding-text-navigation">
-            <p>Masterclass<br>by Danilo&Sharon</p>
-            <p>Working worldwide</p>
+            <p class="sliding-text" style="font-size: 15px">Masterclass<br>by Danilo&Sharon</p>
+            <p class="sliding-text" style="font-size: 15px; margin-top: -1.4rem">Working worldwide</p>
         </div>
 
         <div class="hero-content">
             <div class="hero-copy">
                 <p class="hide-desktop">Masterclass by DANILO&SHARON</p>
                 <h2>Our masterclass will make the path of your flash mastery quick and easy.</h2>
-                <a href="#" class="btn btn-secondary">Enroll now &#8599;</a>
+                <a href="#" class="btn btn-secondary"><span>Enroll now </span> <img class="arrow-up" src="http://localhost:10003/wp-content/themes/ReflectionsAcademy/assets/images/icons/arrow-up-right-md.svg" alt=""></a>
             </div>
             <div class="hero-mock">
-                <img src="/wp-content/uploads/2023/10/hero-main-image.png" alt="Hero image">
+                <img  src="/wp-content/uploads/2023/10/hero-main-image.png" alt="Hero image">
             </div>
         </div>
     </div>
@@ -82,9 +82,12 @@
             <br>
             <span>online</span>
             <br>
-            less<img src="<?= get_template_directory_uri() ?>/assets/images/online-lessons-danilo-cta.svg" alt="O">ns</h2>
+            <span class="lessons">
+
+                less<img src="<?= get_template_directory_uri() ?>/assets/images/online-lessons-danilo-cta.svg" alt="O">ns</h2>
+            </span>
         <span class="hide-desktop">Courses</span>
-        <h2 class="hide-desktop">Interactive <span>online</span> lessons</h2>
+        <h2 class="hide-desktop">Interactive <span>online</span> lessons</span></h2>
         <p>Unlock your photography skills in a real-time & interactive classroom with your peers and your mentor.</p>
         <a class="btn online-lessons-btn" href="#">Check more about</a>
     </div>
@@ -97,7 +100,7 @@
         </video>
         <div class="play-btn" id="playVideo">
             <svg xmlns="http://www.w3.org/2000/svg" width="248" height="248" viewBox="0 0 248 248" fill="none">
-                <circle cx="124" cy="124" r="123.5" stroke="white"/>
+                <circle cx="124" cy="124" r="110.5" stroke="white"/>
                 <g filter="url(#filter0_d_66_184)">
                     <path d="M94 72.0385L184 124L94 175.962L94 72.0385Z" stroke="white" shape-rendering="crispEdges"/>
                 </g>
@@ -264,7 +267,7 @@
                 <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
             </div>
         </div>
-        <p class="text-us-p">If you have any more questions, please don't hesistate to text us at info@reflections.com</p>
+        <p class="text-us-p">If you have any more questions, please <br> don't hesistate to text us at info@reflections.com</p>
     </div>
 </div>
 

@@ -1,138 +1,162 @@
 .where-do-you-fit {
-    position: relative;
-    background: $bg-dark;
-    padding-top: 63px;
-    padding-bottom: 93px;
-    @include media(lg) {
-        margin-top: -2px;
-        padding-top: 59px;
-        padding-bottom: 79px;
-    }
+	position: relative;
+	background: $bg-dark;
+	padding-top: 60px;
+	padding-bottom: 83px;
+	@include media(lg) {
+		margin-top: -2px;
+		padding-top: 59px;
+		padding-bottom: 79px;
+	}
 
-    .radial-background-1 {
-        width: 806px;
-        height: 806px;
-        position: absolute;
-        top: -30%;
-        right: -200px;
-        border-radius: 370px;
-        background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(255, 0, 0, 0.50) 0%, rgba(255, 89, 0, 0.00) 70%);
-        @include media(lg) {
-            display: none;
-        }
-    }
+	.radial-background-1 {
+		width: 806px;
+		height: 806px;
+		position: absolute;
+		top: -30%;
+		right: -200px;
+		border-radius: 370px;
+		background: radial-gradient(
+			70.71% 70.71% at 50% 50%,
+			rgba(255, 0, 0, 0.5) 0%,
+			rgba(255, 89, 0, 0) 70%
+		);
+		@include media(lg) {
+			display: none;
+		}
+	}
 
-    .radial-background-2 {
-        width: 806px;
-        height: 806px;
-        position: absolute;
-        top: 10%;
-        left: -550px;
-        border-radius: 370px;
-        background: radial-gradient(70.71% 70.71% at 50% 50%, rgba(255, 0, 0, 0.50) 0%, rgba(255, 89, 0, 0.00) 70%);
-        @include media(lg) {
-            display: none;
-        }
-    }
+	.radial-background-2 {
+		width: 806px;
+		height: 806px;
+		position: absolute;
+		top: 10%;
+		left: -550px;
+		border-radius: 370px;
+		background: radial-gradient(
+			70.71% 70.71% at 50% 50%,
+			rgba(255, 0, 0, 0.5) 0%,
+			rgba(255, 89, 0, 0) 70%
+		);
+		@include media(lg) {
+			display: none;
+		}
+	}
 
-    .where-do-you-fit-container {
+	.where-do-you-fit-container {
+		.subtitle {
+			padding-top: 25px;
+			border-top: 1px solid #d9d9d9;
 
-        .subtitle {
-            padding-top: 25px;
-            border-top: 1px solid #d9d9d9;
+			font-family: "GeneralSans Regular", sans-serif;
+			color: $text-light;
 
-            font-family: 'GeneralSans Regular', sans-serif;
-            color: $text-light;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 18.196px;
+			letter-spacing: -0.2px;
+			margin-bottom: 25px;
+			margin-left: -5px;
+			margin-top: -2px;
+			@include media(lg) {
+				border: unset;
+				font-family: "Clash Display Regular", sans-serif;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px;
+				text-transform: uppercase;
+				margin-bottom: 27px;
+			}
+		}
 
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 18.196px;
-            letter-spacing: -0.2px;
-            margin-bottom: 25px;
-            @include media(lg) {
-                border: unset;
-                font-family: 'Clash Display Regular', sans-serif;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 14px;
-                text-transform: uppercase;
-                margin-bottom: 27px;
-            }
-        }
+		h2 {
+			font-family: "Clash Display Medium", sans-serif;
+			font-weight: 500;
 
-        h2 {
-            @include h-2;
-            color: $text-light;
-            text-transform: uppercase;
-            max-width: 450px;
-            @include media(lg) {
-                font-family: 'GeneralSans Regular', sans-serif;
-                margin: 0;
-                text-align: left;
-                text-transform: unset;
-            }
-        }
+			color: $text-light;
+			text-transform: uppercase;
+			max-width: 500px;
+			font-size: 50px;
+			margin-top: -2px;
+			margin-left: -3px;
+			letter-spacing: 1.4px;
+			@include media(lg) {
+				font-family: "GeneralSans Regular", sans-serif;
+				margin: 0;
+				text-align: left;
+				text-transform: unset;
+			}
+		}
 
-        .courses-wrapper {
-            position: relative;
-            margin-top: 190px;
-            display: flex;
-            gap: 130px;
-            @include media(lg) {
-                margin-top: 60px;
-                flex-direction: column;
-                gap: 30px;
-            }
+		.courses-wrapper {
+			position: relative;
+			margin-top: 170px;
+			display: flex;
+			gap: 112px;
+			@include media(lg) {
+				margin-top: 60px;
+				flex-direction: column;
+				gap: 30px;
+			}
 
-            .course-separator {
-                width: 1px;
-                height: auto;
-                background: #d9d9d9;
-            }
+			.course-separator {
+				width: 1px;
+				height: auto;
+				background: #d9d9d9;
+			}
 
-            .course {
-                max-width: 445px;
+			.course {
+				max-width: 390px;
 
-                h3 {
-                    @include h-4;
-                    color: $text-light;
-                    text-transform: uppercase;
-                    max-width: 315px;
-                }
+				h3 {
+					// @include h-4;
+					font-family: "Clash Display Medium", sans-serif;
+					font-weight: 500;
 
-                p {
-                    @include p-2;
-                    color: #bebebe;
-                    margin-top: 40px;
-                    margin-bottom: 28px;
-                }
+					color: $text-light;
+					font-size: 36px;
+					line-height: 35px;
+					text-transform: uppercase;
+					max-width: 315px;
+				}
 
-                .buttons-wrapper {
-                    display: flex;
-                    gap: 25px;
+				p {
+					font-family: "GeneralSans Regular", sans-serif;
+					font-weight: 400;
+					font-size: 14px;
+					color: #bebebe;
+					margin-top: 32px;
+					margin-bottom: 28px;
+					margin-left: -5px;
+					max-width: 450px;
+				}
 
-                    a {
-                        text-transform: unset;
+				.buttons-wrapper {
+					display: flex;
+					gap: 37px;
+					margin-top: -5px;
 
-                        &:nth-child(2) {
-                            background: $primary;
-                            color: $text-light;
-                            border: 1px solid $primary;
-                        }
-                    }
-                }
+					a {
+						text-transform: unset;
+						padding: 2px 18px;
+						font-size: 14px;
+						margin-right: -7px;
 
-                &:nth-child(2) {
-                    h3 {
-                        max-width: 280px;
-                    }
-                }
+						&:nth-child(2) {
+							background: $primary;
+							color: $text-light;
+							border: 1px solid $primary;
+						}
+					}
+				}
 
-            }
-
-        }
-
-    }
-
+				&:nth-child(2) {
+					h3 {
+						max-width: 280px;
+					}
+				}
+			}
+		}
+	}
 }
