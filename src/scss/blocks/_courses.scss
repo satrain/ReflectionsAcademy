@@ -2,31 +2,28 @@
 	background: $bg-dark;
 	padding-top: 111px;
 	padding-bottom: 100px;
-	@include media(lg) {
-		padding-top: 59px;
-		padding-bottom: 79px;
+	@include media($custom_1279) {
+		padding-top: 87px;
+		padding-bottom: 72px;
 	}
 
 	.courses-container {
 		.courses-subtitle {
 			color: $text-light;
-
 			font-size: 26px;
 			font-weight: 400;
 			line-height: 50.654px;
 			letter-spacing: -1px;
 			margin-bottom: 7px;
 			text-align: center;
-			@include media(lg) {
+			@include media($custom_1279) {
 				font-family: "Clash Display Regular", sans-serif;
-				font-size: 14px;
-				font-style: normal;
+				font-size: 17px;
+				// font-style: normal;
 				font-weight: 500;
 				line-height: 14px;
-				text-transform: uppercase;
 				letter-spacing: normal;
-				text-align: left;
-				margin-bottom: 27px;
+				margin-bottom: 11px;
 			}
 		}
 
@@ -40,8 +37,11 @@
 			line-height: 49px;
 			letter-spacing: -1px;
 			margin-top: -2px;
-			@include media(lg) {
-				text-align: left;
+			@include media($custom_1279) {
+				text-align: center;
+				max-width: 530px;
+				font-size: 30px;
+				line-height: 34px;
 			}
 		}
 
@@ -50,10 +50,10 @@
 			justify-content: center;
 			gap: 97px;
 			margin-top: 76px;
-			@include media(lg) {
-				flex-direction: column;
-				gap: 50px;
-				margin-top: 63px;
+
+			@include media($custom_1279) {
+				margin-top: 55px;
+				gap: 56px;
 			}
 
 			.card {
@@ -67,11 +67,29 @@
 				flex-direction: column;
 				// justify-content: space-between;
 				gap: 194px;
-				@include media(lg) {
-					min-height: 512px;
-					width: 100%;
-					min-width: unset;
-					border-radius: 15px;
+				// @include media(lg) {
+				// 	min-height: 512px;
+				// 	width: 100%;
+				// 	min-width: unset;
+				// 	border-radius: 15px;
+				// }
+
+				@include media($custom_1279) {
+					max-width: 310px;
+					padding-top: 15px;
+					min-height: 100px;
+				}
+
+				.card-upper {
+					@include media($custom_1279) {
+						margin-left: -10px;
+					}
+				}
+
+				.card-lower {
+					@include media($custom_1279) {
+						margin-top: -70px;
+					}
 				}
 
 				.subtitle {
@@ -79,6 +97,11 @@
 					width: fit-content;
 					margin-left: -3px;
 					padding: 4px 13px;
+
+					@include media($custom_1279) {
+						padding: 1px 9.5px;
+						font-size: 11px;
+					}
 				}
 
 				h3 {
@@ -88,6 +111,12 @@
 					margin-top: 18px;
 					font-size: 45px;
 					line-height: 45px;
+
+					@include media($custom_1279) {
+						font-size: 30px;
+						margin-top: 12px;
+						line-height: 29px;
+					}
 				}
 
 				p {
@@ -96,6 +125,13 @@
 					font-weight: 400;
 					line-height: 23.2px;
 					letter-spacing: -0.36px;
+
+					@include media($custom_1279) {
+						font-size: 10px;
+						line-height: 16px;
+						margin-top: 2px;
+						margin-left: -9px;
+					}
 				}
 
 				.buttons-wrapper {
@@ -105,12 +141,20 @@
 					align-items: center;
 					gap: 40px;
 
+					@include media($custom_1279) {
+						margin-bottom: 0.8rem;
+						gap: 28px;
+						margin-left: -10px;
+					}
+
 					a {
 						text-transform: unset;
 						font-size: 15px;
 						padding: 4px 13px;
-						@include media(md) {
-							font-size: 13px;
+						@include media($custom_1279) {
+							font-size: 11px;
+
+							padding: 0px 10px !important;
 						}
 					}
 				}

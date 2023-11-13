@@ -7,13 +7,18 @@
 	// 	padding-bottom: 58px;
 	// }
 
+	@include media($custom_1279) {
+		padding-top: 95px;
+		padding-bottom: 33px;
+	}
+
 	.online-lessons-container {
-		@include media(lg) {
+		@include media($custom_1279) {
 			span {
 				color: #fff;
 
 				font-family: "Clash Display Regular", sans-serif;
-				font-size: 14px;
+				font-size: 100px;
 				font-style: normal;
 				font-weight: 500;
 				line-height: 14px;
@@ -24,12 +29,16 @@
 		h2 {
 			color: $text-light;
 			text-align: center;
-			font-size: 142px;
 			font-style: normal;
 			font-weight: 500;
+			font-size: 142px;
 			line-height: 110px;
 			letter-spacing: -1.6px;
 			text-transform: uppercase;
+			@include media($custom_1279) {
+				font-size: 97px;
+				line-height: 84px;
+			}
 			span {
 				color: $primary;
 			}
@@ -42,6 +51,11 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				@include media($custom_1279) {
+					margin-top: -39px;
+					letter-spacing: 0.1px;
+					font-weight: bold;
+				}
 			}
 			img {
 				width: auto;
@@ -49,6 +63,11 @@
 				cursor: pointer;
 				transform: scale(0.85);
 				margin: 0 -10px 0 -4px;
+
+				@include media($custom_1279) {
+					transform: scale(0.6);
+					margin: 0 -34px 0 -27px;
+				}
 			}
 			&.hide-desktop {
 				@include media(lg) {
@@ -87,11 +106,12 @@
 			font-weight: 400;
 			line-height: 25.196px;
 			letter-spacing: -0px;
-			@include media(lg) {
-				margin: 28px auto;
-				text-align: left;
-				font-size: 30px;
-				line-height: 30.5px;
+			@include media($custom_1279) {
+				margin: 0 auto;
+				text-align: center;
+				font-size: 15px;
+				max-width: 340px;
+				line-height: 18.5px;
 				letter-spacing: -0.6px;
 			}
 		}
@@ -107,7 +127,9 @@
 			font-size: 14px;
 			padding: 3px 21px;
 			@include media(lg) {
-				margin: 0;
+				margin-top: 20px;
+				padding: 0 11px;
+				font-size: 11px;
 			}
 		}
 	}

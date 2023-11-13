@@ -4,8 +4,12 @@ header {
 	padding: 31px 60px 20px;
 	z-index: 99;
 
-	@include media(lg) {
-		padding: 25px 20px;
+	// @include media(lg) {
+	// 	padding: 25px 20px;
+	// }
+
+	@include media($custom_1279) {
+		padding: 14px 35px 0;
 	}
 
 	&.light {
@@ -41,10 +45,15 @@ header {
 			a {
 				text-transform: uppercase;
 				font-family: "Clash Display Regular", sans-serif;
-				@include media(lg) {
+				// @include media(lg) {
+				// 	padding: 3px 12px;
+				// 	font-size: 14px;
+				// 	line-height: 20px;
+				// }
+
+				@include media($custom_1279) {
 					padding: 3px 12px;
-					font-size: 14px;
-					line-height: 20px;
+					font-size: 11px;
 				}
 			}
 		}
@@ -52,20 +61,29 @@ header {
 		.header-navigation {
 			margin-right: -3px;
 
+			@include media($custom_1279) {
+				margin-right: -1px;
+			}
+
 			.btn-header-menu {
 				margin-left: 20px;
-				@include media(lg) {
-					margin-left: 10px;
-				}
+				// @include media($custom_1279) {
+				// 	margin-left: 10px;
+				// }
 			}
 
 			a {
 				text-transform: uppercase;
 				font-family: "Clash Display Regular", sans-serif;
-				@include media(lg) {
+				// @include media(lg) {
+				// 	padding: 3px 12px;
+				// 	font-size: 14px;
+				// 	line-height: 20px;
+				// }
+
+				@include media($custom_1279) {
+					font-size: 11px;
 					padding: 3px 12px;
-					font-size: 14px;
-					line-height: 20px;
 				}
 			}
 		}

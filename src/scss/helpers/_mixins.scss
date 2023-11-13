@@ -9,6 +9,11 @@
 			@content;
 		}
 	}
+	@if $break-point== $custom_1279 {
+		@media (max-width: $custom_1279) {
+			@content;
+		}
+	}
 	@if $break-point== $custom_1200 {
 		@media (max-width: $custom_1200) {
 			@content;
@@ -168,9 +173,9 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 10px;
-	@include media(lg) {
-		display: none;
-	}
+	// @include media(lg) {
+	// 	display: none;
+	// }
 
 	p {
 		font-family: "Clash Display Medium", sans-serif;
@@ -186,6 +191,13 @@
 		&:nth-child(2) {
 			max-width: 155px;
 			text-align: right;
+
+			@include media($custom_1279) {
+				max-width: 100px;
+			}
 		}
+	}
+	@include media($custom_1279) {
+		margin-top: -15px;
 	}
 }

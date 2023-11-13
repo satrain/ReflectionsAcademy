@@ -195,8 +195,8 @@
         <span class="hide-desktop">Our clients</span>
         <h2 class="hide-desktop">Real people, real results.</h2>
         <div class="sliding-text-navigation">
-            <p>Let's see what they have to say</p>
-            <p>Our worldwide clients</p>
+            <p class="marko">Let's see what they have to say</p>
+            <p class="marko">Our worldwide clients</p>
         </div>
 
         <div class="real-results-wrapper">

@@ -2,15 +2,19 @@
 	background: $bg-dark;
 	padding-top: 58px;
 	padding-bottom: 70px;
-	@include media(lg) {
+	@include media($custom_1279) {
 		padding-top: 38px;
-		padding-bottom: 38px;
+		padding-bottom: 55px;
 	}
 
 	h2 {
 		@include p-1;
 		color: $bg-light;
 		text-align: center;
+
+		@include media($custom_1279) {
+			font-size: 12px;
+		}
 	}
 
 	.brand-logos-wrapper {
@@ -23,8 +27,45 @@
 			// overflow: hidden;
 			// width: 100%; /* Ensure the container takes up the full width */
 		}
+
+		@include media($custom_1279) {
+			margin-top: 13px;
+		}
 		img {
 			width: auto;
+
+			&:nth-child(1) {
+				height: 30px;
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translateY(7px);
+				}
+			}
+			&:nth-child(2) {
+				height: 30px;
+				transform: translate(-30px);
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translate(-22px, 6px);
+				}
+			}
+			&:nth-child(3) {
+				height: 30px;
+				transform: translate(-30px);
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translate(-22px, 6px);
+				}
+			}
+			&:nth-child(4) {
+				height: 30px;
+				transform: translate(-67px);
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translate(-47px, 6px);
+				}
+			}
+
 			@include media(lg) {
 				// flex: 0 0 100%; /* Each logo takes up the full width */
 				// transition: transform 0.3s ease-in-out; /* Smooth sliding transition */
