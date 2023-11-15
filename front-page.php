@@ -304,10 +304,8 @@
     <div class="container money-back-guarantee-container">
         <a class="btn btn-primary">21 Day refund policy</a>
         <h2>We can guarantee that you will be fully satisfied with our courses.</h2>
-        <?php if(wp_is_mobile()): ?>
-            <div class="radial-background hide-desktop"></div>
-            <a href="#" class="btn btn-secondary mobile-btn hide-desktop">Check more</a>
-        <?php endif; ?>
+        <div class="radial-background hide-desktop"></div>
+        <a href="#" class="btn btn-secondary mobile-btn hide-desktop">Check more</a>
     </div>
 </div>
 
