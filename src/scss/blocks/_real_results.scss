@@ -19,9 +19,13 @@
 		// @include media(lg) {
 		// 	padding: 0;
 		// }
+		@include media($custom_699) {
+			padding: 0 10px;
+			margin-top: 5px;
+		}
 
 		span {
-			padding: 0 20px;
+			padding: 0 16px;
 			margin-bottom: 16px;
 			color: $text-dark;
 
@@ -29,7 +33,7 @@
 			font-size: 14px;
 			font-style: normal;
 			font-weight: 500;
-			line-height: 14px;
+			line-height: 12px;
 			text-transform: uppercase;
 		}
 
@@ -38,12 +42,15 @@
 			color: $text-dark;
 
 			font-family: "Clash Display Medium", sans-serif;
-			font-size: 40px;
+			font-size: 31px;
 			font-style: normal;
 			font-weight: 500;
-			line-height: 35px;
+			line-height: 30px;
+			max-width: 300px;
 			letter-spacing: -0.8px;
 			text-transform: uppercase;
+			margin-top: -5px;
+			margin-left: -3px;
 		}
 
 		.sliding-text-navigation {
@@ -52,6 +59,9 @@
 			@include media($custom_1279) {
 				margin-top: -28px;
 				padding: 0 15px;
+			}
+			@include media($custom_699) {
+				display: none;
 			}
 			margin-top: 0;
 			p {
@@ -84,12 +94,21 @@
 				padding-left: 15px;
 			}
 
+			@include media($custom_699) {
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+			}
+
 			.item {
 				width: 24%;
 				@include media($custom_1279) {
 					// width: 100%;
 					flex: 0 0 22%;
 					// scroll-snap-align: start;
+				}
+
+				@include media($custom_699) {
+					flex: 0 0 64%;
 				}
 				&:nth-child(1) {
 					@include media($custom_1279) {
@@ -133,6 +152,11 @@
 					@include media($custom_1279) {
 						height: 202px;
 					}
+
+					@include media($custom_699) {
+						height: 323px;
+						margin-bottom: 21px;
+					}
 				}
 
 				.real-results-btn {
@@ -154,6 +178,10 @@
 						margin-top: 10px;
 						margin-bottom: -3px;
 					}
+					@include media($custom_699) {
+						font-size: 14px;
+						margin-bottom: 13px;
+					}
 				}
 
 				.name {
@@ -169,6 +197,11 @@
 						font-size: 16.1px;
 						margin-bottom: -6px;
 					}
+
+					@include media($custom_699) {
+						font-size: 29.1px;
+						margin-bottom: 5px;
+					}
 				}
 
 				.profession {
@@ -181,6 +214,10 @@
 
 					@include media($custom_1279) {
 						font-size: 10px;
+					}
+
+					@include media($custom_699) {
+						font-size: 14px;
 					}
 				}
 			}

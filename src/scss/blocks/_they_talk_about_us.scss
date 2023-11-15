@@ -7,6 +7,11 @@
 		padding-bottom: 55px;
 	}
 
+	@include media($custom_699) {
+		padding-top: 7px;
+		padding-bottom: 38px;
+	}
+
 	h2 {
 		@include p-1;
 		color: $bg-light;
@@ -40,6 +45,10 @@
 					height: 20px;
 					transform: translateY(7px);
 				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(11px, 8px);
+				}
 			}
 			&:nth-child(2) {
 				height: 30px;
@@ -47,6 +56,10 @@
 				@include media($custom_1279) {
 					height: 20px;
 					transform: translate(-22px, 6px);
+				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(1px, 8px);
 				}
 			}
 			&:nth-child(3) {
@@ -56,6 +69,10 @@
 					height: 20px;
 					transform: translate(-22px, 6px);
 				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(-8px, 8px);
+				}
 			}
 			&:nth-child(4) {
 				height: 30px;
@@ -63,6 +80,10 @@
 				@include media($custom_1279) {
 					height: 20px;
 					transform: translate(-47px, 6px);
+				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(-8px, 8px);
 				}
 			}
 

@@ -19,6 +19,11 @@
 			@content;
 		}
 	}
+	@if $break-point== $custom_699 {
+		@media (max-width: $custom_699) {
+			@content;
+		}
+	}
 	@if $break-point== $custom_992 {
 		@media (max-width: $custom_992) {
 			@content;

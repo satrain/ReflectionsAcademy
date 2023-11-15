@@ -55,6 +55,12 @@ header {
 					padding: 3px 12px;
 					font-size: 11px;
 				}
+
+				@include media($custom_699) {
+					margin-left: -15px;
+					font-size: 12px;
+					padding: 3px 11px;
+				}
 			}
 		}
 
@@ -63,6 +69,10 @@ header {
 
 			@include media($custom_1279) {
 				margin-right: -1px;
+			}
+
+			@include media($custom_699) {
+				margin-right: -15px;
 			}
 
 			.btn-header-menu {

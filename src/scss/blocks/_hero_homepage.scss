@@ -12,11 +12,20 @@
 		padding-bottom: 31px;
 	}
 
+	@include media($custom_699) {
+		padding-top: 31px;
+		padding-bottom: 27px;
+	}
+
 	.sliding-text-container {
 		p {
 			color: $text-light;
 			@include media($custom_1279) {
 				font-size: 7.5rem;
+			}
+
+			@include media($custom_699) {
+				font-size: 8rem;
 			}
 		}
 	}
@@ -28,6 +37,10 @@
 			@include media($custom_1279) {
 				margin-top: -9px;
 				padding: 0 17px;
+			}
+
+			@include media($custom_699) {
+				display: none;
 			}
 			p {
 				max-width: 203px;
@@ -67,6 +80,9 @@
 				margin-top: 140px;
 				padding: 0 15px;
 			}
+			@include media($custom_699) {
+				padding: 0;
+			}
 
 			.hero-copy {
 				p {
@@ -80,6 +96,14 @@
 					font-weight: 500;
 					line-height: 14px;
 					text-transform: uppercase;
+
+					@include media($custom_699) {
+						margin: 7px 0 2.6rem -4px;
+						font-size: 11px;
+						line-height: 11px;
+						font-weight: bold;
+						max-width: 118px;
+					}
 				}
 				h2 {
 					// @include h-2;
@@ -104,6 +128,15 @@
 						margin-top: -30px;
 						margin-bottom: 13px;
 					}
+
+					@include media($custom_699) {
+						max-width: 220px;
+						line-height: 26.5px !important;
+						margin-top: -30px;
+						margin-left: -4px;
+						letter-spacing: -0.4px;
+						margin-bottom: 29px;
+					}
 				}
 
 				.btn {
@@ -117,6 +150,10 @@
 						font-size: 12px;
 						padding: 0px 15px;
 					}
+
+					@include media($custom_699) {
+						margin-left: -5px;
+					}
 				}
 			}
 
@@ -128,6 +165,10 @@
 				// }
 				@include media($custom_1279) {
 					width: 260px;
+				}
+
+				@include media($custom_699) {
+					display: none;
 				}
 			}
 		}

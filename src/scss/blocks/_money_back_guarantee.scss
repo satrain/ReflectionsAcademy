@@ -14,6 +14,15 @@
 		padding-bottom: 58px;
 	}
 
+	@include media($custom_699) {
+		padding-bottom: 358px;
+	}
+
+	@include media($custom_699) {
+		margin: 44px 28px;
+		border-radius: 15px;
+	}
+
 	.money-back-guarantee-container {
 		position: relative;
 		@include media($custom_1279) {
@@ -27,6 +36,10 @@
 			@include media($custom_1279) {
 				font-size: 12px;
 				padding: 3px 20px;
+			}
+
+			@include media($custom_699) {
+				display: none;
 			}
 		}
 
@@ -46,14 +59,29 @@
 				max-width: 328px;
 				margin-top: 17px;
 			}
+
+			@include media($custom_699) {
+				font-size: 36px;
+				line-height: 37px;
+				max-width: 377px;
+				margin-top: -46px;
+				margin-left: -14px;
+				text-transform: uppercase;
+			}
 		}
 
 		.mobile-btn {
+			//OBRATI PAZNJU, PITAJ MLADENA
 			position: relative;
 			z-index: 1;
 			display: none;
 			width: fit-content;
-			margin-top: 144px;
+			margin-top: 170px;
+
+			@include media($custom_699) {
+				display: inline-block;
+				z-index: 999;
+			}
 		}
 
 		.radial-background {
@@ -68,6 +96,10 @@
 				#fff 0%,
 				#f00 70%
 			);
+
+			@include media($custom_699) {
+				display: none;
+			}
 		}
 	}
 }

@@ -17,6 +17,10 @@
 		@include media($custom_1279) {
 			width: 167px;
 		}
+		@include media($custom_699) {
+			width: 175px;
+			margin-top: 10px;
+		}
 		svg {
 			@include media(lg) {
 				width: 100%;
@@ -35,12 +39,17 @@
 			padding: 0 35px 51px;
 		}
 
+		@include media($custom_699) {
+			padding: 0 !important;
+			margin-top: 65px;
+		}
+
 		.video-n-accordion-container {
 			position: relative;
 			border-radius: $radius-2;
 			background: $primary;
-			padding: 15px;
-			margin-top: -100px;
+			padding: 15px 0 15px;
+			margin-top: -92px;
 			z-index: 2;
 			@include media($custom_1279) {
 				// border-radius: 0;
@@ -49,14 +58,23 @@
 				border-radius: 22px;
 			}
 
+			@include media($custom_699) {
+				border-radius: 0;
+				padding-bottom: 49px;
+			}
+
 			.copy-block {
 				display: flex;
 				justify-content: space-between;
 				gap: 160px;
-				// @include media(lg) {
-				// 	flex-direction: column;
-				// 	gap: 48px;
-				// }
+				@include media($custom_699) {
+					flex-direction: column;
+					gap: 48px;
+				}
+
+				@include media($custom_699) {
+					gap: 86px;
+				}
 
 				.copy-block-text {
 					display: flex;
@@ -89,6 +107,13 @@
 							margin-left: 6px;
 						}
 
+						@include media($custom_699) {
+							line-height: 27px;
+							max-width: 381px;
+							font-size: 31px;
+							margin-top: 13px;
+						}
+
 						span {
 							color: $text-dark;
 						}
@@ -115,6 +140,10 @@
 				}
 
 				.copy-block-accordion {
+					@include media($custom_699) {
+						align-self: flex-start;
+						margin-left: 43px;
+					}
 					.accordion-wrapper {
 						max-width: 520px;
 						margin-top: 2.5rem;
@@ -122,6 +151,10 @@
 						@include media($custom_1279) {
 							margin-top: 0;
 							margin-left: -35px;
+						}
+
+						@include media($custom_699) {
+							max-width: 395px;
 						}
 
 						.item {
@@ -157,6 +190,10 @@
 									font-size: 13px;
 								}
 
+								@include media($custom_699) {
+									font-size: 13px;
+								}
+
 								&::after {
 									content: "+";
 									position: absolute;
@@ -180,6 +217,10 @@
 									line-height: 13px;
 									padding-right: 35px;
 									margin-top: -15px;
+								}
+
+								@include media($custom_699) {
+									font-size: 12px;
 								}
 							}
 
@@ -212,6 +253,10 @@
 							margin-top: 128px; // Vidi ovde sta ces
 
 							margin-left: -55px;
+						}
+
+						@include media($custom_699) {
+							display: none;
 						}
 						a {
 							text-transform: unset;

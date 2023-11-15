@@ -12,6 +12,11 @@
 		padding-bottom: 33px;
 	}
 
+	@include media($custom_699) {
+		padding-top: 46px;
+		padding-bottom: 10px;
+	}
+
 	.online-lessons-container {
 		@include media($custom_1279) {
 			span {
@@ -23,7 +28,22 @@
 				font-weight: 500;
 				line-height: 14px;
 				text-transform: uppercase;
+
+				@include media($custom_699) {
+					color: #fff;
+
+					font-family: "Clash Display Regular", sans-serif;
+					font-size: 11px;
+					font-style: normal;
+					font-weight: bold;
+					line-height: 14px;
+					text-transform: uppercase;
+				}
 			}
+		}
+
+		@include media($custom_699) {
+			padding: 0 24px;
 		}
 
 		h2 {
@@ -70,27 +90,28 @@
 				}
 			}
 			&.hide-desktop {
-				@include media(lg) {
+				@include media($custom_699) {
 					color: #fff;
-					margin-top: 19px;
+					margin-top: 9px;
 
 					font-family: "Clash Display Medium", sans-serif;
 					font-size: 45px;
 					font-style: normal;
 					font-weight: 500;
-					line-height: 40px;
-					letter-spacing: -0.9px;
+					line-height: 41px;
+					letter-spacing: 2px;
 					text-transform: uppercase;
-					text-align: left;
+					max-width: 200px;
 					span {
 						font-family: "Clash Display Medium", sans-serif;
 						font-size: 45px;
 						font-style: normal;
 						font-weight: 500;
 						line-height: 40px;
-						letter-spacing: -0.9px;
+						letter-spacing: 1px;
 						text-transform: uppercase;
 						text-align: left;
+						margin-left: -27px;
 					}
 				}
 			}
@@ -114,6 +135,14 @@
 				line-height: 18.5px;
 				letter-spacing: -0.6px;
 			}
+
+			@include media($custom_699) {
+				text-align: left;
+				max-width: 458px;
+				font-size: 28.5px;
+				line-height: 28.5px;
+				margin: 0;
+			}
 		}
 
 		.online-lessons-btn {
@@ -126,10 +155,15 @@
 			text-transform: unset;
 			font-size: 14px;
 			padding: 3px 21px;
-			@include media(lg) {
+			@include media($custom_1279) {
 				margin-top: 20px;
 				padding: 0 11px;
 				font-size: 11px;
+			}
+
+			@include media($custom_699) {
+				margin: 30px 0;
+				padding: 2px 21px;
 			}
 		}
 	}

@@ -6,6 +6,10 @@
 		padding-bottom: 41px;
 	}
 
+	@include media($custom_699) {
+		padding-top: 0;
+	}
+
 	.sliding-text-container {
 		.sliding-text {
 			@include media($custom_1279) {
@@ -21,6 +25,10 @@
 			@include media($custom_1279) {
 				padding: 0 15px;
 				margin-top: -17px;
+			}
+
+			@include media($custom_699) {
+				display: none;
 			}
 			p {
 				color: $text-dark;
@@ -54,11 +62,23 @@
 				padding: 0 10px;
 			}
 
+			@include media($custom_699) {
+				margin-top: 3px;
+			}
+
+			@include media($custom_699) {
+				overflow: hidden;
+			}
+
 			.post-item {
 				@include media($custom_1279) {
 					flex: 0 0 22%;
 					scroll-snap-align: start;
 					margin-right: 5px;
+				}
+
+				@include media($custom_699) {
+					flex: 0 0 100%;
 				}
 
 				img {
@@ -80,6 +100,12 @@
 				@include media($custom_1279) {
 					margin-top: -6px;
 					padding-bottom: 5px;
+				}
+
+				div {
+					@include media($custom_699) {
+						display: none;
+					}
 				}
 
 				#menu-footer-menu {
@@ -106,6 +132,10 @@
 				.footer-search {
 					display: flex;
 					align-items: center;
+
+					@include media($custom_699) {
+						align-items: flex-end;
+					}
 
 					.search-input-icon {
 						@include media($custom_1279) {
@@ -176,12 +206,21 @@
 					padding: 30px 0px 0 15px;
 				}
 
+				@include media($custom_699) {
+					flex-direction: column;
+					gap: 65px;
+				}
+
 				.shortcut-links {
 					display: flex;
 					gap: 153px;
 					flex-wrap: wrap;
 					@include media($custom_1279) {
 						gap: 92px;
+					}
+
+					@include media($custom_699) {
+						gap: 134px;
 					}
 					ul {
 						line-height: 23.5px;
@@ -192,6 +231,10 @@
 							@include media($custom_1279) {
 								line-height: 17.5px;
 							}
+
+							@include media($custom_699) {
+								line-height: 31.5px;
+							}
 							a {
 								text-decoration: none;
 								color: #616161;
@@ -201,6 +244,10 @@
 								// line-height: 24px;
 								@include media($custom_1279) {
 									font-size: 10px;
+								}
+
+								@include media($custom_699) {
+									font-size: 12px;
 								}
 							}
 						}
@@ -219,6 +266,11 @@
 						max-width: 143px;
 					}
 
+					@include media($custom_699) {
+						max-width: 100%;
+						margin-left: -4px;
+					}
+
 					p {
 						color: #616161;
 						font-size: 10px;
@@ -229,6 +281,11 @@
 						@include media($custom_1279) {
 							line-height: 11px;
 							font-size: 7px;
+						}
+
+						@include media($custom_699) {
+							font-size: 13px;
+							line-height: 18px;
 						}
 					}
 
@@ -244,12 +301,21 @@
 							margin-left: -2px;
 						}
 
+						@include media($custom_699) {
+							gap: 7px;
+							margin-bottom: 30px;
+						}
+
 						a {
 							img {
 								width: auto;
 								@include media($custom_1279) {
 									transform: scale(0.9);
 									margin-right: 2px;
+								}
+
+								@include media($custom_699) {
+									transform: scale(1.2);
 								}
 							}
 						}
@@ -274,6 +340,10 @@
 
 							@include media($custom_1279) {
 								font-size: 8.8px;
+							}
+
+							@include media($custom_699) {
+								font-size: 11px;
 							}
 						}
 					}

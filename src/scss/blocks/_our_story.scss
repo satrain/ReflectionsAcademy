@@ -7,9 +7,19 @@
 		padding-bottom: 45px;
 	}
 
+	@include media($custom_699) {
+		padding-top: 27px;
+		padding-bottom: 77px;
+	}
+
 	.our-story-container {
 		@include media($custom_1279) {
 			padding: 34px 0 0;
+		}
+
+		@include media($custom_699) {
+			margin-left: -15px;
+			padding-top: 37px;
 		}
 
 		h2 {
@@ -27,6 +37,8 @@
 				padding: 0 36px;
 				font-size: 10px;
 				line-height: 12.2px;
+				font-weight: bold;
+				max-width: 125px;
 			}
 		}
 
@@ -44,6 +56,15 @@
 				padding: 0px 0 0 34px;
 				line-height: 35px;
 			}
+
+			@include media($custom_699) {
+				font-size: 30px;
+				max-width: 485px;
+				padding: 0 20px 0 34px;
+				line-height: 28px;
+				letter-spacing: -1.5px;
+				margin-top: -8px;
+			}
 		}
 
 		.our-story-list {
@@ -59,6 +80,11 @@
 				gap: 17px;
 			}
 
+			@include media($custom_699) {
+				justify-content: center;
+				margin-top: 80px;
+			}
+
 			.as-featured-in {
 				max-width: 505px;
 				@include media($custom_1279) {
@@ -66,6 +92,14 @@
 					flex: 0 0 50%;
 					scroll-snap-align: start;
 					margin-right: -1%;
+				}
+
+				@include media($custom_699) {
+					border: 1px solid #fff;
+					flex: 0 0 44.5%;
+					margin-left: -15px;
+					border-radius: 15px;
+					padding-top: 12px;
 				}
 
 				a {
@@ -79,6 +113,12 @@
 
 					@include media($custom_1279) {
 						font-size: 12px;
+					}
+
+					@include media($custom_699) {
+						display: inline;
+						font-size: 11px;
+						padding: 2px 19px;
 					}
 				}
 
@@ -97,6 +137,13 @@
 						max-width: 325px;
 						font-size: 11.9px;
 						line-height: 17.2px;
+					}
+
+					@include media($custom_699) {
+						font-size: 14.9px;
+						margin-top: 129px;
+						line-height: 18.5px;
+						padding-bottom: 19px;
 					}
 				}
 			}
@@ -111,6 +158,13 @@
 					margin-right: -1%;
 				}
 
+				@include media($custom_699) {
+					border: 1px solid #fff;
+					flex: 0 0 44.5%;
+					border-radius: 15px;
+					padding-top: 12px;
+				}
+
 				a {
 					font-family: "GeneralSans Regular", sans-serif;
 					font-size: 19px;
@@ -122,6 +176,12 @@
 
 					@include media($custom_1279) {
 						font-size: 12px;
+					}
+
+					@include media($custom_699) {
+						display: inline;
+						font-size: 11px;
+						padding: 2px 19px;
 					}
 				}
 
@@ -140,6 +200,13 @@
 						max-width: 325px;
 						font-size: 11.9px;
 						line-height: 17.2px;
+					}
+
+					@include media($custom_699) {
+						font-size: 14.9px;
+						margin-top: 129px;
+						line-height: 18.5px;
+						padding-bottom: 19px;
 					}
 				}
 			}

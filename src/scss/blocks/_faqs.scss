@@ -7,17 +7,22 @@
 		padding-bottom: 33px;
 	}
 
+	@include media($custom_699) {
+		padding-top: 45px;
+	}
+
 	.faqs-container {
 		span {
 			margin-bottom: 13px;
 			color: $text-light;
 
 			font-family: "Clash Display Medium", sans-serif;
-			font-size: 14px;
+			font-size: 13px;
 			font-style: normal;
 			font-weight: 500;
 			line-height: 14px;
 			text-transform: uppercase;
+			margin-left: 2px;
 		}
 
 		h2 {
@@ -37,6 +42,11 @@
 				line-height: 30.5px;
 				letter-spacing: -0.6px;
 			}
+
+			@include media($custom_699) {
+				text-align: left;
+				margin: 0;
+			}
 		}
 
 		.accordion-wrapper {
@@ -47,6 +57,11 @@
 				padding: 0 20px;
 			}
 
+			@include media($custom_699) {
+				padding: 0 9px;
+				margin-top: 61px;
+			}
+
 			.item {
 				padding-top: 23px;
 				padding-bottom: 4px;
@@ -54,6 +69,15 @@
 				@include media($custom_1279) {
 					padding-top: 0px;
 					padding-bottom: 1px;
+				}
+
+				@include media($custom_699) {
+					padding-bottom: 4px;
+				}
+				&:nth-child(5) {
+					@include media($custom_699) {
+						border-bottom: 1px solid $text-light;
+					}
 				}
 
 				.title {
@@ -76,6 +100,10 @@
 						letter-spacing: -0.2px;
 						padding-right: 4px;
 						margin-bottom: 12px;
+					}
+
+					@include media($custom_699) {
+						font-size: 14.8px;
 					}
 
 					&::after {
@@ -133,6 +161,11 @@
 				font-weight: 400;
 				line-height: 16px;
 				letter-spacing: -1px;
+			}
+
+			@include media($custom_699) {
+				font-size: 15px;
+				margin-top: 29px;
 			}
 		}
 	}

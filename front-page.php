@@ -5,7 +5,7 @@
         <p class="sliding-text">distinctive©aestheticdistinctive©aestheticdistinctive©aestheticdistinctive©aesthetic</p>
     </div>
     <div class="container homepage-hero-container">
-        <div class="sliding-text-navigation">
+        <div class="sliding-text-navigation ">
             <p class="sliding-text" style="font-size: 15px">Masterclass<br>by Danilo&Sharon</p>
             <p class="sliding-text" style="font-size: 15px; margin-top: -1.4rem">Working worldwide</p>
         </div>
@@ -88,6 +88,7 @@
             </span>
         <span class="hide-desktop">Courses</span>
         <h2 class="hide-desktop">Interactive <span>online</span> lessons</span></h2>
+        <img src="/wp-content/uploads/2023/10/hero-main-image.png" alt="O" class="hero-image">
         <p>Unlock your photography skills in a real-time & interactive classroom with your peers and your mentor.</p>
         <a class="btn online-lessons-btn" href="#">Check more about</a>
     </div>
