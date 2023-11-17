@@ -113,7 +113,7 @@
 
 		h2 {
 			@include h-2;
-			font-family: "Clash Display Regular", sans-serif;
+			font-family: "Clash Display Medium", sans-serif;
 			color: $text-light;
 			text-transform: uppercase;
 			max-width: 584px;
@@ -137,6 +137,8 @@
 			}
 
 			@include media($custom_699) {
+				font-family: "Clash Display Regular", sans-serif;
+
 				text-transform: none;
 				font-size: 25px;
 				font-weight: 500;

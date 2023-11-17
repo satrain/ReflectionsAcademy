@@ -3256,7 +3256,8 @@ header {
     @media (max-width: 500px) {
       .faqs .faqs-container h2 {
         font-size: 28px;
-        margin-left: 9px; } }
+        margin-left: 9px;
+        max-width: 255px; } }
   .faqs .faqs-container .accordion-wrapper {
     margin-top: 77px; }
     @media (max-width: 1440px) {
@@ -3499,7 +3500,7 @@ header {
     line-height: 53px;
     font-weight: 500;
     letter-spacing: -0.6px;
-    font-family: "Clash Display Regular", sans-serif;
+    font-family: "Clash Display Medium", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     max-width: 584px;
@@ -3534,6 +3535,7 @@ header {
         line-height: 33px; } }
     @media (max-width: 699px) {
       .where-do-you-fit .where-do-you-fit-container h2 {
+        font-family: "Clash Display Regular", sans-serif;
         text-transform: none;
         font-size: 25px;
         font-weight: 500;
