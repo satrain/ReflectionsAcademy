@@ -3494,15 +3494,16 @@ header {
         margin-left: 4px;
         font-size: 13px; } }
   .where-do-you-fit .where-do-you-fit-container h2 {
-    font-family: "Clash Display Regular", sans-serif;
     font-family: "Clash Display Medium", sans-serif;
     font-size: 60px;
     line-height: 53px;
     font-weight: 500;
     letter-spacing: -0.6px;
+    font-family: "Clash Display Regular", sans-serif;
     color: #ffffff;
     text-transform: uppercase;
-    max-width: 584px; }
+    max-width: 584px;
+    font-weight: 500; }
     @media (max-width: 1280px) {
       .where-do-you-fit .where-do-you-fit-container h2 {
         font-size: 40px;
@@ -3523,8 +3524,7 @@ header {
         font-size: 50px;
         margin-top: -2px;
         margin-left: -3px;
-        letter-spacing: 1.4px;
-        font-weight: 400; } }
+        letter-spacing: 1.4px; } }
     @media (max-width: 1279px) {
       .where-do-you-fit .where-do-you-fit-container h2 {
         font-size: 34px;
@@ -3730,6 +3730,11 @@ header {
             background: #ff0000;
             color: #ffffff;
             border: 1px solid #ff0000; }
+            @media (max-width: 699px) {
+              .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course .buttons-wrapper a:nth-child(2) {
+                background-color: #0d0d17;
+                border: 1px solid #0d0d17;
+                color: #ffffff; } }
       @media (max-width: 699px) {
         .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course:last-child {
           background-color: #f00 !important;
@@ -3756,9 +3761,14 @@ header {
           border: 1px solid #ffffff;
           color: #ffffff; } }
       .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course:last-child .buttons-wrapper a:nth-child(2) {
-        background: #ffffff;
-        color: #0d0d17;
+        background: red;
+        color: #ffffff;
         border: 1px solid #ff0000; }
+        @media (max-width: 699px) {
+          .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course:last-child .buttons-wrapper a:nth-child(2) {
+            background-color: #ffffff;
+            color: #0d0d17;
+            border: 1px solid #ffffff; } }
 
 .money-back-guarantee {
   padding-top: 100px;

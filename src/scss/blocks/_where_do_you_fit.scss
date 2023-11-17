@@ -112,11 +112,12 @@
 		}
 
 		h2 {
-			font-family: "Clash Display Regular", sans-serif;
 			@include h-2;
+			font-family: "Clash Display Regular", sans-serif;
 			color: $text-light;
 			text-transform: uppercase;
 			max-width: 584px;
+			font-weight: 500;
 
 			@include media($custom_1440) {
 				color: $text-light;
@@ -126,7 +127,6 @@
 				margin-top: -2px;
 				margin-left: -3px;
 				letter-spacing: 1.4px;
-				font-weight: 400;
 			}
 			@include media($custom_1279) {
 				font-size: 34px;
@@ -336,6 +336,12 @@
 							background: $primary;
 							color: $text-light;
 							border: 1px solid $primary;
+
+							@include media($custom_699) {
+								background-color: $text-dark;
+								border: 1px solid $text-dark;
+								color: $text-light;
+							}
 						}
 					}
 				}
@@ -377,9 +383,15 @@
 							}
 
 							&:nth-child(2) {
-								background: $text-light;
-								color: $text-dark;
+								background: red;
+								color: $text-light;
 								border: 1px solid $primary;
+
+								@include media($custom_699) {
+									background-color: $text-light;
+									color: $text-dark;
+									border: 1px solid $text-light;
+								}
 							}
 						}
 					}
