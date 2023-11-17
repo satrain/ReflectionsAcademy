@@ -21,6 +21,11 @@
 			width: 175px;
 			margin-top: 10px;
 		}
+
+		@include media($custom_500) {
+			width: 112px;
+			margin-top: 5px;
+		}
 		svg {
 			@include media(lg) {
 				width: 100%;
@@ -30,13 +35,16 @@
 	}
 
 	.accordion-holder {
-		padding: 0 50px 66px;
+		padding: 0 60px 61px;
+		@include media($custom_1440) {
+			padding: 0 50px 80px;
+		}
 		// @include media(lg) {
 		// 	padding: 0;
 		// }
 
 		@include media($custom_1279) {
-			padding: 0 35px 51px;
+			padding: 0 35px 45px;
 		}
 
 		@include media($custom_699) {
@@ -48,9 +56,17 @@
 			position: relative;
 			border-radius: $radius-2;
 			background: $primary;
-			padding: 15px 0 15px;
-			margin-top: -92px;
+			margin-top: -124px;
 			z-index: 2;
+			padding: 30px 20px;
+			@include media($custom_1440) {
+				position: relative;
+				border-radius: $radius-2;
+				background: $primary;
+				padding: 15px 0 15px;
+				margin-top: -102px;
+				z-index: 2;
+			}
 			@include media($custom_1279) {
 				// border-radius: 0;
 				margin-top: -72px;
@@ -60,7 +76,11 @@
 
 			@include media($custom_699) {
 				border-radius: 0;
-				padding-bottom: 49px;
+				padding-bottom: 48px;
+			}
+
+			@include media($custom_500) {
+				padding-bottom: 82px;
 			}
 
 			.copy-block {
@@ -79,25 +99,41 @@
 				.copy-block-text {
 					display: flex;
 					flex-direction: column;
-					// justify-content: space-between;
-					gap: 227px;
+					justify-content: space-between;
+					@include media($custom_1440) {
+						justify-content: unset;
+						gap: 227px;
+						margin-left: 19px;
+					}
 
 					@include media($custom_1279) {
 						gap: 125px;
+						margin-left: 0;
 					}
 
 					h2 {
+						@include h-3;
 						font-family: "Clash Display Medium", sans-serif;
-
 						font-weight: 500;
-						line-height: 43px;
+						line-height: 46px;
 						letter-spacing: -0.5px;
 						text-transform: uppercase;
 						color: $text-light;
 						max-width: 435px;
-						font-size: 45px;
-						margin-top: 35px;
-						margin-left: 20px;
+						margin-top: 38px;
+						margin-left: 10px;
+
+						@include media($custom_1440) {
+							font-weight: 500;
+							line-height: 43px;
+							letter-spacing: -0.5px;
+							text-transform: uppercase;
+							color: $text-light;
+							max-width: 435px;
+							font-size: 45px;
+							margin-top: 35px;
+							margin-left: 20px;
+						}
 
 						@include media($custom_1279) {
 							line-height: 28px;
@@ -114,6 +150,14 @@
 							margin-top: 13px;
 						}
 
+						@include media($custom_500) {
+							margin-left: -1px;
+							line-height: 29px;
+							max-width: 268px;
+							margin-top: 11px;
+							font-size: 29px;
+						}
+
 						span {
 							color: $text-dark;
 						}
@@ -121,12 +165,20 @@
 
 					p {
 						color: $text-light;
-						font-size: 14px;
+						font-size: 16px;
 						font-weight: 400;
 						line-height: 18.196px;
 						letter-spacing: -0.2px;
 						max-width: 202px;
-						margin-left: 1.5rem;
+						@include media($custom_1440) {
+							color: $text-light;
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 18.196px;
+							letter-spacing: -0.2px;
+							max-width: 202px;
+							margin-left: 1.5rem;
+						}
 
 						@include media($custom_1279) {
 							margin-top: 1.8rem;
@@ -140,13 +192,30 @@
 				}
 
 				.copy-block-accordion {
+					@include media($custom_1440) {
+						padding-right: 19px;
+					}
+
+					@include media($custom_1279) {
+						padding-right: 0;
+					}
+
 					@include media($custom_699) {
 						align-self: flex-start;
 						margin-left: 43px;
 					}
+
+					@include media($custom_500) {
+						margin-top: -33px;
+						margin-left: 36px;
+					}
 					.accordion-wrapper {
-						max-width: 520px;
-						margin-top: 2.5rem;
+						max-width: 554px;
+						margin-top: 50px;
+						@include media($custom_1440) {
+							max-width: 520px;
+							margin-top: 3rem;
+						}
 
 						@include media($custom_1279) {
 							margin-top: 0;
@@ -180,6 +249,7 @@
 								cursor: pointer;
 								outline: none;
 								transition: 0.5s;
+								font-family: "Neue Montreal", sans-serif;
 								// @include media(lg) {
 								// 	font-size: 30px;
 								// 	font-weight: 400;
@@ -194,23 +264,39 @@
 									font-size: 13px;
 								}
 
+								@include media($custom_500) {
+									font-size: 26px;
+									margin-top: 9px;
+								}
+
 								&::after {
 									content: "+";
 									position: absolute;
 									right: 0;
+
+									@include media($custom_699) {
+										display: none;
+									}
 								}
 							}
 
 							.content {
-								font-family: "GeneralSans Light",
-									sans-serif;
+								font-family: "Neue Montreal", sans-serif;
+								@include p-1;
 								color: $text-light;
 								opacity: 0;
 								max-height: 0;
 								transition: all 0.5s,
 									max-height 0.3s linear;
-								font-size: 15px;
-								line-height: 21px;
+								@include media($custom_1440) {
+									color: $text-light;
+									opacity: 0;
+									max-height: 0;
+									transition: all 0.5s,
+										max-height 0.3s linear;
+									font-size: 15px;
+									line-height: 21px;
+								}
 
 								@include media($custom_1279) {
 									font-size: 10px;
@@ -221,6 +307,13 @@
 
 								@include media($custom_699) {
 									font-size: 12px;
+								}
+
+								@include media($custom_500) {
+									margin-top: 27px;
+									font-size: 17.5px;
+									line-height: 19.5px;
+									padding-right: 0;
 								}
 							}
 
@@ -244,13 +337,18 @@
 					}
 
 					.buttons-wrapper {
-						margin-top: 170px;
-						margin-bottom: 1.5rem;
+						margin-top: 206px;
 						display: flex;
-						gap: 36px;
+						gap: 24px;
+						@include media($custom_1440) {
+							margin-top: 127px;
+							margin-bottom: 1.5rem;
+							display: flex;
+							gap: 36px;
+						}
 
 						@include media($custom_1279) {
-							margin-top: 128px; // Vidi ovde sta ces
+							margin-top: 117px; // Vidi ovde sta ces
 
 							margin-left: -55px;
 						}

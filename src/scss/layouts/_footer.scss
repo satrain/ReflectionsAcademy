@@ -1,6 +1,10 @@
 #colophon {
-	padding-top: 96px;
+	padding-top: 100px;
 	padding-bottom: 30px;
+	@include media($custom_1440) {
+		padding-top: 96px;
+		padding-bottom: 30px;
+	}
 	@include media(lg) {
 		padding-top: 40px;
 		padding-bottom: 41px;
@@ -11,9 +15,21 @@
 	}
 
 	.sliding-text-container {
+		margin-top: 20px;
+		@include media($custom_1440) {
+			margin-top: 0;
+		}
+		@include media($custom_699) {
+			margin-top: -1.5rem;
+		}
 		.sliding-text {
 			@include media($custom_1279) {
 				font-size: 7.7rem;
+			}
+
+			@include media($custom_500) {
+				font-size: 11rem;
+				margin-top: 2px;
 			}
 		}
 	}
@@ -49,14 +65,20 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			gap: 23px;
+
+			gap: 33px;
+			margin: 67px 0;
+
+			@include media($custom_1440) {
+				gap: 23px;
+				margin: 50px 0;
+			}
 
 			// @include media($) {
 			// 	overflow-x: auto;
 			// 	scroll-snap-type: x mandatory;
 			// }
 
-			margin: 50px 0;
 			@include media($custom_1279) {
 				margin: 39px 0 40px;
 				padding: 0 10px;
@@ -70,6 +92,11 @@
 				overflow: hidden;
 			}
 
+			@include media($custom_500) {
+				padding: 0;
+				margin-top: 13px;
+			}
+
 			.post-item {
 				@include media($custom_1279) {
 					flex: 0 0 22%;
@@ -79,6 +106,10 @@
 
 				@include media($custom_699) {
 					flex: 0 0 100%;
+				}
+
+				@include media($custom_500) {
+					flex: 0 0 108%;
 				}
 
 				img {
@@ -95,11 +126,18 @@
 				justify-content: space-between;
 
 				border-bottom: 1px solid #000;
-				padding-bottom: 10px;
+				padding-bottom: 15px;
+				@include media($custom_1440) {
+					padding-bottom: 10px;
+				}
 
 				@include media($custom_1279) {
 					margin-top: -6px;
 					padding-bottom: 5px;
+				}
+
+				@include media($custom_500) {
+					padding-bottom: 13px;
 				}
 
 				div {
@@ -142,6 +180,10 @@
 							width: 16px;
 							margin-right: 12px;
 						}
+
+						@include media($custom_500) {
+							width: 20px;
+						}
 					}
 
 					input {
@@ -149,25 +191,48 @@
 						outline: none;
 
 						color: #000;
-						font-size: 20px;
+						font-size: 24px;
 						font-weight: 400;
 						line-height: 24px;
 						letter-spacing: -0.48px;
 
-						@include media($custom_1279) {
-							font-size: 15px;
-						}
-
-						&::placeholder {
+						@include media($custom_1440) {
 							color: #000;
 							font-size: 20px;
 							font-weight: 400;
 							line-height: 24px;
 							letter-spacing: -0.48px;
-							text-align: center;
+						}
+
+						@include media($custom_1279) {
+							font-size: 15px;
+						}
+
+						@include media($custom_500) {
+							margin-right: 76px;
+						}
+
+						&::placeholder {
+							color: #000;
+							font-size: 24px;
+							font-weight: 400;
+							line-height: 24px;
+							letter-spacing: -0.48px;
+							@include media($custom_1440) {
+								color: #000;
+								font-size: 20px;
+								font-weight: 400;
+								line-height: 24px;
+								letter-spacing: -0.48px;
+								text-align: center;
+							}
 
 							@include media($custom_1279) {
 								font-size: 15px;
+							}
+
+							@include media($custom_500) {
+								font-size: 25px;
 							}
 						}
 
@@ -199,9 +264,14 @@
 			}
 
 			.bottom-navigation {
-				padding-top: 46px;
+				padding-top: 52px;
 				display: flex;
 				justify-content: space-between;
+				@include media($custom_1440) {
+					padding-top: 46px;
+					display: flex;
+					justify-content: space-between;
+				}
 				@include media($custom_1279) {
 					padding: 30px 0px 0 15px;
 				}
@@ -211,10 +281,18 @@
 					gap: 65px;
 				}
 
+				@include media($custom_500) {
+					padding-left: 2px;
+					gap: 24px;
+				}
+
 				.shortcut-links {
 					display: flex;
-					gap: 153px;
 					flex-wrap: wrap;
+					gap: 161px;
+					@include media($custom_1440) {
+						gap: 153px;
+					}
 					@include media($custom_1279) {
 						gap: 92px;
 					}
@@ -222,11 +300,19 @@
 					@include media($custom_699) {
 						gap: 134px;
 					}
+
+					@include media($custom_500) {
+						gap: 130px;
+					}
 					ul {
-						line-height: 23.5px;
+						@include media($custom_1440) {
+							line-height: 23.5px;
+						}
 						li {
-							margin: -3px 0;
 							list-style: none;
+							@include media($custom_1440) {
+								margin: -3px 0;
+							}
 
 							@include media($custom_1279) {
 								line-height: 17.5px;
@@ -235,12 +321,24 @@
 							@include media($custom_699) {
 								line-height: 31.5px;
 							}
+
+							@include media($custom_500) {
+								line-height: 27.5px;
+							}
 							a {
 								text-decoration: none;
 								color: #616161;
-								font-size: 11px;
+								font-size: 14px;
 								font-style: normal;
 								font-weight: 400;
+								line-height: 24px;
+								@include media($custom_1440) {
+									text-decoration: none;
+									color: #616161;
+									font-size: 11px;
+									font-style: normal;
+									font-weight: 400;
+								}
 								// line-height: 24px;
 								@include media($custom_1279) {
 									font-size: 10px;
@@ -255,7 +353,10 @@
 				}
 
 				.notices {
-					max-width: 190px;
+					max-width: 213px;
+					@include media($custom_1440) {
+						max-width: 190px;
+					}
 					// @include media(lg) {
 					// 	max-width: unset;
 					// 	width: 100%;
@@ -273,10 +374,17 @@
 
 					p {
 						color: #616161;
-						font-size: 10px;
+						font-size: 11.4px;
 						font-style: normal;
 						font-weight: 400;
-						line-height: 16px;
+						line-height: 18px;
+						@include media($custom_1440) {
+							color: #616161;
+							font-size: 10px;
+							font-style: normal;
+							font-weight: 400;
+							line-height: 16px;
+						}
 
 						@include media($custom_1279) {
 							line-height: 11px;
@@ -287,14 +395,23 @@
 							font-size: 13px;
 							line-height: 18px;
 						}
+
+						@include media($custom_500) {
+							font-size: 12px;
+						}
 					}
 
 					.social-media-links {
-						margin-top: 33px;
+						margin-top: 45px;
 						margin-bottom: 16px;
-						display: flex;
 						gap: 9px;
-						margin-left: 3px;
+						display: flex;
+						@include media($custom_1440) {
+							margin-top: 33px;
+							margin-bottom: 16px;
+							gap: 9px;
+							margin-left: 3px;
+						}
 						@include media($custom_1279) {
 							margin-top: 21px;
 							gap: 0;
@@ -304,6 +421,13 @@
 						@include media($custom_699) {
 							gap: 7px;
 							margin-bottom: 30px;
+						}
+
+						@include media($custom_500) {
+							gap: 19px;
+							margin-top: 31px;
+							margin-left: 3px;
+							margin-bottom: 42px;
 						}
 
 						a {
@@ -322,21 +446,34 @@
 					}
 
 					.privacy {
-						margin-top: -16px;
-						margin-left: 5px;
-
+						@include media($custom_1440) {
+							margin-top: -16px;
+							margin-left: 5px;
+						}
 						@include media($custom_1279) {
 							margin-top: -26px;
 							margin-left: 0;
 						}
+
+						@include media($custom_500) {
+							margin-left: 2px;
+						}
 						a {
 							text-decoration: none;
 							color: #616161;
-							font-size: 9.8px;
+							font-size: 12px;
 							font-style: normal;
 							font-weight: 400;
 							line-height: 14px;
-							max-width: 180px;
+							@include media($custom_1440) {
+								text-decoration: none;
+								color: #616161;
+								font-size: 9.8px;
+								font-style: normal;
+								font-weight: 400;
+								line-height: 14px;
+								max-width: 180px;
+							}
 
 							@include media($custom_1279) {
 								font-size: 8.8px;

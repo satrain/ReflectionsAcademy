@@ -1,7 +1,12 @@
 .faqs {
-	padding-top: 124px;
-	padding-bottom: 41px;
+	padding-top: 138px;
+	padding-bottom: 51px;
 	background: $bg-dark;
+	@include media($custom_1440) {
+		padding-top: 124px;
+		padding-bottom: 41px;
+		background: $bg-dark;
+	}
 	@include media($custom_1279) {
 		padding-top: 88px;
 		padding-bottom: 33px;
@@ -11,7 +16,14 @@
 		padding-top: 45px;
 	}
 
+	@include media($custom_500) {
+		padding-top: 59px;
+	}
+
 	.faqs-container {
+		@include media($custom_500) {
+			padding: 0 12px;
+		}
 		span {
 			margin-bottom: 13px;
 			color: $text-light;
@@ -22,18 +34,33 @@
 			font-weight: 500;
 			line-height: 14px;
 			text-transform: uppercase;
-			margin-left: 2px;
+			margin-left: 3px;
+
+			@include media($custom_500) {
+				margin-left: 9px;
+			}
 		}
 
 		h2 {
+			@include h-3;
 			font-family: "GeneralSans Regular", sans-serif;
 			color: $text-light;
 			text-transform: unset;
 			text-align: center;
-			max-width: 555px;
+			max-width: 612px;
 			margin: 0 auto;
-			font-size: 41px;
-			line-height: 46px;
+			margin-top: 25px;
+
+			@include media($custom_1440) {
+				font-family: "GeneralSans Regular", sans-serif;
+				color: $text-light;
+				text-transform: unset;
+				text-align: center;
+				max-width: 555px;
+				margin: 0 auto;
+				font-size: 41px;
+				line-height: 46px;
+			}
 			@include media($custom_1279) {
 				max-width: 380px;
 				font-size: 30px;
@@ -47,11 +74,19 @@
 				text-align: left;
 				margin: 0;
 			}
+
+			@include media($custom_500) {
+				font-size: 28px;
+				margin-left: 9px;
+			}
 		}
 
 		.accordion-wrapper {
-			margin-top: 76px;
-			margin-left: -3px;
+			margin-top: 77px;
+			@include media($custom_1440) {
+				margin-top: 76px;
+				margin-left: -3px;
+			}
 			@include media($custom_1279) {
 				margin-top: 53px;
 				padding: 0 20px;
@@ -60,6 +95,10 @@
 			@include media($custom_699) {
 				padding: 0 9px;
 				margin-top: 61px;
+			}
+
+			@include media($custom_500) {
+				margin-top: 41px;
 			}
 
 			.item {
@@ -74,6 +113,10 @@
 				@include media($custom_699) {
 					padding-bottom: 4px;
 				}
+
+				@include media($custom_500) {
+					padding-top: 5px;
+				}
 				&:nth-child(5) {
 					@include media($custom_699) {
 						border-bottom: 1px solid $text-light;
@@ -81,17 +124,30 @@
 				}
 
 				.title {
-					font-family: "GeneralSans Regular", sans-serif;
+					font-family: "Neue Montreal", sans-serif;
 					position: relative;
 					color: $text-light;
 
-					font-size: 20px;
+					font-size: 24px;
 					font-weight: 400;
-					line-height: 9.2px;
+					line-height: 18.196px;
 					letter-spacing: -0.2px;
 					margin-bottom: 20px;
 					cursor: pointer;
 					transition: 0.5s;
+
+					@include media($custom_1440) {
+						position: relative;
+						color: $text-light;
+
+						font-size: 20px;
+						font-weight: 400;
+						line-height: 9.2px;
+						letter-spacing: -0.2px;
+						margin-bottom: 20px;
+						cursor: pointer;
+						transition: 0.5s;
+					}
 					@include media($custom_1279) {
 						font-size: 13.8px;
 						font-style: normal;
@@ -106,10 +162,19 @@
 						font-size: 14.8px;
 					}
 
+					@include media($custom_500) {
+						margin-bottom: 2px;
+						font-size: 13px;
+					}
+
 					&::after {
 						content: "+";
 						position: absolute;
 						right: 0;
+
+						@include media($custom_500) {
+							display: none;
+						}
 					}
 				}
 
@@ -147,13 +212,22 @@
 		.text-us-p {
 			font-family: "GeneralSans Light", sans-serif;
 			color: $text-light;
-			font-size: 17px;
+			font-size: 21px;
 			font-weight: 400;
 			line-height: 25.154px;
-			letter-spacing: -0.4px;
+			letter-spacing: -1px;
 			text-align: center;
 			max-width: 420px;
-			margin: 37px auto 0;
+			margin: 48px auto 0;
+			@include media($custom_1440) {
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 25.154px;
+				letter-spacing: -0.4px;
+				text-align: center;
+				max-width: 420px;
+				margin: 37px auto 0;
+			}
 			@include media($custom_1279) {
 				margin: 25px auto 0;
 				font-size: 13px;

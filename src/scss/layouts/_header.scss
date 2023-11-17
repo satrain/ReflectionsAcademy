@@ -1,15 +1,23 @@
 header {
 	position: fixed;
 	width: 100vw;
-	padding: 31px 60px 20px;
 	z-index: 99;
+	padding: 31px 60px 20px;
 
 	// @include media(lg) {
 	// 	padding: 25px 20px;
 	// }
 
+	@include media($custom_1440) {
+		padding: 31px 60px 20px;
+	}
+
 	@include media($custom_1279) {
 		padding: 14px 35px 0;
+	}
+
+	@include media($custom_500) {
+		padding: 20px 55px 0;
 	}
 
 	&.light {
@@ -61,11 +69,19 @@ header {
 					font-size: 12px;
 					padding: 3px 11px;
 				}
+
+				@include media($custom_500) {
+					margin-left: -35px;
+					font-size: 8px;
+					padding: 2px 13px;
+				}
 			}
 		}
 
 		.header-navigation {
-			margin-right: -3px;
+			@include media($custom_1440) {
+				margin-right: -3px;
+			}
 
 			@include media($custom_1279) {
 				margin-right: -1px;
@@ -75,11 +91,18 @@ header {
 				margin-right: -15px;
 			}
 
+			@include media($custom_500) {
+				margin-right: -35px;
+			}
+
 			.btn-header-menu {
 				margin-left: 20px;
 				// @include media($custom_1279) {
 				// 	margin-left: 10px;
 				// }
+				@include media($custom_500) {
+					margin-left: 16px;
+				}
 			}
 
 			a {
@@ -94,6 +117,11 @@ header {
 				@include media($custom_1279) {
 					font-size: 11px;
 					padding: 3px 12px;
+				}
+
+				@include media($custom_500) {
+					font-size: 8.5px;
+					padding: 0px 8px;
 				}
 			}
 		}

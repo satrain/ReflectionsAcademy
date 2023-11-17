@@ -1,8 +1,12 @@
 .where-do-you-fit {
 	position: relative;
 	background: $bg-dark;
-	padding-top: 60px;
-	padding-bottom: 83px;
+	padding-top: 63px;
+	padding-bottom: 93px;
+	@include media($custom_1440) {
+		padding-top: 60px;
+		padding-bottom: 83px;
+	}
 	@include media($custom_1279) {
 		margin-top: -22px;
 		padding-top: 59px;
@@ -13,6 +17,11 @@
 
 	@include media($custom_699) {
 		padding-bottom: 64px;
+	}
+
+	@include media($custom_500) {
+		margin-top: -5px;
+		padding-bottom: 77px;
 	}
 
 	.radial-background-1 {
@@ -53,22 +62,33 @@
 		@include media($custom_699) {
 			padding: 0 11px;
 		}
+
+		@include media($custom_500) {
+			padding: 0 7px;
+		}
 		.subtitle {
 			padding-top: 25px;
 			border-top: 1px solid #d9d9d9;
 
-			font-family: "GeneralSans Regular", sans-serif;
+			font-family: "GeneralSans Medium", sans-serif;
 			color: $text-light;
 
-			font-size: 14px;
+			font-size: 16px;
 			font-weight: 400;
 			line-height: 18.196px;
 			letter-spacing: -0.2px;
 			margin-bottom: 25px;
-			margin-left: -5px;
-			margin-top: -2px;
+
+			@include media($custom_1440) {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 18.196px;
+				letter-spacing: -0.2px;
+				margin-bottom: 25px;
+				margin-left: -5px;
+				margin-top: -2px;
+			}
 			@include media($custom_1279) {
-				font-family: "Clash Display Regular", sans-serif;
 				font-size: 10px;
 				font-style: normal;
 				font-weight: 500;
@@ -84,22 +104,31 @@
 				text-transform: uppercase;
 				margin-top: -3px;
 			}
+
+			@include media($custom_500) {
+				margin-left: 4px;
+				font-size: 13px;
+			}
 		}
 
 		h2 {
-			font-family: "Clash Display Medium", sans-serif;
-			font-weight: 500;
-
+			font-family: "Clash Display Regular", sans-serif;
+			@include h-2;
 			color: $text-light;
 			text-transform: uppercase;
-			max-width: 500px;
-			font-size: 50px;
-			margin-top: -2px;
-			margin-left: -3px;
-			letter-spacing: 1.4px;
+			max-width: 584px;
+
+			@include media($custom_1440) {
+				color: $text-light;
+				text-transform: uppercase;
+				max-width: 570px;
+				font-size: 50px;
+				margin-top: -2px;
+				margin-left: -3px;
+				letter-spacing: 1.4px;
+				font-weight: 400;
+			}
 			@include media($custom_1279) {
-				font-family: "Clash Display Medium", sans-serif;
-				font-weight: bold;
 				font-size: 34px;
 				max-width: 350px;
 				margin-top: -11px;
@@ -113,13 +142,24 @@
 				font-weight: 500;
 				margin-top: -5px;
 			}
+
+			@include media($custom_500) {
+				margin-left: 4px;
+				margin-top: 34px;
+				font-size: 25px;
+			}
 		}
 
 		.courses-wrapper {
 			position: relative;
-			margin-top: 170px;
+			margin-top: 190px;
 			display: flex;
-			gap: 112px;
+			gap: 130px;
+			@include media($custom_1440) {
+				margin-top: 170px;
+				display: flex;
+				gap: 112px;
+			}
 			@include media($custom_1279) {
 				margin-top: 105px;
 				gap: 67px;
@@ -131,6 +171,10 @@
 				gap: 17px;
 			}
 
+			@include media($custom_500) {
+				margin-top: 120px;
+			}
+
 			.course-separator {
 				width: 1px;
 				height: auto;
@@ -138,25 +182,41 @@
 			}
 
 			.course {
-				max-width: 390px;
+				max-width: 445px;
+
+				@include media($custom_1440) {
+					max-width: 390px;
+				}
 
 				@include media($custom_699) {
 					background-color: $text-light;
 					max-width: 100%;
 					padding: 0 113px;
 					border-radius: 15px;
+					background-image: url("/wp-content/uploads/2023/10/rectangle.jpg");
+					background-size: cover;
+					position: relative;
+					z-index: 999;
+				}
+
+				@include media($custom_500) {
+					max-width: 100%;
+					width: 291px;
+					padding: 0;
 				}
 
 				h3 {
-					// @include h-4;
+					@include h-4;
 					font-family: "Clash Display Medium", sans-serif;
 					font-weight: 500;
 
-					color: $text-light;
-					font-size: 36px;
-					line-height: 35px;
 					text-transform: uppercase;
+					color: $text-light;
 					max-width: 315px;
+					@include media($custom_1440) {
+						font-size: 36px;
+						line-height: 35px;
+					}
 
 					@include media($custom_1279) {
 						font-size: 25px;
@@ -170,17 +230,29 @@
 						font-size: 42px;
 						line-height: 39px;
 					}
+
+					@include media($custom_500) {
+						margin: 43px 0 113px 13px;
+						font-size: 27px;
+						line-height: 28px;
+					}
 				}
 
 				p {
+					@include p-2;
+					margin-top: 20px;
+					font-size: 16px;
+					margin-bottom: 28px;
 					font-family: "GeneralSans Regular", sans-serif;
 					font-weight: 400;
-					font-size: 14px;
-					color: #bebebe;
-					margin-top: 32px;
-					margin-bottom: 28px;
-					margin-left: -5px;
-					max-width: 450px;
+					color: #969392;
+					@include media($custom_1440) {
+						font-size: 14px;
+						margin-top: 32px;
+						margin-bottom: 28px;
+						margin-left: -5px;
+						max-width: 450px;
+					}
 
 					@include media($custom_1279) {
 						font-size: 10px;
@@ -195,13 +267,22 @@
 						line-height: 20px;
 						font-size: 12px;
 					}
+
+					@include media($custom_500) {
+						padding: 0 11px;
+						margin-left: 4px;
+						font-size: 8px;
+						line-height: 15px;
+					}
 				}
 
 				.buttons-wrapper {
 					display: flex;
-					gap: 37px;
-					margin-top: -5px;
-
+					gap: 25px;
+					@include media($custom_1440) {
+						gap: 37px;
+						margin-top: -5px;
+					}
 					@include media($custom_1279) {
 						gap: 19px;
 						margin-top: -13px;
@@ -209,16 +290,25 @@
 
 					@include media($custom_699) {
 						margin-bottom: 34px;
-						margin-top: -21px;
+						margin-top: -3px;
 						gap: 31px;
 						margin-left: -93px;
 					}
 
+					@include media($custom_500) {
+						margin-top: -15px;
+						margin-left: 13px;
+						gap: 16px;
+						margin-bottom: 20px;
+					}
+
 					a {
 						text-transform: unset;
-						padding: 2px 18px;
-						font-size: 14px;
-						margin-right: -7px;
+						@include media($custom_1440) {
+							padding: 2px 18px;
+							font-size: 14px;
+							margin-right: -7px;
+						}
 
 						@include media($custom_1279) {
 							font-size: 10px;
@@ -228,6 +318,11 @@
 						@include media($custom_699) {
 							padding: 2px 25px;
 							font-size: 12px;
+						}
+
+						@include media($custom_500) {
+							padding: 0 18px;
+							font-size: 8px;
 						}
 
 						&:nth-child(1) {
@@ -246,14 +341,30 @@
 				}
 				&:last-child {
 					@include media($custom_699) {
-						background-color: #f00;
+						background-color: #f00 !important;
+						background-image: none;
 					}
 					h3 {
 						max-width: 280px;
+						@include media($custom_1440) {
+							max-width: 239px;
+						}
+
+						@include media($custom_1279) {
+							max-width: 210px;
+						}
 						@include media($custom_699) {
 							max-width: 315px;
 							color: $text-light;
 						}
+
+						@include media($custom_500) {
+							max-width: 200px;
+						}
+					}
+
+					p {
+						color: #e1e1e1;
 					}
 
 					.buttons-wrapper {

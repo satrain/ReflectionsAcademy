@@ -45,11 +45,13 @@ p {
 .btn {
 	@include p-2;
 
-	padding: 5px 21px;
 	border-radius: $radius-1;
 	border: 1px solid $primary-border;
 
 	text-decoration: none;
+	@include media($custom_1440) {
+		padding: 5px 21px;
+	}
 	@include media(md) {
 		padding: 5px 15px;
 	}
@@ -58,14 +60,22 @@ p {
 
 .btn-primary {
 	color: $text-light;
-	margin-right: -0.8rem;
-	padding: 5px 17px;
+	padding: 10px 21px;
+
+	@include media($custom_1440) {
+		margin-right: -0.8rem;
+		padding: 5px 17px;
+	}
 }
 
 .btn-secondary {
+	padding: 10px 21px;
+
 	background: $bg;
 	color: $text-dark;
-	padding: 5px 15px;
+	@include media($custom_1440) {
+		padding: 5px 15px;
+	}
 }
 
 .sliding-text-container {
@@ -77,8 +87,11 @@ p {
 		text-transform: uppercase;
 		white-space: pre;
 		animation: slideText 30s linear infinite;
-		font-size: 11rem;
-		margin-top: -1rem;
+
+		@include media($custom_1440) {
+			font-size: 11rem;
+			margin-top: -1rem;
+		}
 	}
 }
 
@@ -112,6 +125,10 @@ p {
 		width: 15px;
 		height: 15px;
 	}
+
+	@include media($custom_500) {
+		margin-left: 10px;
+	}
 }
 
 .vogue,
@@ -135,5 +152,9 @@ p {
 		margin-top: 36px;
 		margin-bottom: 31px;
 		max-height: 262px;
+	}
+
+	@include media($custom_500) {
+		margin-top: 26px;
 	}
 }
