@@ -192,8 +192,9 @@
 				}
 
 				.copy-block-accordion {
+					padding-right: 15px;
 					@include media($custom_1440) {
-						padding-right: 19px;
+						padding-right: 25px;
 					}
 
 					@include media($custom_1279) {
@@ -307,6 +308,7 @@
 
 								@include media($custom_699) {
 									font-size: 12px;
+									padding-bottom: 5px;
 								}
 
 								@include media($custom_500) {

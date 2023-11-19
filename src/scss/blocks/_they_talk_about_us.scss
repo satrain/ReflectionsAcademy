@@ -47,7 +47,8 @@
 
 		@include media($custom_500) {
 			margin-top: 25px;
-			gap: 40px;
+			gap: 35px;
+			margin-left: 36px;
 			margin-bottom: 10px;
 		}
 		img {
@@ -67,7 +68,7 @@
 					transform: translate(11px, 8px);
 				}
 				@include media($custom_500) {
-					height: 17px;
+					height: 12px;
 					transform: translate(6px, 8px);
 				}
 			}
@@ -86,7 +87,7 @@
 					transform: translate(1px, 8px);
 				}
 				@include media($custom_500) {
-					height: 17px;
+					height: 12px;
 					transform: translate(-8px, 8px);
 				}
 			}
@@ -105,7 +106,7 @@
 					transform: translate(-8px, 8px);
 				}
 				@include media($custom_500) {
-					height: 17px;
+					height: 12px;
 					transform: translate(-25px, 8px);
 				}
 			}
@@ -124,7 +125,7 @@
 					transform: translate(-8px, 8px);
 				}
 				@include media($custom_500) {
-					height: 17px;
+					height: 12px;
 					transform: translate(-42px, 8px);
 				}
 			}

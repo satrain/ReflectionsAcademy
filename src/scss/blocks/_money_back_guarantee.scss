@@ -26,7 +26,7 @@
 
 	@include media($custom_699) {
 		margin: 44px 28px;
-		border-radius: 15px;
+		border-radius: 24px;
 	}
 
 	@include media($custom_500) {
@@ -56,7 +56,7 @@
 
 		h2 {
 			@include h-3;
-			font-family: "Clash Display", sans-serif;
+			font-family: "Clash Display Medium", sans-serif !important;
 			position: relative;
 			z-index: 1;
 			max-width: 538px;
@@ -64,7 +64,7 @@
 			color: $text-light;
 			font-weight: 300;
 			font-size: 46px;
-			max-width: 591px;
+			max-width: 571px;
 			@include media($custom_1440) {
 				position: relative;
 				line-height: 47px;

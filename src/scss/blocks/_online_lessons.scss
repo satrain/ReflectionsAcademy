@@ -30,7 +30,7 @@
 			span {
 				color: #fff;
 
-				font-family: "Clash Display Variable", sans-serif;
+				font-family: "Clash Display Medium", sans-serif;
 				font-size: 100px;
 				font-style: normal;
 				font-weight: 500;
@@ -40,17 +40,18 @@
 				@include media($custom_699) {
 					color: #fff;
 
-					font-family: "Clash Display Variable", sans-serif;
+					font-family: "Clash Display Medium", sans-serif;
 					font-size: 13px;
 					font-style: normal;
-					font-weight: bold;
+					font-weight: 500;
 					line-height: 14px;
 					text-transform: uppercase;
+					margin-bottom: 20px;
 				}
 
 				@include media($custom_500) {
 					font-size: 14px;
-					margin-left: -2px;
+					margin-left: 1px;
 					margin-top: -1px;
 				}
 			}
@@ -126,8 +127,8 @@
 					font-size: 45px;
 					font-style: normal;
 					font-weight: 500;
-					line-height: 41px;
-					letter-spacing: 2px;
+					line-height: 28px;
+					letter-spacing: 1px;
 					text-transform: uppercase;
 					max-width: 200px;
 					span {

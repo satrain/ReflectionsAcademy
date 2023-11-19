@@ -92,6 +92,10 @@ p {
 			font-size: 11rem;
 			margin-top: -1rem;
 		}
+
+		@include media($custom_699) {
+			animation-duration: 10s;
+		}
 	}
 }
 

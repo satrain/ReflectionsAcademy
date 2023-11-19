@@ -95,6 +95,9 @@ p {
       .sliding-text-container .sliding-text {
         font-size: 11rem;
         margin-top: -1rem; } }
+    @media (max-width: 699px) {
+      .sliding-text-container .sliding-text {
+        animation-duration: 10s; } }
 
 .hide-desktop {
   display: none; }
@@ -165,29 +168,35 @@ p {
   font-family: "Clash Display Regular";
   src: url("../fonts/ClashDisplay-Regular.woff"); }
 @font-face {
-  font-family: 'Neue Montreal Regular';
+  font-family: "Neue Montreal Regular";
   src: url("../fonts/GeneralSans-Regular.otf"); }
 @font-face {
-  font-family: 'Neue Montreal Medium';
+  font-family: "Neue Montreal Medium";
   src: url("../fonts/NeueMontreal-Medium.otf"); }
 @font-face {
-  font-family: 'Neue Montreal Light';
+  font-family: "Neue Montreal Light";
   src: url("../fonts/NeueMontreal-Light.otf"); }
 @font-face {
-  font-family: 'Neue Montreal Bold';
+  font-family: "Neue Montreal Bold";
   src: url("../fonts/NeueMontreal-Bold.otf"); }
 @font-face {
-  font-family: 'Neue Montreal Regular';
+  font-family: "Neue Montreal Regular";
   src: url("../fonts/NeueMontreal-Regular.otf"); }
 @font-face {
-  font-family: 'GeneralSans Light';
+  font-family: "GeneralSans Light";
   src: url("../fonts/GeneralSans-Light.woff"); }
 @font-face {
-  font-family: 'GeneralSans Regular';
+  font-family: "GeneralSans Regular";
   src: url("../fonts/GeneralSans-Regular.woff"); }
 @font-face {
-  font-family: 'GeneralSans Medium';
+  font-family: "GeneralSans Medium";
   src: url("../fonts/GeneralSans-Medium.otf"); }
+@font-face {
+  font-family: "Tex Gyre Heroes";
+  src: url("../../../assets/fonts/texgyreheros-regular.otf"); }
+@font-face {
+  font-family: "Helvetica";
+  src: url("../../../assets/fonts/helveticaneue.ttf"); }
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -867,7 +876,7 @@ header {
     .homepage-hero .homepage-hero-container .sliding-text-navigation p {
       max-width: 203px;
       font-size: 17px;
-      font-weight: 500;
+      font-weight: 700;
       line-height: 18px;
       letter-spacing: -0.085px;
       text-transform: uppercase;
@@ -929,12 +938,13 @@ header {
       line-height: 53px;
       font-weight: 500;
       letter-spacing: -0.6px;
-      font-family: "Neue Montreal", sans-serif;
+      font-family: "Tex Gyre Heroes", sans-serif;
       letter-spacing: -1px;
       line-height: 49px !important;
       color: #ffffff;
       margin-bottom: 33px;
-      max-width: 445px;
+      max-width: 516px;
+      letter-spacing: -2px;
       font-size: 43px; }
       @media (max-width: 1280px) {
         .homepage-hero .homepage-hero-container .hero-content .hero-copy h2 {
@@ -982,9 +992,9 @@ header {
         .homepage-hero .homepage-hero-container .hero-content .hero-copy h2 {
           font-size: 32px;
           line-height: 37px !important;
-          max-width: 280px;
+          max-width: 281px;
           margin-left: 1px;
-          letter-spacing: -0.8px;
+          letter-spacing: -2px;
           margin-top: -32px; } }
     .homepage-hero .homepage-hero-container .hero-content .hero-copy .btn {
       display: flex;
@@ -1074,7 +1084,8 @@ header {
     @media (max-width: 500px) {
       .they-talk-about-us .brand-logos-wrapper {
         margin-top: 25px;
-        gap: 40px;
+        gap: 35px;
+        margin-left: 36px;
         margin-bottom: 10px; } }
     .they-talk-about-us .brand-logos-wrapper img {
       width: auto; }
@@ -1093,7 +1104,7 @@ header {
             transform: translate(11px, 8px); } }
         @media (max-width: 500px) {
           .they-talk-about-us .brand-logos-wrapper img:nth-child(1) {
-            height: 17px;
+            height: 12px;
             transform: translate(6px, 8px); } }
       .they-talk-about-us .brand-logos-wrapper img:nth-child(2) {
         height: 40px;
@@ -1111,7 +1122,7 @@ header {
             transform: translate(1px, 8px); } }
         @media (max-width: 500px) {
           .they-talk-about-us .brand-logos-wrapper img:nth-child(2) {
-            height: 17px;
+            height: 12px;
             transform: translate(-8px, 8px); } }
       .they-talk-about-us .brand-logos-wrapper img:nth-child(3) {
         height: 40px;
@@ -1129,7 +1140,7 @@ header {
             transform: translate(-8px, 8px); } }
         @media (max-width: 500px) {
           .they-talk-about-us .brand-logos-wrapper img:nth-child(3) {
-            height: 17px;
+            height: 12px;
             transform: translate(-25px, 8px); } }
       .they-talk-about-us .brand-logos-wrapper img:nth-child(4) {
         height: 40px;
@@ -1147,7 +1158,7 @@ header {
             transform: translate(-8px, 8px); } }
         @media (max-width: 500px) {
           .they-talk-about-us .brand-logos-wrapper img:nth-child(4) {
-            height: 17px;
+            height: 12px;
             transform: translate(-42px, 8px); } }
 
 .about-reflections-homepage .dream-outcome {
@@ -1304,7 +1315,7 @@ header {
           max-width: 240px;
           line-height: 20.8px;
           margin-top: 22px;
-          margin-bottom: 97px; } }
+          margin-bottom: 38px; } }
     .about-reflections-homepage .dream-outcome .copy-block a {
       text-transform: unset; }
       .about-reflections-homepage .dream-outcome .copy-block a.dream-outcome-btn-light {
@@ -1382,14 +1393,14 @@ header {
       margin-top: -23px; } }
   .about-reflections-homepage .decade-of-building .copy-block {
     width: 50%;
-    padding: 0 56px 73px 60px; }
+    padding: 0 56px 200px 60px; }
     @media (max-width: 1440px) {
       .about-reflections-homepage .decade-of-building .copy-block {
-        padding: 0 56px 70px 57px;
+        padding: 0 56px 150px 57px;
         margin-bottom: -15px; } }
     @media (max-width: 1279px) {
       .about-reflections-homepage .decade-of-building .copy-block {
-        padding: 0 56px 50px 39px;
+        padding: 0 56px 70px 39px;
         margin-bottom: -4px; } }
     @media (max-width: 699px) {
       .about-reflections-homepage .decade-of-building .copy-block {
@@ -1423,7 +1434,7 @@ header {
       @media (max-width: 1440px) {
         .about-reflections-homepage .decade-of-building .copy-block h2 {
           letter-spacing: 1px;
-          line-height: 55px;
+          line-height: 43px;
           font-weight: 500; } }
       .about-reflections-homepage .decade-of-building .copy-block h2 span {
         color: #ff0000; }
@@ -1548,7 +1559,7 @@ header {
       margin-left: -15px;
       padding-top: 37px; } }
   .our-story .our-story-container h2 {
-    font-family: "GeneralSans Regular", sans-serif;
+    font-family: "GeneralSans Medium", sans-serif;
     max-width: 134px;
     margin-bottom: 18px;
     color: #ffffff;
@@ -1571,7 +1582,10 @@ header {
         font-size: 10px;
         line-height: 12.2px;
         font-weight: bold;
-        max-width: 125px; } }
+        max-width: 135px; } }
+    @media (max-width: 699px) {
+      .our-story .our-story-container h2 {
+        text-transform: uppercase; } }
     @media (max-width: 500px) {
       .our-story .our-story-container h2 {
         margin-left: 1px; } }
@@ -1624,8 +1638,8 @@ header {
     @media (max-width: 500px) {
       .our-story .our-story-container p {
         margin-left: 2px;
-        max-width: 332px;
-        font-size: 26px;
+        max-width: 378px;
+        font-size: 30px;
         line-height: 30px;
         margin-top: 25px; } }
   .our-story .our-story-container .our-story-list {
@@ -1727,7 +1741,7 @@ header {
         @media (max-width: 500px) {
           .our-story .our-story-container .our-story-list .as-featured-in p {
             font-size: 19px;
-            margin-top: 99px;
+            margin-top: 220px;
             line-height: 24.5px; } }
     .our-story .our-story-container .our-story-list .previous-destinations {
       max-width: 546px; }
@@ -1826,7 +1840,7 @@ header {
   @media (max-width: 1279px) {
     .online-lessons .online-lessons-container span {
       color: #fff;
-      font-family: "Clash Display Variable", sans-serif;
+      font-family: "Clash Display Medium", sans-serif;
       font-size: 100px;
       font-style: normal;
       font-weight: 500;
@@ -1835,16 +1849,17 @@ header {
   @media (max-width: 1279px) and (max-width: 699px) {
     .online-lessons .online-lessons-container span {
       color: #fff;
-      font-family: "Clash Display Variable", sans-serif;
+      font-family: "Clash Display Medium", sans-serif;
       font-size: 13px;
       font-style: normal;
-      font-weight: bold;
+      font-weight: 500;
       line-height: 14px;
-      text-transform: uppercase; } }
+      text-transform: uppercase;
+      margin-bottom: 20px; } }
   @media (max-width: 1279px) and (max-width: 500px) {
     .online-lessons .online-lessons-container span {
       font-size: 14px;
-      margin-left: -2px;
+      margin-left: 1px;
       margin-top: -1px; } }
 
   @media (max-width: 699px) {
@@ -1911,8 +1926,8 @@ header {
         font-size: 45px;
         font-style: normal;
         font-weight: 500;
-        line-height: 41px;
-        letter-spacing: 2px;
+        line-height: 28px;
+        letter-spacing: 1px;
         text-transform: uppercase;
         max-width: 200px; }
         .online-lessons .online-lessons-container h2.hide-desktop span {
@@ -2192,152 +2207,155 @@ header {
                 max-width: 142px;
                 font-size: 9px;
                 margin-bottom: 1rem; } }
-        @media (max-width: 1440px) {
-          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
-            padding-right: 19px; } }
-        @media (max-width: 1279px) {
-          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
-            padding-right: 0; } }
-        @media (max-width: 699px) {
-          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
-            align-self: flex-start;
-            margin-left: 43px; } }
-        @media (max-width: 500px) {
-          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
-            margin-top: -33px;
-            margin-left: 36px; } }
-        .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
-          max-width: 554px;
-          margin-top: 50px; }
+        .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
+          padding-right: 15px; }
           @media (max-width: 1440px) {
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
-              max-width: 520px;
-              margin-top: 3rem; } }
+            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
+              padding-right: 25px; } }
           @media (max-width: 1279px) {
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
-              margin-top: 0;
-              margin-left: -35px; } }
+            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
+              padding-right: 0; } }
           @media (max-width: 699px) {
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
-              max-width: 395px; } }
-          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item {
-            padding-top: 12px;
-            margin-bottom: 20px;
-            border-top: 1px solid #ffffff; }
+            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
+              align-self: flex-start;
+              margin-left: 43px; } }
+          @media (max-width: 500px) {
+            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion {
+              margin-top: -33px;
+              margin-left: 36px; } }
+          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
+            max-width: 554px;
+            margin-top: 50px; }
+            @media (max-width: 1440px) {
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
+                max-width: 520px;
+                margin-top: 3rem; } }
             @media (max-width: 1279px) {
-              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item {
-                padding-top: 3px;
-                margin-bottom: 10px; } }
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
-              position: relative;
-              color: #ffffff;
-              font-size: 21px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 18.196px;
-              letter-spacing: -0.2px;
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
+                margin-top: 0;
+                margin-left: -35px; } }
+            @media (max-width: 699px) {
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper {
+                max-width: 395px; } }
+            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item {
+              padding-top: 12px;
               margin-bottom: 20px;
-              cursor: pointer;
-              outline: none;
-              transition: 0.5s;
-              font-family: "Neue Montreal", sans-serif; }
+              border-top: 1px solid #ffffff; }
               @media (max-width: 1279px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
-                  font-size: 13px; } }
-              @media (max-width: 699px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
-                  font-size: 13px; } }
-              @media (max-width: 500px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
-                  font-size: 26px;
-                  margin-top: 9px; } }
-              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title::after {
-                content: "+";
+                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item {
+                  padding-top: 3px;
+                  margin-bottom: 10px; } }
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
+                position: relative;
+                color: #ffffff;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18.196px;
+                letter-spacing: -0.2px;
+                margin-bottom: 20px;
+                cursor: pointer;
+                outline: none;
+                transition: 0.5s;
+                font-family: "Neue Montreal", sans-serif; }
+                @media (max-width: 1279px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
+                    font-size: 13px; } }
+                @media (max-width: 699px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
+                    font-size: 13px; } }
+                @media (max-width: 500px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title {
+                    font-size: 26px;
+                    margin-top: 9px; } }
+                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title::after {
+                  content: "+";
+                  position: absolute;
+                  right: 0; }
+                  @media (max-width: 699px) {
+                    .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title::after {
+                      display: none; } }
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                font-family: "Neue Montreal", sans-serif;
+                font-family: "GeneralSans Regular", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 20.696px;
+                letter-spacing: -0.2px;
+                color: #ffffff;
+                opacity: 0;
+                max-height: 0;
+                transition: all 0.5s, max-height 0.3s linear; }
+                @media (max-width: 1440px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                    letter-spacing: -0.176px; } }
+                @media (max-width: 1280px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                    font-size: 17px; } }
+                @media (max-width: 375px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                    font-size: 16px;
+                    line-height: 19px;
+                    letter-spacing: -0.176px; } }
+                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content.semi-bold {
+                  font-weight: 600; }
+                @media (max-width: 1440px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                    color: #ffffff;
+                    opacity: 0;
+                    max-height: 0;
+                    transition: all 0.5s, max-height 0.3s linear;
+                    font-size: 15px;
+                    line-height: 21px; } }
+                @media (max-width: 1279px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                    font-size: 10px;
+                    line-height: 13px;
+                    padding-right: 35px;
+                    margin-top: -15px; } }
+                @media (max-width: 699px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                    font-size: 12px;
+                    padding-bottom: 5px; } }
+                @media (max-width: 500px) {
+                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
+                    margin-top: 27px;
+                    font-size: 17.5px;
+                    line-height: 19.5px;
+                    padding-right: 0; } }
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item.active .title::after {
+                content: "-";
                 position: absolute;
                 right: 0; }
-                @media (max-width: 699px) {
-                  .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .title::after {
-                    display: none; } }
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-              font-family: "Neue Montreal", sans-serif;
-              font-family: "GeneralSans Regular", sans-serif;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 20.696px;
-              letter-spacing: -0.2px;
-              color: #ffffff;
-              opacity: 0;
-              max-height: 0;
-              transition: all 0.5s, max-height 0.3s linear; }
-              @media (max-width: 1440px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-                  letter-spacing: -0.176px; } }
-              @media (max-width: 1280px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-                  font-size: 17px; } }
-              @media (max-width: 375px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-                  font-size: 16px;
-                  line-height: 19px;
-                  letter-spacing: -0.176px; } }
-              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content.semi-bold {
-                font-weight: 600; }
-              @media (max-width: 1440px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-                  color: #ffffff;
-                  opacity: 0;
-                  max-height: 0;
-                  transition: all 0.5s, max-height 0.3s linear;
-                  font-size: 15px;
-                  line-height: 21px; } }
-              @media (max-width: 1279px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-                  font-size: 10px;
-                  line-height: 13px;
-                  padding-right: 35px;
-                  margin-top: -15px; } }
-              @media (max-width: 699px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-                  font-size: 12px; } }
-              @media (max-width: 500px) {
-                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item .content {
-                  margin-top: 27px;
-                  font-size: 17.5px;
-                  line-height: 19.5px;
-                  padding-right: 0; } }
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item.active .title::after {
-              content: "-";
-              position: absolute;
-              right: 0; }
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item.active .content {
-              visibility: visible;
-              opacity: 1;
-              max-height: 200px;
-              transition: all 0.5s linear; }
-        .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
-          margin-top: 206px;
-          display: flex;
-          gap: 24px; }
-          @media (max-width: 1440px) {
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
-              margin-top: 127px;
-              margin-bottom: 1.5rem;
-              display: flex;
-              gap: 36px; } }
-          @media (max-width: 1279px) {
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
-              margin-top: 117px;
-              margin-left: -55px; } }
-          @media (max-width: 699px) {
-            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
-              display: none; } }
-          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper a {
-            text-transform: unset;
-            font-size: 14px; }
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .accordion-wrapper .item.active .content {
+                visibility: visible;
+                opacity: 1;
+                max-height: 200px;
+                transition: all 0.5s linear; }
+          .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
+            margin-top: 206px;
+            display: flex;
+            gap: 24px; }
+            @media (max-width: 1440px) {
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
+                margin-top: 127px;
+                margin-bottom: 1.5rem;
+                display: flex;
+                gap: 36px; } }
             @media (max-width: 1279px) {
-              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper a {
-                font-size: 10px;
-                padding: 0 15px; } }
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
+                margin-top: 117px;
+                margin-left: -55px; } }
+            @media (max-width: 699px) {
+              .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper {
+                display: none; } }
+            .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper a {
+              text-transform: unset;
+              font-size: 14px; }
+              @media (max-width: 1279px) {
+                .video-n-accordion .accordion-holder .video-n-accordion-container .copy-block .copy-block-accordion .buttons-wrapper a {
+                  font-size: 10px;
+                  padding: 0 15px; } }
 
 .courses {
   background: #151515;
@@ -2360,12 +2378,12 @@ header {
       padding-top: 60px;
       padding-bottom: 107px; } }
   .courses .courses-container .courses-subtitle {
-    font-family: "Clash Display Medium", sans-serif;
+    font-family: "Neue Montreal", sans-serif;
     color: #ffffff;
     font-size: 31px;
     font-weight: 400;
     line-height: 50.654px;
-    letter-spacing: -1px;
+    letter-spacing: -2px;
     margin-bottom: 7px;
     text-align: center; }
     @media (max-width: 1440px) {
@@ -2501,7 +2519,8 @@ header {
           min-height: 100px; } }
       @media (max-width: 699px) {
         .courses .courses-container .courses-cards-wrapper .card {
-          max-width: 100%; } }
+          max-width: 100%;
+          gap: 300px; } }
       @media (max-width: 1279px) {
         .courses .courses-container .courses-cards-wrapper .card .card-upper {
           margin-left: -10px; } }
@@ -3038,7 +3057,7 @@ header {
         font-size: 40px;
         font-weight: 500;
         line-height: 44.654px;
-        font-family: "Clash Display", sans-serif;
+        font-family: "Clash Display Medium", sans-serif !important;
         text-transform: uppercase;
         color: #ffffff;
         max-width: 579px;
@@ -3082,7 +3101,8 @@ header {
         @media (max-width: 500px) {
           .newsletter .newsletter-container .newsletter-copy h2 {
             font-size: 27px !important;
-            max-width: 320px;
+            max-width: 290px;
+            letter-spacing: -0.5px;
             margin-top: -28px;
             line-height: 29px; } }
       .newsletter .newsletter-container .newsletter-copy form {
@@ -3101,7 +3121,8 @@ header {
           letter-spacing: -0.36px;
           border-radius: 40px;
           border: 1px solid #ffffff;
-          outline: none; }
+          outline: none;
+          width: 75%; }
           @media (max-width: 1440px) {
             .newsletter .newsletter-container .newsletter-copy form input {
               color: #ffffff;
@@ -3116,7 +3137,6 @@ header {
               outline: none; } }
           @media (max-width: 1279px) {
             .newsletter .newsletter-container .newsletter-copy form input {
-              width: 47%;
               font-size: 17px;
               line-height: 21px;
               padding: 1px 15px; } }
@@ -3325,11 +3345,11 @@ header {
             margin-bottom: 12px; } }
         @media (max-width: 699px) {
           .faqs .faqs-container .accordion-wrapper .item .title {
-            font-size: 14.8px; } }
+            font-size: 19.8px; } }
         @media (max-width: 500px) {
           .faqs .faqs-container .accordion-wrapper .item .title {
             margin-bottom: 2px;
-            font-size: 13px; } }
+            font-size: 18px; } }
         .faqs .faqs-container .accordion-wrapper .item .title::after {
           content: "+";
           position: absolute;
@@ -3589,7 +3609,7 @@ header {
       @media (max-width: 500px) {
         .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course {
           max-width: 100%;
-          width: 291px;
+          width: 100%;
           padding: 0; } }
       .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course h3 {
         font-family: "Clash Display Medium", sans-serif;
@@ -3626,12 +3646,12 @@ header {
         @media (max-width: 699px) {
           .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course h3 {
             color: red;
-            margin: 75px 0 191px -91px;
+            margin: 75px 0 250px -91px;
             font-size: 42px;
             line-height: 39px; } }
         @media (max-width: 500px) {
           .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course h3 {
-            margin: 43px 0 113px 13px;
+            margin: 43px 0 230px 13px;
             font-size: 27px;
             line-height: 28px; } }
       .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course p {
@@ -3789,7 +3809,7 @@ header {
   @media (max-width: 699px) {
     .money-back-guarantee {
       margin: 44px 28px;
-      border-radius: 15px; } }
+      border-radius: 24px; } }
   @media (max-width: 500px) {
     .money-back-guarantee {
       margin: 44px 19px;
@@ -3815,7 +3835,7 @@ header {
       font-weight: 400;
       line-height: 50.654px;
       letter-spacing: -1.5px;
-      font-family: "Clash Display", sans-serif;
+      font-family: "Clash Display Medium", sans-serif !important;
       position: relative;
       z-index: 1;
       max-width: 538px;
@@ -3823,7 +3843,7 @@ header {
       color: #ffffff;
       font-weight: 300;
       font-size: 46px;
-      max-width: 591px; }
+      max-width: 571px; }
       @media (max-width: 1440px) {
         .money-back-guarantee .money-back-guarantee-container h2 {
           font-size: 45px;

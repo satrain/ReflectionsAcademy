@@ -135,7 +135,7 @@
 					max-width: 240px;
 					line-height: 20.8px;
 					margin-top: 22px;
-					margin-bottom: 97px;
+					margin-bottom: 38px;
 				}
 			}
 
@@ -237,13 +237,13 @@
 
 		.copy-block {
 			width: 50%;
-			padding: 0 56px 73px 60px;
+			padding: 0 56px 200px 60px;
 			@include media($custom_1440) {
-				padding: 0 56px 70px 57px;
+				padding: 0 56px 150px 57px;
 				margin-bottom: -15px;
 			}
 			@include media($custom_1279) {
-				padding: 0 56px 50px 39px;
+				padding: 0 56px 70px 39px;
 				margin-bottom: -4px;
 			}
 			// @include media(lg) {
@@ -270,7 +270,7 @@
 
 				@include media($custom_1440) {
 					letter-spacing: 1px;
-					line-height: 55px;
+					line-height: 43px;
 					font-weight: 500;
 				}
 				span {

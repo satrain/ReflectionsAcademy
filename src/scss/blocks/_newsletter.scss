@@ -45,7 +45,7 @@
 
 			h2 {
 				@include h-4;
-				font-family: "Clash Display", sans-serif;
+				font-family: "Clash Display Medium", sans-serif !important;
 				text-transform: uppercase;
 				color: $text-light;
 				max-width: 579px;
@@ -80,7 +80,8 @@
 
 				@include media($custom_500) {
 					font-size: 27px !important;
-					max-width: 320px;
+					max-width: 290px;
+					letter-spacing: -0.5px;
 					margin-top: -28px;
 					line-height: 29px;
 				}
@@ -105,6 +106,7 @@
 					border-radius: 40px;
 					border: 1px solid $text-light;
 					outline: none;
+					width: 75%;
 					@include media($custom_1440) {
 						color: $text-light;
 						background: transparent;
@@ -119,7 +121,6 @@
 						outline: none;
 					}
 					@include media($custom_1279) {
-						width: 47%;
 						font-size: 17px;
 						line-height: 21px;
 						padding: 1px 15px;

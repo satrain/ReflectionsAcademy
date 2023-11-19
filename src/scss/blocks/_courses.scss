@@ -24,13 +24,13 @@
 
 	.courses-container {
 		.courses-subtitle {
-			font-family: "Clash Display Medium", sans-serif;
+			font-family: "Neue Montreal", sans-serif;
 			color: $text-light;
 
 			font-size: 31px;
 			font-weight: 400;
 			line-height: 50.654px;
-			letter-spacing: -1px;
+			letter-spacing: -2px;
 			margin-bottom: 7px;
 			text-align: center;
 
@@ -171,6 +171,7 @@
 
 				@include media($custom_699) {
 					max-width: 100%;
+					gap: 300px;
 				}
 
 				.card-upper {
