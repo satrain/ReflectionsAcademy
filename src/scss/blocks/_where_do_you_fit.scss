@@ -184,6 +184,7 @@
 			}
 
 			.course {
+				position: relative;
 				max-width: 445px;
 
 				@include media($custom_1440) {
@@ -205,6 +206,24 @@
 					max-width: 100%;
 					width: 100%;
 					padding: 0;
+				}
+
+				.card-background-radial {
+					position: absolute;
+					z-index: 0;
+					width: 100%;
+					height: 85%;
+					top: 10%;
+					left: 0;
+					border-radius: 370px;
+					background: radial-gradient(
+						70.71% 70.71% at 50% 50%,
+						$primary 0%,
+						rgba(255, 89, 0, 0) 70%
+					);
+					@include media(lg) {
+						height: 68%;
+					}
 				}
 
 				h3 {

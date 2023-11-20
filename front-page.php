@@ -281,6 +281,7 @@
         <h2>Where do you  fit into the picture?</h2>
         <div class="courses-wrapper">
             <div class="course">
+                <div class="card-background-radial hide-desktop"></div>
                 <h3>Wedding photography flash.</h3>
                 <p>An approachable way to learn web design & CSS in Squarespace, get up to speed on freelancing workflows (hourly rates, client contracts), and level up with 1on1 design critiques!</p>
                 <div class="buttons-wrapper">

@@ -3591,6 +3591,7 @@ header {
       height: auto;
       background: #d9d9d9; }
     .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course {
+      position: relative;
       max-width: 445px; }
       @media (max-width: 1440px) {
         .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course {
@@ -3610,6 +3611,18 @@ header {
           max-width: 100%;
           width: 100%;
           padding: 0; } }
+      .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course .card-background-radial {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        height: 85%;
+        top: 10%;
+        left: 0;
+        border-radius: 370px;
+        background: radial-gradient(70.71% 70.71% at 50% 50%, #ff0000 0%, rgba(255, 89, 0, 0) 70%); }
+        @media (max-width: 992px) {
+          .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course .card-background-radial {
+            height: 68%; } }
       .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course h3 {
         font-family: "Clash Display Medium", sans-serif;
         font-size: 40px;
