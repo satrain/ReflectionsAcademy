@@ -14,7 +14,7 @@
             <div class="hero-copy">
                 <p class="hide-desktop">Masterclass by DANILO&SHARON</p>
                 <h2>Our masterclass will make the path of your flash mastery quick and easy.</h2>
-                <a href="#" class="btn btn-secondary"><span>Enroll now </span> <img class="arrow-up" src="http://localhost:10003/wp-content/themes/ReflectionsAcademy/assets/images/icons/arrow-up-right-md.svg" alt=""></a>
+                <a href="#" class="btn btn-secondary"><span>Enroll now </span> <img class="arrow-up" src="<?= get_template_directory_uri() ?>/assets/images/icons/arrow-up-right-md.svg" alt=""></a>
             </div>
             <div class="hero-mock">
                 <img  src="/wp-content/uploads/2023/10/hero-main-image.png" alt="Hero image">
@@ -60,7 +60,8 @@
 
 <div class="our-story section" data-background="dark">
     <div class="container our-story-container">
-        <h2>DANILO&SHARON Our story</h2>
+        <h2 class="hide-mobile">DANILO&SHARON Our story</h2>
+        <h2 class="hide-desktop">Our story DANILO&SHARON</h2>
         <p>Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.</p>
 
         <div class="our-story-list">
