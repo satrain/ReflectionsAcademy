@@ -3602,8 +3602,6 @@ header {
           max-width: 100%;
           padding: 0 113px;
           border-radius: 15px;
-          background-image: url("/wp-content/uploads/2023/10/rectangle.jpg");
-          background-size: cover;
           position: relative;
           z-index: 999; } }
       @media (max-width: 500px) {
