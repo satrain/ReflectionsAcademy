@@ -1683,7 +1683,7 @@ header {
           border: 1px solid #fff;
           flex: 0 0 44.5%;
           margin-left: -15px;
-          border-radius: 15px;
+          border-radius: 24px;
           padding-top: 12px; } }
       @media (max-width: 500px) {
         .our-story .our-story-container .our-story-list .as-featured-in {
@@ -1758,7 +1758,7 @@ header {
         .our-story .our-story-container .our-story-list .previous-destinations {
           border: 1px solid #fff;
           flex: 0 0 44.5%;
-          border-radius: 15px;
+          border-radius: 24px;
           padding-top: 12px; } }
       @media (max-width: 500px) {
         .our-story .our-story-container .our-story-list .previous-destinations {
@@ -1815,7 +1815,7 @@ header {
         @media (max-width: 500px) {
           .our-story .our-story-container .our-story-list .previous-destinations p {
             font-size: 19px;
-            margin-top: 99px;
+            margin-top: 220px;
             line-height: 24.5px; } }
 
 .online-lessons {
