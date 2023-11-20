@@ -75,8 +75,7 @@ p {
       padding: 5px 15px; } }
 
 .sliding-text-container {
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
   .sliding-text-container .sliding-text {
     font-family: "Clash Display Medium", sans-serif;
     font-size: 200px;
@@ -1164,8 +1163,7 @@ header {
 .about-reflections-homepage .dream-outcome {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  margin-top: 124px; }
+  align-items: flex-end; }
   @media (max-width: 1440px) {
     .about-reflections-homepage .dream-outcome {
       margin-top: 4rem; } }
@@ -1363,7 +1361,7 @@ header {
         width: 100%; } }
     .about-reflections-homepage .dream-outcome .image-block img {
       filter: grayscale(1);
-      max-height: 650px;
+      max-height: 700px;
       object-fit: cover; }
       @media (max-width: 1279px) {
         .about-reflections-homepage .dream-outcome .image-block img {
