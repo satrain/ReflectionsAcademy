@@ -1391,7 +1391,7 @@ header {
       margin-top: -23px; } }
   .about-reflections-homepage .decade-of-building .copy-block {
     width: 50%;
-    padding: 0 56px 200px 60px; }
+    padding: 0 56px 130px 60px; }
     @media (max-width: 1440px) {
       .about-reflections-homepage .decade-of-building .copy-block {
         padding: 0 56px 150px 57px;
@@ -1519,7 +1519,8 @@ header {
       .about-reflections-homepage .decade-of-building .image-block {
         width: 100%; } }
     .about-reflections-homepage .decade-of-building .image-block img {
-      object-fit: cover; }
+      object-fit: cover;
+      max-height: 700px; }
       @media (max-width: 1279px) {
         .about-reflections-homepage .decade-of-building .image-block img {
           max-height: 500px; } }
