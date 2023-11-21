@@ -1,171 +1,397 @@
 .about-reflections-homepage {
+	.dream-outcome {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		@include media($custom_1440) {
+			margin-top: 4rem;
+		}
+		@include media($custom_699) {
+			flex-direction: column-reverse;
+			gap: 21px;
+		}
 
-    .dream-outcome {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        @include media(lg) {
-            flex-direction: column-reverse;
-            gap: 40px;
-        }
+		.copy-block {
+			width: 50%;
+			padding-bottom: 73px;
+			@include media($custom_1440) {
+				padding-bottom: 80px;
+			}
 
-        .copy-block {
-            width: 50%;
-            padding-bottom: 73px;
-            @include media(lg) {
-                padding-bottom: 60px;
-                width: 100%;
-            }
-            
-            .p-above-title {
-                max-width: 130px;
-                color: #000;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 18.196px;
-                letter-spacing: -0.2px;
-                margin-bottom: 37px;
-            }
+			@include media($custom_1279) {
+				padding-bottom: 42px;
+				padding-left: 40px;
+			}
+			@include media($custom_699) {
+				padding-bottom: 60px;
+				width: 100%;
+				padding-left: 19px;
+			}
 
-            h2 {
-                @include h-2;
-                color: $text-dark;
-                text-transform: uppercase;
-                max-width: 370px;
-                span {
-                    color: $primary;
-                }
-                @include media(lg) {
-                    font-size: 30px;
-                    line-height: 28px;
-                    letter-spacing: -0.6px;
-                    max-width: 270px;
-                }
-            }
+			@include media($custom_500) {
+				padding-bottom: 82px;
+			}
 
-            p {
-                @include p-1;
-                margin-top: 17px;
-                margin-bottom: 47px;
-                max-width: 440px;
-                @include media(lg) {
-                    margin-bottom: 27px;
-                }
-            }
+			.p-above-title {
+				max-width: 147px;
+				color: #000;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 18.196px;
+				letter-spacing: -0.2px;
+				margin-bottom: 37px;
+				@include media($custom_1440) {
+					max-width: 145px;
+					color: #000;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 18.196px;
+					letter-spacing: -0.2px;
+					margin-bottom: 37px;
+				}
 
-            a {
-                text-transform: unset;
+				@include media($custom_1279) {
+					font-size: 10px;
+					margin-bottom: 24px;
+					max-width: 88px;
+					line-height: 11.2px;
+				}
+			}
 
-                &.dream-outcome-btn-light {
-                    border: 1px solid #000;
-                    color: #000;
-                }
-    
-                &.dream-outcome-btn-dark {
-                    background: #000;
-                    border: 1px solid #000;
-                    color: $bg-light;
-                    margin-left: 25px;
-                    @include media(lg) {
-                        margin-left: 0;
-                    }
-                }
-            }
+			h2 {
+				@include h-2;
+				font-family: "Clash Display Medium", sans-serif;
+				font-weight: 300;
+				color: $text-dark;
+				text-transform: uppercase;
+				max-width: 556px;
+				font-size: 60px;
+				line-height: 49px;
+				@include media($custom_1440) {
+					max-width: 500px;
+					font-size: 55px;
+					margin-left: -0.2rem;
+					letter-spacing: -1px;
+				}
+				span {
+					color: $primary;
+				}
+				@include media($custom_1279) {
+					font-size: 32px;
+					line-height: 31px;
+					letter-spacing: -0.5px;
+					max-width: 291px;
+				}
+				@include media($custom_699) {
+					font-size: 31px;
+					line-height: 27px;
+					max-width: 293px;
+				}
 
-        }
+				@include media($custom_500) {
+					margin-top: 15px;
+					font-size: 30px;
+					max-width: 273px;
+					margin-left: 2px;
+				}
+			}
 
-        .image-block {
-            width: 50%;
-            @include media(lg) {
-                width: 100%;
-            }
+			p {
+				@include p-1;
+				font-family: "Helvetica Neue", sans-serif;
+				margin-top: 17px;
+				margin-bottom: 47px;
+				max-width: 470px;
 
-            img {
-                filter: grayscale(1);
-                max-height: 650px;
-                object-fit: cover;
-                @include media(md) {
-                    height: 300px;
-                }
-            }
-        }
+				@include media($custom_1440) {
+					font-weight: 400;
+					line-height: 17.7px;
 
-    }
+					margin-top: 17px;
+					margin-bottom: 47px;
+					max-width: 400px;
+					font-size: 15px;
+				}
 
-    .decade-of-building {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: flex-end;
-        margin-top: -7px;
-        @include media(lg) {
-            flex-direction: column-reverse;
-            margin-top: 0;
-            gap: 40px;
-        }
+				@include media($custom_1279) {
+					margin-bottom: 27px;
+					font-size: 11px;
+					line-height: 12.7px;
+					max-width: 268px;
+				}
 
-        .copy-block {
-            width: 50%;
-            padding: 0 56px 73px 60px;
-            @include media(lg) {
-                padding: 0 20px;
-                padding-bottom: 60px;
-                width: 100%;
-            }
+				@include media($custom_699) {
+					font-size: 12px;
+					max-width: 346px;
+					margin-left: -3px;
+					line-height: 13.8px;
+					margin-top: 40px;
+				}
 
-            h2 {
-                @include h-2;
-                color: $text-dark;
-                text-transform: uppercase;
-                max-width: 400px;
-                span {
-                    color: $primary;
-                }
-                @include media(lg) {
-                    font-size: 30px;
-                    line-height: 28px;
-                    letter-spacing: -0.6px;
-                }
-            }
+				@include media($custom_500) {
+					margin-left: 1px;
+					font-size: 14px;
+					max-width: 240px;
+					line-height: 20.8px;
+					margin-top: 22px;
+					margin-bottom: 38px;
+				}
+			}
 
-            p {
-                @include p-1;
-                margin-top: 17px;
-                margin-bottom: 47px;
-                max-width: 485px;
-                @include media(lg) {
-                    margin-bottom: 27px;
-                }
-            }
+			a {
+				text-transform: unset;
 
-            a {
-                text-transform: unset;
-    
-                &.dream-outcome-btn-dark {
-                    background: #000;
-                    border: 1px solid #000;
-                    color: $bg-light;
-                }
-            }
+				&.dream-outcome-btn-light {
+					border: 1px solid #000;
+					color: #000;
 
-        }
+					@include media($custom_1440) {
+						font-size: 15px;
+						display: inline-block;
+					}
 
-        .image-block {
-            width: 50%;
-            display: flex;
-            @include media(lg) {
-                width: 100%;
-            }
+					@include media($custom_1279) {
+						font-size: 10px;
+						padding: 0 14px;
+						margin-right: 10px;
+					}
 
-            img {
-                object-fit: cover;
-                max-height: 650px;
-                @include media(md) {
-                    height: 300px;
-                }
-            }
-        }
+					@include media($custom_699) {
+						display: none;
+					}
+				}
 
-    }
+				&.dream-outcome-btn-dark {
+					background: #000;
+					border: 1px solid #000;
+					color: $bg-light;
+					margin-left: 25px;
+					@include media($custom_1279) {
+						margin: 0;
+						font-size: 10px;
+						padding: 7px 14px;
+					}
 
+					@include media($custom_699) {
+						display: inline-block;
+						margin-top: 18px;
+						padding: 1px 16px;
+						font-size: 12px;
+						margin-left: -5px;
+					}
+
+					@include media($custom_500) {
+						margin-top: 10px;
+						padding: 7px 28px;
+						font-size: 15px;
+						margin-left: -1px;
+					}
+				}
+			}
+		}
+
+		.image-block {
+			width: 50%;
+			@include media($custom_699) {
+				width: 100%;
+			}
+
+			img {
+				filter: grayscale(1);
+				max-height: 700px;
+				object-fit: cover;
+				@include media($custom_1279) {
+					max-height: 420px;
+				}
+
+				@include media($custom_699) {
+					max-height: 184px;
+				}
+
+				@include media($custom_500) {
+					max-height: 225px;
+				}
+			}
+		}
+	}
+
+	.decade-of-building {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: center;
+		align-items: flex-end;
+		margin-top: -7px;
+		@include media($custom_1440) {
+			margin-top: -12px;
+		}
+
+		@include media($custom_1279) {
+			margin-top: -10px;
+		}
+		@include media($custom_699) {
+			flex-direction: column-reverse;
+			gap: 21px;
+			margin-top: -23px;
+		}
+
+		.copy-block {
+			width: 50%;
+			padding: 0 56px 73px 60px;
+			@include media($custom_1440) {
+				padding: 0 56px 88px 57px;
+				margin-bottom: -15px;
+			}
+			@include media($custom_1279) {
+				padding: 0 56px 70px 39px;
+				margin-bottom: -4px;
+			}
+			// @include media(lg) {
+			// 	padding: 0 20px;
+			// 	padding-bottom: 60px;
+			// 	width: 100%;
+			// }
+
+			@include media($custom_699) {
+				width: 100%;
+				padding: 9px 56px 28px 13px;
+			}
+
+			@include media($custom_500) {
+				padding-bottom: 57px;
+			}
+
+			h2 {
+				@include h-2;
+				color: $text-dark;
+				text-transform: uppercase;
+				max-width: 400px;
+				line-height: 46px;
+
+				@include media($custom_1440) {
+					letter-spacing: 1px;
+					line-height: 43px;
+					font-weight: 500;
+				}
+				span {
+					color: $primary;
+				}
+				@include media($custom_1279) {
+					font-weight: 500;
+					font-size: 36px;
+					line-height: 32px;
+					letter-spacing: -0.6px;
+					max-width: 331px;
+				}
+
+				@include media($custom_699) {
+					font-size: 31px;
+					line-height: 27px;
+					max-width: 318px;
+				}
+
+				@include media($custom_500) {
+					font-size: 30px;
+					margin-top: 11px;
+					margin-left: 8px;
+					max-width: 306px;
+					line-height: 27.2px;
+				}
+			}
+
+			p {
+				font-family: "Helvetica Neue", sans-serif;
+				margin-top: 17px;
+				margin-bottom: 47px;
+				max-width: 485px;
+
+				@include media($custom_1440) {
+					max-width: 430px;
+					font-size: 14px;
+					line-height: 18px;
+				}
+				@include media($custom_1279) {
+					margin-bottom: 20px;
+					max-width: 305px;
+					font-size: 10px;
+					margin-top: 3px;
+					line-height: 13px;
+				}
+
+				@include media($custom_699) {
+					font-size: 11px;
+					max-width: 331px;
+					margin-top: 37px;
+					line-height: 15px;
+					margin-left: 2px;
+					margin-bottom: 15px;
+				}
+
+				@include media($custom_500) {
+					margin-top: 22px;
+					font-size: 15px;
+					max-width: 270px;
+					line-height: 20.5px;
+					margin-left: 8px;
+				}
+			}
+
+			a {
+				text-transform: unset;
+				margin-left: -2px;
+
+				&.dream-outcome-btn-dark {
+					background: #000;
+					border: 1px solid #000;
+					color: $bg-light;
+					// display: inline-block;
+					margin-top: -10px;
+
+					@include media($custom_1279) {
+						padding: 7px 14px;
+						font-size: 10px;
+					}
+
+					@include media($custom_699) {
+						font-size: 12px;
+						margin-left: 4px;
+						padding: 0 13px;
+						display: inline-block;
+					}
+
+					@include media($custom_500) {
+						margin-top: 16px;
+						padding: 7px 28px;
+						font-size: 15px;
+						margin-left: 8px;
+					}
+				}
+			}
+		}
+
+		.image-block {
+			width: 50%;
+			display: flex;
+			height: auto;
+
+			@include media($custom_699) {
+				width: 100%;
+			}
+
+			img {
+				object-fit: cover;
+				max-height: 650px;
+				@include media($custom_1279) {
+					max-height: 500px;
+				}
+
+				@include media($custom_699) {
+					max-height: 239px;
+				}
+
+				@include media($custom_500) {
+					max-height: 288px;
+				}
+			}
+		}
+	}
 }

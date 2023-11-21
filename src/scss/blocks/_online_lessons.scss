@@ -1,104 +1,247 @@
 .online-lessons {
-    background: $bg-dark;
-    padding-top: 170px;
-    padding-bottom: 53px;
-    @include media(lg) {
-        padding-top: 44px;
-        padding-bottom: 58px;
-    }
+	background: $bg-dark;
+	padding-top: 170px;
+	padding-bottom: 53px;
+	@include media($custom_1440) {
+		padding-top: 150px;
+		padding-bottom: 46px;
+	}
+	// @include media(lg) {
+	// 	padding-top: 44px;
+	// 	padding-bottom: 58px;
+	// }
 
-    .online-lessons-container {
-        
-        @include media(lg) {
-            span {
-                color: #FFF;
+	@include media($custom_1279) {
+		padding-top: 95px;
+		padding-bottom: 33px;
+	}
 
-                font-family: 'Clash Display Regular', sans-serif;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 14px;
-                text-transform: uppercase;
-            }
-        }
+	@include media($custom_699) {
+		padding-top: 46px;
+		padding-bottom: 10px;
+	}
 
-        h2 {
-            color: $text-light;
-            text-align: center;
-            font-size: 160px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 130px;
-            letter-spacing: -1.6px;
-            text-transform: uppercase;
-            span {
-                color: $primary;
-            }
-            img {
-                width: auto;
-                vertical-align: bottom;
-                cursor: pointer;
-                transform: scale(1.25);
-            }
-            &.hide-desktop {
-                @include media(lg) {
-                    color: #FFF;
-                    margin-top: 19px;
+	@include media($custom_500) {
+		padding-bottom: 31px;
+	}
 
-                    font-family: 'Clash Display Medium', sans-serif;
-                    font-size: 45px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 40px;
-                    letter-spacing: -0.9px;
-                    text-transform: uppercase;
-                    text-align: left;
-                    span {
-                        font-family: 'Clash Display Medium', sans-serif;
-                        font-size: 45px;
-                        font-style: normal;
-                        font-weight: 500;
-                        line-height: 40px;
-                        letter-spacing: -0.9px;
-                        text-transform: uppercase;
-                        text-align: left;
-                    }
-                }
-            }
-        }
+	.online-lessons-container {
+		@include media($custom_1279) {
+			span {
+				color: #fff;
 
-        p {
-            max-width: 592px;
-            margin: 73px auto 41px;
-            color: $text-light;
-            text-align: center;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 25.196px;
-            letter-spacing: -0.2px;
-            @include media(lg) {
-                margin: 28px auto;
-                text-align: left;
-                font-size: 30px;
-                line-height: 30.5px;
-                letter-spacing: -0.6px;
-            }
-        }
+				font-family: "Clash Display Medium", sans-serif;
+				font-size: 100px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px;
+				text-transform: uppercase;
 
-        .online-lessons-btn {
-            margin: 0 auto;
-            display: block;
-            width: fit-content;
-            color: $text-light;
-            background: $primary;
-            border: 1px solid $primary;
-            text-transform: unset;
-            @include media(lg) {
-                margin: 0;
-            }
-        }
+				@include media($custom_699) {
+					color: #fff;
 
-    }
+					font-family: "Clash Display Medium", sans-serif;
+					font-size: 13px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 14px;
+					text-transform: uppercase;
+					margin-bottom: 20px;
+				}
 
+				@include media($custom_500) {
+					font-size: 14px;
+					margin-left: 1px;
+					margin-top: -1px;
+				}
+			}
+		}
+
+		@include media($custom_699) {
+			padding: 0 24px;
+		}
+
+		h2 {
+			color: $text-light;
+			text-align: center;
+			font-size: 160px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 130px;
+			letter-spacing: -1.6px;
+			text-transform: uppercase;
+			@include media($custom_1440) {
+				color: $text-light;
+				text-align: center;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 142px;
+				line-height: 110px;
+				letter-spacing: -1.6px;
+				text-transform: uppercase;
+			}
+			@include media($custom_1279) {
+				font-size: 97px;
+				line-height: 84px;
+			}
+			span {
+				color: $primary;
+				font-family: "Clash Display Medium", sans-serif;
+				@include media($custom_1279) {
+					font-size: 96px;
+				}
+			}
+			.lessons {
+				margin-top: -13px;
+				margin-left: 10px;
+				color: white;
+				display: inline-block;
+				letter-spacing: -7px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include media($custom_1279) {
+					margin-top: -39px;
+					letter-spacing: 0.1px;
+					font-weight: bold;
+				}
+			}
+			img {
+				width: auto;
+				vertical-align: bottom;
+				cursor: pointer;
+				transform: scale(0.85);
+				margin: 0 -10px 0 -4px;
+
+				@include media($custom_1279) {
+					transform: scale(0.6);
+					margin: 0 -34px 0 -27px;
+				}
+			}
+			&.hide-desktop {
+				@include media($custom_699) {
+					color: #fff;
+					margin-top: 9px;
+
+					font-family: "Clash Display Medium", sans-serif;
+					font-size: 45px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 28px;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					max-width: 200px;
+					span {
+						font-family: "Clash Display Medium", sans-serif;
+						font-size: 45px;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 40px;
+						letter-spacing: 1px;
+						text-transform: uppercase;
+						text-align: left;
+						margin-left: -32px;
+
+						@include media($custom_500) {
+							font-size: 40px;
+							margin-left: -48px;
+						}
+					}
+				}
+
+				@include media($custom_500) {
+					font-size: 40px;
+				}
+			}
+		}
+
+		p {
+			max-width: 681px;
+			margin: 73px auto 41px;
+			color: $text-light;
+			text-align: center;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 25.196px;
+			letter-spacing: -0.2px;
+			font-family: "Neue Montreal", sans-serif;
+			@include media($custom_1440) {
+				max-width: 543px;
+				margin: 45px auto 41px;
+				color: $text-light;
+				text-align: center;
+				font-size: 19px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 25.196px;
+				letter-spacing: -0px;
+			}
+			@include media($custom_1279) {
+				margin: 0 auto;
+				text-align: center;
+				font-size: 13px;
+				max-width: 338px;
+				line-height: 18.5px;
+				letter-spacing: -0.6px;
+			}
+
+			@include media($custom_699) {
+				text-align: left;
+				max-width: 458px;
+				font-size: 25.8px;
+				margin-left: -1px;
+				line-height: 28.5px;
+				margin: 0;
+			}
+
+			@include media($custom_500) {
+				max-width: 271px;
+				font-size: 24px;
+				line-height: 30px;
+				margin-left: -2px;
+				margin-top: -1px;
+			}
+		}
+
+		.online-lessons-btn {
+			margin: 0 auto;
+			display: block;
+			width: fit-content;
+			color: $text-light;
+			background: $primary;
+			border: 1px solid $primary;
+			text-transform: unset;
+			padding: 5px 21px;
+
+			@include media($custom_1440) {
+				margin: -0.3rem auto 0;
+				display: block;
+				width: fit-content;
+				color: $text-light;
+				background: $primary;
+				border: 1px solid $primary;
+				text-transform: unset;
+				font-size: 14px;
+				padding: 3px 21px;
+			}
+			@include media($custom_1279) {
+				margin-top: 20px;
+				padding: 0 11px;
+				font-size: 11px;
+			}
+
+			@include media($custom_699) {
+				display: inline-block;
+				margin: 30px 0;
+				padding: 2px 21px;
+			}
+
+			@include media($custom_500) {
+				margin-top: 31px;
+				font-size: 14px;
+				padding: 6px 28px;
+			}
+		}
+	}
 }

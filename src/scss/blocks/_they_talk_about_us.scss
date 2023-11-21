@@ -1,35 +1,139 @@
 .they-talk-about-us {
-    background: $bg-dark;
-    padding-top: 58px;
-    padding-bottom: 73px;
-    @include media(lg) {
-        padding-top: 38px;
-        padding-bottom: 38px;
-    }
+	background: $bg-dark;
+	padding-top: 58px;
+	padding-bottom: 78px;
+	@include media($custom_1440) {
+		padding-bottom: 70px;
+	}
+	@include media($custom_1279) {
+		padding-top: 38px;
+		padding-bottom: 55px;
+	}
 
-    h2 {
-        @include p-1;
-        color: $bg-light;
-        text-align: center;
-    }
+	@include media($custom_699) {
+		padding-top: 7px;
+		padding-bottom: 38px;
+	}
 
-    .brand-logos-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 104px;
-        margin-top: 40px;
-        @include media(lg) {
-            // overflow: hidden;
-            // width: 100%; /* Ensure the container takes up the full width */
-        }
-        img {
-            width: auto;
-            @include media(lg) {
-                // flex: 0 0 100%; /* Each logo takes up the full width */
-                // transition: transform 0.3s ease-in-out; /* Smooth sliding transition */
-            }
-        }
-    }
+	h2 {
+		@include p-1;
+		color: $bg-light;
+		text-align: center;
+		margin-top: 2px;
 
+		@include media($custom_1440) {
+			margin-top: 0;
+		}
+
+		@include media($custom_1279) {
+			font-size: 12px;
+		}
+	}
+
+	.brand-logos-wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		// gap: 85px;
+		margin-top: 35px;
+		@include media(lg) {
+			// overflow: hidden;
+			// width: 100%; /* Ensure the container takes up the full width */
+		}
+
+		@include media($custom_1279) {
+			margin-top: 13px;
+		}
+
+		@include media($custom_500) {
+			margin-top: 25px;
+			gap: 35px;
+			margin-left: 36px;
+			margin-bottom: 10px;
+		}
+		img {
+			width: auto;
+
+			&:nth-child(1) {
+				height: 40px;
+				@include media($custom_1440) {
+					height: 30px;
+				}
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translateY(7px);
+				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(11px, 8px);
+				}
+				@include media($custom_500) {
+					height: 12px;
+					transform: translate(6px, 8px);
+				}
+			}
+			&:nth-child(2) {
+				height: 40px;
+				@include media($custom_1440) {
+					height: 30px;
+				}
+				transform: translate(-30px);
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translate(-22px, 6px);
+				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(1px, 8px);
+				}
+				@include media($custom_500) {
+					height: 12px;
+					transform: translate(-8px, 8px);
+				}
+			}
+			&:nth-child(3) {
+				height: 40px;
+				@include media($custom_1440) {
+					height: 30px;
+				}
+				transform: translate(-30px);
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translate(-22px, 6px);
+				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(-8px, 8px);
+				}
+				@include media($custom_500) {
+					height: 12px;
+					transform: translate(-25px, 8px);
+				}
+			}
+			&:nth-child(4) {
+				height: 40px;
+				@include media($custom_1440) {
+					height: 30px;
+				}
+				transform: translate(-67px);
+				@include media($custom_1279) {
+					height: 20px;
+					transform: translate(-47px, 6px);
+				}
+				@include media($custom_699) {
+					height: 14px;
+					transform: translate(-8px, 8px);
+				}
+				@include media($custom_500) {
+					height: 12px;
+					transform: translate(-42px, 8px);
+				}
+			}
+
+			@include media(lg) {
+				// flex: 0 0 100%; /* Each logo takes up the full width */
+				// transition: transform 0.3s ease-in-out; /* Smooth sliding transition */
+			}
+		}
+	}
 }

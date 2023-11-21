@@ -1,91 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 @keyframes slideText {
-    0% {
-      transform: translateX(0); 
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 html {
-    scroll-behavior: smooth; // can mess up with Scroll To Top, also prevents scrolling with mouse3 button, comment it out if needed
-    overflow-x: hidden;
+	scroll-behavior: smooth; // can mess up with Scroll To Top, also prevents scrolling with mouse3 button, comment it out if needed
+	overflow-x: hidden;
 }
 
 body {
-    color: $text-dark;
-    overflow-x: hidden;
+	color: $text-dark;
+	overflow-x: hidden;
 }
 
 .container {
-    padding: 0 60px;
-    @include media($custom_1440) {
-        padding: 0 56px;
-    }
-    @include media(lg) {
-        padding: 0 20px;
-    }
+	padding: 0 60px;
+	@include media($custom_1440) {
+		padding: 0 56px;
+	}
+	@include media($custom_1279) {
+		padding: 0 20px;
+	}
 }
 
 img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 p {
-    font-family: 'GeneralSans Regular', sans-serif;
+	font-family: "GeneralSans Regular", sans-serif;
 }
 
 .btn {
-    @include p-2;
+	@include p-2;
 
-    padding: 5px 21px;
-    border-radius: $radius-1;
-    border: 1px solid $primary-border;
+	border-radius: $radius-1;
+	border: 1px solid $primary-border;
 
-    text-decoration: none;
-    @include media(md) {
-        padding: 5px 15px;
-    }
-    // text-transform: uppercase;
+	text-decoration: none;
+	@include media($custom_1440) {
+		padding: 5px 21px;
+	}
+	@include media(md) {
+		padding: 5px 15px;
+	}
+	// text-transform: uppercase;
 }
 
 .btn-primary {
-    color: $text-light;
+	color: $text-light;
+	padding: 10px 21px;
+
+	@include media($custom_1440) {
+		margin-right: -0.8rem;
+		padding: 5px 17px;
+	}
 }
 
 .btn-secondary {
-    background: $bg;
-    color: $text-dark;
+	padding: 10px 21px;
+
+	background: $bg;
+	color: $text-dark;
+	@include media($custom_1440) {
+		padding: 5px 15px;
+	}
 }
 
 .sliding-text-container {
-    width: 100%;
-    overflow: hidden;
-    .sliding-text {
-        @include h-1;
-        font-family: 'Clash Display Medium', sans-serif;
-        text-transform: uppercase;
-        white-space: pre;
-        animation: slideText 30s linear infinite;
-    }
+	width: 100%;
+	.sliding-text {
+		@include h-1;
+		font-family: "Clash Display Medium", sans-serif;
+		text-transform: uppercase;
+		white-space: pre;
+		animation: slideText 30s linear infinite;
+
+		@include media($custom_1440) {
+			font-size: 11rem;
+			margin-top: -1rem;
+		}
+
+		@include media($custom_699) {
+			animation-duration: 10s;
+		}
+	}
 }
 
 .hide-desktop {
-    display: none;
-    @include media(lg) {
-        display: block;
-    }
+	display: none;
+	@include media($custom_699) {
+		display: block;
+	}
 }
 
 .hide-mobile {
-    @include media(lg) {
-        display: none;
-    }
+	margin-top: -0.4rem;
+	margin-left: -0.2rem;
+	@include media($custom_699) {
+		display: none;
+	}
+}
+
+.sliding-text {
+	margin-top: -1.7rem;
+	font-size: 100px;
+}
+
+.arrow-up {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	display: inline-block;
+
+	@include media($custom_1279) {
+		width: 15px;
+		height: 15px;
+	}
+
+	@include media($custom_500) {
+		margin-left: 10px;
+	}
+}
+
+.vogue,
+.elle,
+.lane,
+.brides {
+	width: 30px;
+	height: 30px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.hero-image {
+	display: none;
+	@include media($custom_699) {
+		display: block;
+		margin-top: 36px;
+		margin-bottom: 31px;
+		max-height: 262px;
+	}
+
+	@include media($custom_500) {
+		margin-top: 26px;
+	}
 }

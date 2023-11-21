@@ -1,174 +1,375 @@
 .video-n-accordion {
-    position: relative;
-    @include media(lg) {
-        margin-top: -2px;
-    }
+	position: relative;
+	@include media(lg) {
+		margin-top: -2px;
+	}
 
-    .video-holder {
-        position: relative;
-    }
+	.video-holder {
+		position: relative;
+	}
 
-    .play-btn {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        cursor: pointer;
-        @include media(lg) {
-            width: 102px;
-            height: 102px;
-        }
-        svg {
-            @include media(lg) {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
+	.play-btn {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		cursor: pointer;
+		@include media($custom_1279) {
+			width: 167px;
+		}
+		@include media($custom_699) {
+			width: 175px;
+			margin-top: 10px;
+		}
 
-    .accordion-holder {
-        padding: 0 60px 83px;
-        @include media(lg) {
-            padding: 0;
-        }
+		@include media($custom_500) {
+			width: 112px;
+			margin-top: 5px;
+		}
+		svg {
+			@include media(lg) {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
 
-        .video-n-accordion-container {
-            position: relative;
-            border-radius: $radius-2;
-            background: $primary;
-            padding: 40px;
-            margin-top: -85px;
-            z-index: 2;
-            @include media(lg) {
-                border-radius: 0;
-                margin-top: -8px;
-                padding: 41px 20px;
-            }
+	.accordion-holder {
+		padding: 0 60px 61px;
+		@include media($custom_1440) {
+			padding: 0 50px 80px;
+		}
+		// @include media(lg) {
+		// 	padding: 0;
+		// }
 
-            .copy-block {
-                display: flex;
-                justify-content: space-between;
-                gap: 160px;
-                @include media(lg) {
-                    flex-direction: column;
-                    gap: 48px;
-                }
+		@include media($custom_1279) {
+			padding: 0 35px 45px;
+		}
 
-                .copy-block-text {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+		@include media($custom_699) {
+			padding: 0 !important;
+			margin-top: 65px;
+		}
 
-                    h2 {
-                        @include h-3;
-                        font-weight: 500;
-                        line-height: 46px;
-                        letter-spacing: -0.5px;
-                        text-transform: uppercase;
-                        color: $text-light;
-                        max-width: 435px;
+		.video-n-accordion-container {
+			position: relative;
+			border-radius: $radius-2;
+			background: $primary;
+			margin-top: -124px;
+			z-index: 2;
+			padding: 30px 20px;
+			@include media($custom_1440) {
+				position: relative;
+				border-radius: $radius-2;
+				background: $primary;
+				padding: 15px 0 15px;
+				margin-top: -102px;
+				z-index: 2;
+			}
+			@include media($custom_1279) {
+				// border-radius: 0;
+				margin-top: -72px;
+				padding: 41px 20px 0px;
+				border-radius: 22px;
+			}
 
-                        span {
-                            color: $text-dark;
-                        }
-                    }
+			@include media($custom_699) {
+				border-radius: 0;
+				padding-bottom: 48px;
+			}
 
-                    p {
-                        color: $text-light;
-                        font-size: 16px;
-                        font-weight: 400;
-                        line-height: 18.196px;
-                        letter-spacing: -0.2px;
-                        max-width: 202px;
-                    }
+			@include media($custom_500) {
+				padding-bottom: 82px;
+			}
 
-                }
+			.copy-block {
+				display: flex;
+				justify-content: space-between;
+				gap: 160px;
+				@include media($custom_699) {
+					flex-direction: column;
+					gap: 48px;
+				}
 
-                .copy-block-accordion {
+				@include media($custom_699) {
+					gap: 86px;
+				}
 
-                    .accordion-wrapper {
-                        max-width: 554px;
+				.copy-block-text {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					@include media($custom_1440) {
+						justify-content: unset;
+						gap: 227px;
+						margin-left: 19px;
+					}
 
-                        .item {
-                            padding-top: 12px;
-                            margin-bottom: 20px;
-                            border-top: 1px solid $text-light;
+					@include media($custom_1279) {
+						gap: 125px;
+						margin-left: 0;
+					}
 
-                            .title {
-                                position: relative;
-                                color: $text-light;
-                                font-size: 21px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: 18.196px;
-                                letter-spacing: -0.2px;
-                                margin-bottom: 20px;
-                                cursor: pointer;
-                                outline: none;
-                                transition: .5s;
-                                @include media(lg) {
-                                    font-size: 30px;
-                                    font-weight: 400;
-                                    line-height: 30px;
-                                    letter-spacing: -0.2px;
-                                }
+					h2 {
+						@include h-3;
+						font-family: "Clash Display Medium", sans-serif;
+						font-weight: 500;
+						line-height: 46px;
+						letter-spacing: -0.5px;
+						text-transform: uppercase;
+						color: $text-light;
+						max-width: 435px;
+						margin-top: 38px;
+						margin-left: 10px;
 
-                                &::after {
-                                    content: '+';
-                                    position: absolute;
-                                    right: 0;
-                                }
-                            }
+						@include media($custom_1440) {
+							font-weight: 500;
+							line-height: 43px;
+							letter-spacing: -0.5px;
+							text-transform: uppercase;
+							color: $text-light;
+							max-width: 435px;
+							font-size: 45px;
+							margin-top: 35px;
+							margin-left: 20px;
+						}
 
-                            .content {
-                                @include p-1;
-                                font-family: 'GeneralSans Light', sans-serif;
-                                color: $text-light;
-                                opacity: 0;
-                                max-height: 0;
-                                transition: all .5s, max-height .3s linear;
-                            }
+						@include media($custom_1279) {
+							line-height: 28px;
+							max-width: 456px;
+							font-size: 30px;
+							margin-top: -5px;
+							margin-left: 6px;
+						}
 
-                            &.active {
-                                .title {
-                                    &::after {
-                                        content: '-';
-                                        position: absolute;
-                                        right: 0;
-                                    }
-                                }
+						@include media($custom_699) {
+							line-height: 27px;
+							max-width: 381px;
+							font-size: 31px;
+							margin-top: 13px;
+						}
 
-                                .content {
-                                    visibility: visible;
-                                    opacity: 1;
-                                    max-height: 200px;
-                                    transition: all .5s linear;
-                                }
-                            }
+						@include media($custom_500) {
+							margin-left: -1px;
+							line-height: 29px;
+							max-width: 268px;
+							margin-top: 11px;
+							font-size: 29px;
+						}
 
-                        }
+						span {
+							color: $text-dark;
+						}
+					}
 
-                    }
+					p {
+						color: $text-light;
+						font-size: 16px;
+						font-weight: 400;
+						line-height: 18.196px;
+						letter-spacing: -0.2px;
+						max-width: 202px;
+						@include media($custom_1440) {
+							color: $text-light;
+							font-size: 14px;
+							font-weight: 400;
+							line-height: 18.196px;
+							letter-spacing: -0.2px;
+							max-width: 202px;
+							margin-left: 1.5rem;
+						}
 
-                    .buttons-wrapper {
-                        margin-top: 206px;
-                        display: flex;
-                        gap: 24px;
+						@include media($custom_1279) {
+							margin-top: 1.8rem;
+							margin-left: 6px;
+							line-height: 11.2px;
+							max-width: 142px;
+							font-size: 9px;
+							margin-bottom: 1rem;
+						}
+					}
+				}
 
-                        a {
-                            text-transform: unset;
-                        }
-                        @include media(lg) {
-                            display: none;
-                        }
-                    }
+				.copy-block-accordion {
+					padding-right: 15px;
+					@include media($custom_1440) {
+						padding-right: 25px;
+					}
 
-                }
+					@include media($custom_1279) {
+						padding-right: 0;
+					}
 
-            }
+					@include media($custom_699) {
+						align-self: flex-start;
+						margin-left: 43px;
+					}
 
-        }
+					@include media($custom_500) {
+						margin-top: -33px;
+						margin-left: 36px;
+					}
+					.accordion-wrapper {
+						max-width: 554px;
+						margin-top: 50px;
+						@include media($custom_1440) {
+							max-width: 520px;
+							margin-top: 3rem;
+						}
 
-    }
+						@include media($custom_1279) {
+							margin-top: 0;
+							margin-left: -35px;
+						}
 
+						@include media($custom_699) {
+							max-width: 395px;
+						}
+
+						.item {
+							padding-top: 12px;
+							margin-bottom: 20px;
+							border-top: 1px solid $text-light;
+
+							@include media($custom_1279) {
+								padding-top: 3px;
+								margin-bottom: 10px;
+								// margin-bottom: -14px;
+							}
+
+							.title {
+								position: relative;
+								color: $text-light;
+								font-size: 21px;
+								font-style: normal;
+								font-weight: 400;
+								line-height: 18.196px;
+								letter-spacing: -0.2px;
+								margin-bottom: 20px;
+								cursor: pointer;
+								outline: none;
+								transition: 0.5s;
+								font-family: "Neue Montreal", sans-serif;
+								// @include media(lg) {
+								// 	font-size: 30px;
+								// 	font-weight: 400;
+								// 	line-height: 30px;
+								// 	letter-spacing: -0.2px;
+								// }
+								@include media($custom_1279) {
+									font-size: 13px;
+								}
+
+								@include media($custom_699) {
+									font-size: 13px;
+								}
+
+								@include media($custom_500) {
+									font-size: 26px;
+									margin-top: 9px;
+								}
+
+								&::after {
+									content: "+";
+									position: absolute;
+									right: 0;
+
+									@include media($custom_699) {
+										display: none;
+									}
+								}
+							}
+
+							.content {
+								font-family: "Neue Montreal", sans-serif;
+								@include p-1;
+								color: $text-light;
+								opacity: 0;
+								max-height: 0;
+								transition: all 0.5s,
+									max-height 0.3s linear;
+								@include media($custom_1440) {
+									color: $text-light;
+									opacity: 0;
+									max-height: 0;
+									transition: all 0.5s,
+										max-height 0.3s linear;
+									font-size: 15px;
+									line-height: 21px;
+								}
+
+								@include media($custom_1279) {
+									font-size: 10px;
+									line-height: 13px;
+									padding-right: 35px;
+									margin-top: -15px;
+								}
+
+								@include media($custom_699) {
+									font-size: 12px;
+									padding-bottom: 5px;
+								}
+
+								@include media($custom_500) {
+									margin-top: 27px;
+									font-size: 17.5px;
+									line-height: 19.5px;
+									padding-right: 0;
+								}
+							}
+
+							&.active {
+								.title {
+									&::after {
+										content: "-";
+										position: absolute;
+										right: 0;
+									}
+								}
+
+								.content {
+									visibility: visible;
+									opacity: 1;
+									max-height: 200px;
+									transition: all 0.5s linear;
+								}
+							}
+						}
+					}
+
+					.buttons-wrapper {
+						margin-top: 206px;
+						display: flex;
+						gap: 24px;
+						@include media($custom_1440) {
+							margin-top: 127px;
+							margin-bottom: 1.5rem;
+							display: flex;
+							gap: 36px;
+						}
+
+						@include media($custom_1279) {
+							margin-top: 117px; // Vidi ovde sta ces
+
+							margin-left: -55px;
+						}
+
+						@include media($custom_699) {
+							display: none;
+						}
+						a {
+							text-transform: unset;
+							font-size: 14px;
+
+							@include media($custom_1279) {
+								font-size: 10px;
+								padding: 0 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }

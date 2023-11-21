@@ -5,19 +5,19 @@
         <p class="sliding-text">distinctive©aestheticdistinctive©aestheticdistinctive©aestheticdistinctive©aesthetic</p>
     </div>
     <div class="container homepage-hero-container">
-        <div class="sliding-text-navigation">
-            <p>Masterclass<br>by Danilo&Sharon</p>
-            <p>Working worldwide</p>
+        <div class="sliding-text-navigation ">
+            <p class="sliding-text" style="font-size: 15px">Masterclass<br>by Danilo&Sharon</p>
+            <p class="sliding-text" style="font-size: 15px; margin-top: -1.4rem">Working worldwide</p>
         </div>
 
         <div class="hero-content">
             <div class="hero-copy">
                 <p class="hide-desktop">Masterclass by DANILO&SHARON</p>
                 <h2>Our masterclass will make the path of your flash mastery quick and easy.</h2>
-                <a href="#" class="btn btn-secondary">Enroll now &#8599;</a>
+                <a href="#" class="btn btn-secondary"><span>Enroll now </span> <img class="arrow-up" src="<?= get_template_directory_uri() ?>/assets/images/icons/arrow-up-right-md.svg" alt=""></a>
             </div>
             <div class="hero-mock">
-                <img src="/wp-content/uploads/2023/10/hero-main-image.png" alt="Hero image">
+                <img  src="/wp-content/uploads/2023/10/hero-main-image.png" alt="Hero image">
             </div>
         </div>
     </div>
@@ -60,7 +60,8 @@
 
 <div class="our-story section" data-background="dark">
     <div class="container our-story-container">
-        <h2>DANILO&SHARON Our story</h2>
+        <h2 class="hide-mobile">DANILO&SHARON Our story</h2>
+        <h2 class="hide-desktop">Our story DANILO&SHARON</h2>
         <p>Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.</p>
 
         <div class="our-story-list">
@@ -82,9 +83,13 @@
             <br>
             <span>online</span>
             <br>
-            less<img src="<?= get_template_directory_uri() ?>/assets/images/online-lessons-danilo-cta.svg" alt="O">ns</h2>
+            <span class="lessons">
+
+                less<img src="<?= get_template_directory_uri() ?>/assets/images/online-lessons-danilo-cta.svg" alt="O">ns</h2>
+            </span>
         <span class="hide-desktop">Courses</span>
-        <h2 class="hide-desktop">Interactive <span>online</span> lessons</h2>
+        <h2 class="hide-desktop">Interactive <span>online</span> lessons</span></h2>
+        <img src="/wp-content/uploads/2023/10/hero-main-image.png" alt="O" class="hero-image">
         <p>Unlock your photography skills in a real-time & interactive classroom with your peers and your mentor.</p>
         <a class="btn online-lessons-btn" href="#">Check more about</a>
     </div>
@@ -97,7 +102,7 @@
         </video>
         <div class="play-btn" id="playVideo">
             <svg xmlns="http://www.w3.org/2000/svg" width="248" height="248" viewBox="0 0 248 248" fill="none">
-                <circle cx="124" cy="124" r="123.5" stroke="white"/>
+                <circle cx="124" cy="124" r="110.5" stroke="white"/>
                 <g filter="url(#filter0_d_66_184)">
                     <path d="M94 72.0385L184 124L94 175.962L94 72.0385Z" stroke="white" shape-rendering="crispEdges"/>
                 </g>
@@ -192,8 +197,8 @@
         <span class="hide-desktop">Our clients</span>
         <h2 class="hide-desktop">Real people, real results.</h2>
         <div class="sliding-text-navigation">
-            <p>Let's see what they have to say</p>
-            <p>Our worldwide clients</p>
+            <p class="marko">Let's see what they have to say</p>
+            <p class="marko">Our worldwide clients</p>
         </div>
 
         <div class="real-results-wrapper">
@@ -264,7 +269,7 @@
                 <p class="content">Working internationally, Danilo and Sharon photographed weddings and portraits around the world, from the busy streets of Hong Kong to historic Paris.The studio is based in Belgrade and is led by wife and husband - Sharon and Danilo Vasic.</p>
             </div>
         </div>
-        <p class="text-us-p">If you have any more questions, please don't hesistate to text us at info@reflections.com</p>
+        <p class="text-us-p">If you have any more questions, please <br> don't hesistate to text us at info@reflections.com</p>
     </div>
 </div>
 
@@ -276,6 +281,7 @@
         <h2>Where do you  fit into the picture?</h2>
         <div class="courses-wrapper">
             <div class="course">
+                <div class="card-background-radial hide-desktop"></div>
                 <h3>Wedding photography flash.</h3>
                 <p>An approachable way to learn web design & CSS in Squarespace, get up to speed on freelancing workflows (hourly rates, client contracts), and level up with 1on1 design critiques!</p>
                 <div class="buttons-wrapper">
@@ -300,10 +306,8 @@
     <div class="container money-back-guarantee-container">
         <a class="btn btn-primary">21 Day refund policy</a>
         <h2>We can guarantee that you will be fully satisfied with our courses.</h2>
-        <?php if(wp_is_mobile()): ?>
-            <div class="radial-background hide-desktop"></div>
-            <a href="#" class="btn btn-secondary mobile-btn hide-desktop">Check more</a>
-        <?php endif; ?>
+        <div class="radial-background hide-desktop"></div>
+        <a href="#" class="btn btn-secondary mobile-btn hide-desktop">Check more</a>
     </div>
 </div>
 

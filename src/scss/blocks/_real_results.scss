@@ -1,150 +1,295 @@
 .real-results {
-    padding-top: 77px;
-    padding-bottom: 116px;
-    @include media(lg) {
-        padding-top: 40px;
-        padding-bottom: 83px;
-    }
+	padding-top: 77px;
+	padding-bottom: 116px;
+	@include media($custom_1440) {
+		padding-top: 73px;
+		padding-bottom: 112px;
+	}
+	@include media($custom_1279) {
+		padding-top: 40px;
+		padding-bottom: 74px;
+	}
 
-    .real-results-container {
-        @include media(lg) {
-            padding: 0;
-        }
+	@include media($custom_500) {
+		padding-top: 36px;
+	}
 
-        span {
-            padding: 0 20px;
-            margin-bottom: 16px;
-            color: $text-dark;
+	.sliding-text-container {
+		margin-top: 24px;
+		@include media($custom_1440) {
+			margin-top: 0;
+		}
+		.sliding-text {
+			@include media($custom_1279) {
+				font-size: 8.1rem !important;
+				margin-top: -1.9rem;
+			}
+		}
+	}
 
-            font-family: 'Clash Display Medium', sans-serif;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 14px;
-            text-transform: uppercase;
-        }
+	.real-results-container {
+		// @include media(lg) {
+		// 	padding: 0;
+		// }
+		@include media($custom_699) {
+			padding: 0 10px;
+			margin-top: 5px;
+		}
 
-        h2 {
-            padding: 0 20px;
-            color: $text-dark;
+		@include media($custom_500) {
+			padding: 0 5px;
+		}
 
-            font-family: 'Clash Display Medium', sans-serif;
-            font-size: 40px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 35px;
-            letter-spacing: -0.8px;
-            text-transform: uppercase;
-        }
+		span {
+			padding: 0 16px;
+			margin-bottom: 16px;
+			color: $text-dark;
 
-        .sliding-text-navigation {
-            @include sliding-text-navigation;
-            p {
-                color: $text-dark;
-                max-width: 176px;
-            }
-        }
+			font-family: "Clash Display Medium", sans-serif;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 12px;
+			text-transform: uppercase;
+		}
 
-        .real-results-wrapper {
-            display: flex;
-            justify-content: space-between;
-            gap: 27px;
-            margin-top: 77px;
-            @include media(lg) {
-                margin-top: 59px;
-                overflow-x: auto;
-                scroll-snap-type: x mandatory;
-                margin: 77px 0 0 20px;
-            }
+		h2 {
+			padding: 0 20px;
+			color: $text-dark;
 
-            .item {
-                width: 24%;
-                @include media(lg) {
-                    width: 100%;
-                    flex: 0 0 92%;
-                    scroll-snap-align: start;
-                }
-                &:nth-child(1) {
-                    @include media(lg) {
-                        margin-right: -4%;
-                    }
-                    .image {
-                        background: url('/wp-content/uploads/2023/10/real-results-image-1.png');
-                    }
-                }
-                &:nth-child(2) {
-                    @include media(lg) {
-                        margin-right: -4%;
-                    }
-                    .image {
-                        background: url('/wp-content/uploads/2023/10/real-results-image-2.png');
-                    }
-                }
-                &:nth-child(3) {
-                    @include media(lg) {
-                        margin-right: -4%;
-                    }
-                    .image {
-                        background: url('/wp-content/uploads/2023/10/real-results-image-3.png');
-                    }
-                }
-                &:nth-child(4) {
-                    .image {
-                        background: url('/wp-content/uploads/2023/10/real-results-image-4.png');
-                    }
-                }
+			font-family: "Clash Display Medium", sans-serif;
+			font-size: 31px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 30px;
+			max-width: 300px;
+			letter-spacing: -0.8px;
+			text-transform: uppercase;
+			margin-top: -5px;
+			margin-left: -3px;
 
-                &:last-child {
-                    @include media(lg) {
-                        margin-right: 20px;
-                    }
-                }
+			@include media($custom_500) {
+				font-size: 38px;
+				line-height: 36px;
+				max-width: 321px;
+				margin-top: 10px;
+			}
+		}
 
-                .image {
-                    width: 100%;
-                    height: 336px;
-                    background-size: cover!important;
-                    background-repeat: no-repeat!important;
+		.sliding-text-navigation {
+			@include sliding-text-navigation;
 
-                }
+			@include media($custom_1279) {
+				margin-top: -28px;
+				padding: 0 15px;
+			}
+			@include media($custom_699) {
+				display: none;
+			}
+			margin-top: 0;
+			p {
+				color: $text-dark;
+				max-width: 150px;
+				font-size: 15px;
 
-                .real-results-btn {
-                    width: fit-content;
-                    display: block;
-                    padding: 0 7px;
-                    margin: 18px 0 10px;
-                    border: 1px solid #222;
-                    color: #000;
-                    text-transform: capitalize;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 27px;
-                    letter-spacing: -0.3px;
-                }
+				@include media($custom_1279) {
+					font-size: 10px;
+					max-width: 95px !important;
+					line-height: 11px;
+				}
+			}
+		}
 
-                .name {
-                    margin-bottom: 10px;
-                    color: #222;
+		.real-results-wrapper {
+			display: flex;
+			justify-content: space-between;
+			gap: 27px;
+			margin-top: 77px;
+			@include media($custom_1440) {
+				margin-top: 55px;
+			}
+			// @include media(lg) {
+			// 	margin-top: 59px;
+			// 	overflow-x: auto;
+			// 	scroll-snap-type: x mandatory;
+			// 	margin: 77px 0 0 20px;
+			// }
 
-                    font-size: 32px;
-                    font-weight: 400;
-                    line-height: 32px;
-                    letter-spacing: -0.28px;
-                }
+			@include media($custom_1279) {
+				margin-top: 43px;
+				padding-left: 15px;
+			}
 
-                .profession {
-                    color: #000;
+			@include media($custom_699) {
+				overflow-x: auto;
+				scroll-snap-type: x mandatory;
+			}
 
-                    font-size: 16px;
-                    font-weight: 400;
-                    line-height: 18.9px;
-                    letter-spacing: -0.72px;
-                }
+			@include media($custom_500) {
+				margin-top: 59px;
+				gap: 14px;
+			}
 
-            }
+			.item {
+				width: 24%;
+				@include media($custom_1279) {
+					// width: 100%;
+					flex: 0 0 22%;
+					// scroll-snap-align: start;
+				}
 
-        }
+				@include media($custom_699) {
+					flex: 0 0 64%;
+				}
 
-    }
+				@include media($custom_500) {
+					flex: 0 0 82%;
+				}
+				&:nth-child(1) {
+					@include media($custom_1279) {
+					}
+					.image {
+						background: url("/wp-content/uploads/2023/10/real-results-image-1.png");
+					}
+				}
+				&:nth-child(2) {
+					@include media($custom_1279) {
+					}
+					.image {
+						background: url("/wp-content/uploads/2023/10/real-results-image-2.png");
+					}
+				}
+				&:nth-child(3) {
+					@include media($custom_1279) {
+					}
+					.image {
+						background: url("/wp-content/uploads/2023/10/real-results-image-3.png");
+					}
+				}
+				&:nth-child(4) {
+					.image {
+						background: url("/wp-content/uploads/2023/10/real-results-image-4.png");
+					}
+				}
 
+				&:last-child {
+					@include media($custom_1279) {
+						margin-right: 20px;
+					}
+				}
+
+				.image {
+					width: 100%;
+					background-size: cover !important;
+					background-repeat: no-repeat !important;
+					height: 336px;
+					@include media($custom_1440) {
+						height: 300px;
+					}
+
+					@include media($custom_1279) {
+						height: 202px;
+					}
+
+					@include media($custom_699) {
+						height: 323px;
+						margin-bottom: 21px;
+					}
+
+					@include media($custom_500) {
+						height: 263px;
+						margin-bottom: -9px;
+					}
+				}
+
+				.real-results-btn {
+					width: fit-content;
+					display: block;
+					padding: 0 7px;
+					border: 1px solid #222;
+					color: #000;
+					text-transform: capitalize;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 27px;
+					letter-spacing: -0.3px;
+					margin: 18px 0 10px;
+
+					@include media($custom_1440) {
+						margin: 18px 0 3px;
+					}
+
+					@include media($custom_1279) {
+						font-size: 8px;
+						line-height: 17px;
+						margin-top: 5px;
+						margin-bottom: -3px;
+					}
+					@include media($custom_699) {
+						font-size: 14px;
+						margin-bottom: 13px;
+						margin-top: 25px;
+					}
+
+					@include media($custom_500) {
+						font-size: 10px;
+						margin-bottom: 5px;
+					}
+				}
+
+				.name {
+					font-family: "Neue Montreal", sans-serif;
+					margin-bottom: 10px;
+					color: #222;
+
+					font-size: 31px;
+					font-weight: 400;
+					line-height: 32px;
+					letter-spacing: -0.28px;
+
+					@include media($custom_1440) {
+						margin-bottom: 5px;
+						color: #222;
+
+						font-size: 24px;
+						font-weight: 400;
+						line-height: 32px;
+						letter-spacing: -0.28px;
+					}
+
+					@include media($custom_1279) {
+						font-size: 16.1px;
+						margin-bottom: -6px;
+					}
+
+					@include media($custom_699) {
+						margin-bottom: 5px;
+						font-size: 22px;
+						margin-bottom: 2px;
+					}
+				}
+
+				.profession {
+					color: #000;
+
+					font-size: 15px;
+					font-weight: 400;
+					line-height: 18.9px;
+					letter-spacing: -0.72px;
+
+					@include media($custom_1279) {
+						font-size: 10px;
+					}
+
+					@include media($custom_699) {
+						font-size: 14px;
+					}
+
+					@include media($custom_500) {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
 }

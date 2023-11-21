@@ -1,70 +1,244 @@
 .homepage-hero {
-    padding-top: 65px;
-    padding-bottom: 54px;
-    background-color: $primary;
-    background: url('/wp-content/uploads/2023/10/hero-background-image.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+	padding-top: 65px;
+	padding-bottom: 54px;
+	background-color: $primary;
+	background: url("/wp-content/uploads/2023/10/hero-background-image.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	@include media($custom_1440) {
+		padding-bottom: 44px;
+	}
 
-    .sliding-text-container {
-        p {
-            color: $text-light;
-        }
-    }
+	@include media($custom_1279) {
+		padding-top: 19px;
+		padding-bottom: 31px;
+	}
 
-    .homepage-hero-container {
+	@include media($custom_699) {
+		padding-top: 31px;
+		padding-bottom: 27px;
+	}
 
-        .sliding-text-navigation {
-            @include sliding-text-navigation;
-            p {
-                font-family: 'Clash Display Regular', sans-serif;
-            }
-        }
+	@include media($custom_500) {
+		padding-top: 56px;
+	}
 
-        .hero-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 200px;
+	.sliding-text-container {
+		p {
+			color: $text-light;
+			font-size: 12rem;
+			margin: 0;
 
-            .hero-copy {
-                p {
-                    max-width: 203px;
-                    margin-bottom: 15px;
-                    color: $text-light;
+			@include media($custom_1440) {
+				font-size: 11rem;
+				margin-top: -1rem;
+			}
+			@include media($custom_1279) {
+				font-size: 7.5rem;
+			}
 
-                    font-family: 'Clash Display Regular', sans-serif;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 14px;
-                    text-transform: uppercase;
-                }
-                h2 {
-                    @include h-2;
-                    font-family: 'GeneralSans Regular', sans-serif;
-                    letter-spacing: -1px;
-                    line-height: 42px!important;
-                    color: $text-light;
-                    margin-bottom: 33px;
-                    max-width: 445px;
-                }
+			@include media($custom_699) {
+				font-size: 8rem;
+			}
 
-                .btn {
-                    font-size: 21px;
-                    letter-spacing: -0.36px;
-                }
-            }
+			@include media($custom_500) {
+				font-size: 11.3rem;
+			}
+		}
+	}
 
-            .hero-mock {
-                @include media(lg) {
-                    display: none;
-                }
-            }
+	.homepage-hero-container {
+		.sliding-text-navigation {
+			@include sliding-text-navigation;
 
-        }
+			margin-top: 24px;
 
-    }
+			@include media($custom_1440) {
+				margin-top: 10px;
+			}
 
+			@include media($custom_1279) {
+				margin-top: -9px;
+				padding: 0 17px;
+			}
+
+			@include media($custom_699) {
+				display: none;
+			}
+			p {
+				max-width: 203px;
+
+				font-size: 17px;
+				font-weight: 700;
+				line-height: 18px;
+				letter-spacing: -0.085px;
+				text-transform: uppercase;
+				color: $text-light;
+
+				&:nth-child(2) {
+					max-width: 155px;
+					text-align: right;
+
+					@include media($custom_1279) {
+						max-width: 100px;
+						margin-top: 10px;
+					}
+				}
+
+				@include media($custom_1279) {
+					font-size: 10px !important;
+					line-height: 12px;
+					font-weight: bold;
+				}
+			}
+		}
+
+		.hero-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 200px;
+
+			@include media($custom_1279) {
+				margin-top: 140px;
+				padding: 0 15px;
+			}
+			@include media($custom_699) {
+				padding: 0;
+			}
+
+			.hero-copy {
+				@include media($custom_500) {
+					margin-top: 130px;
+				}
+				p {
+					max-width: 203px;
+					margin-bottom: 15px;
+					color: $text-light;
+
+					font-family: "Clash Display Regular", sans-serif;
+					font-size: 14px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 14px;
+					text-transform: uppercase;
+
+					@include media($custom_699) {
+						margin: 7px 0 2.6rem -4px;
+						font-size: 11px;
+						line-height: 11px;
+						font-weight: bold;
+						max-width: 118px;
+					}
+
+					@include media($custom_500) {
+						font-size: 14px;
+						line-height: 12px;
+						max-width: 142px;
+						margin-left: 0;
+						margin-bottom: 3.2rem;
+					}
+				}
+				h2 {
+					@include h-2;
+
+					font-family: "Tex Gyre Heroes", sans-serif;
+					letter-spacing: -1px;
+					line-height: 49px !important;
+					color: $text-light;
+					margin-bottom: 33px;
+					max-width: 516px;
+					letter-spacing: -2px;
+					font-size: 43px;
+					@include media($custom_1440) {
+						line-height: 46px !important;
+						color: $text-light;
+						margin-bottom: 33px;
+						margin-top: -2.2rem;
+						max-width: 475px;
+						font-size: 50px;
+						margin-left: -5px;
+					}
+
+					@include media($custom_1280) {
+						font-size: 37px;
+						max-width: 375px;
+					}
+					@include media($custom_1279) {
+						font-size: 26px;
+						max-width: 260px;
+						line-height: 33px !important;
+						margin-left: 2px;
+						margin-top: -30px;
+						margin-bottom: 13px;
+					}
+
+					@include media($custom_699) {
+						max-width: 253px;
+						line-height: 26.5px !important;
+						margin-top: -30px;
+						margin-left: -4px;
+						font-size: 28px;
+						letter-spacing: -0.4px;
+						margin-bottom: 29px;
+					}
+
+					@include media($custom_500) {
+						font-size: 32px;
+						line-height: 37px !important;
+						max-width: 281px;
+						margin-left: 1px;
+						letter-spacing: -2px;
+						margin-top: -32px;
+					}
+				}
+
+				.btn {
+					display: flex;
+					align-items: center;
+					width: max-content;
+					font-size: 21px;
+					@include media($custom_1440) {
+						font-size: 18px;
+						letter-spacing: -0.36px;
+					}
+
+					@include media($custom_1279) {
+						font-size: 12px;
+						padding: 0px 15px;
+					}
+
+					@include media($custom_699) {
+						margin-left: -5px;
+					}
+
+					@include media($custom_500) {
+						margin-left: 0;
+						margin-top: -5px;
+						font-size: 16px;
+						padding: 7px 15px 7px 25px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+
+			.hero-mock {
+				@include media($custom_1440) {
+					width: 375px;
+					margin-top: -2rem;
+				}
+				// @include media(lg) {
+				// 	display: none;
+				// }
+				@include media($custom_1279) {
+					width: 260px;
+				}
+
+				@include media($custom_699) {
+					display: none;
+				}
+			}
+		}
+	}
 }
