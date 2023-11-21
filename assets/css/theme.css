@@ -980,11 +980,11 @@ header {
           margin-bottom: 13px; } }
       @media (max-width: 699px) {
         .homepage-hero .homepage-hero-container .hero-content .hero-copy h2 {
-          max-width: 207px;
+          max-width: 253px;
           line-height: 26.5px !important;
           margin-top: -30px;
           margin-left: -4px;
-          font-size: 23px;
+          font-size: 28px;
           letter-spacing: -0.4px;
           margin-bottom: 29px; } }
       @media (max-width: 500px) {
@@ -1391,10 +1391,10 @@ header {
       margin-top: -23px; } }
   .about-reflections-homepage .decade-of-building .copy-block {
     width: 50%;
-    padding: 0 56px 130px 60px; }
+    padding: 0 56px 73px 60px; }
     @media (max-width: 1440px) {
       .about-reflections-homepage .decade-of-building .copy-block {
-        padding: 0 56px 150px 57px;
+        padding: 0 56px 88px 57px;
         margin-bottom: -15px; } }
     @media (max-width: 1279px) {
       .about-reflections-homepage .decade-of-building .copy-block {
@@ -1494,17 +1494,17 @@ header {
         background: #000;
         border: 1px solid #000;
         color: #fcfcfc;
-        display: inline-block;
         margin-top: -10px; }
         @media (max-width: 1279px) {
           .about-reflections-homepage .decade-of-building .copy-block a.dream-outcome-btn-dark {
-            padding: 0 12px;
+            padding: 7px 14px;
             font-size: 10px; } }
         @media (max-width: 699px) {
           .about-reflections-homepage .decade-of-building .copy-block a.dream-outcome-btn-dark {
             font-size: 12px;
             margin-left: 4px;
-            padding: 0 13px; } }
+            padding: 0 13px;
+            display: inline-block; } }
         @media (max-width: 500px) {
           .about-reflections-homepage .decade-of-building .copy-block a.dream-outcome-btn-dark {
             margin-top: 16px;
@@ -1520,7 +1520,7 @@ header {
         width: 100%; } }
     .about-reflections-homepage .decade-of-building .image-block img {
       object-fit: cover;
-      max-height: 700px; }
+      max-height: 650px; }
       @media (max-width: 1279px) {
         .about-reflections-homepage .decade-of-building .image-block img {
           max-height: 500px; } }
@@ -1616,9 +1616,9 @@ header {
         letter-spacing: -0.6px; } }
     @media (max-width: 1440px) {
       .our-story .our-story-container p {
-        max-width: 976px;
+        max-width: 1020px;
         font-size: 39px;
-        letter-spacing: -2.3px;
+        letter-spacing: -1.5px;
         line-height: 45px; } }
     @media (max-width: 1279px) {
       .our-story .our-story-container p {
@@ -1628,8 +1628,8 @@ header {
         line-height: 34px; } }
     @media (max-width: 699px) {
       .our-story .our-story-container p {
-        font-size: 26px;
-        max-width: 478px;
+        font-size: 28px;
+        max-width: 501px;
         padding: 0 20px 0 34px;
         line-height: 28px;
         letter-spacing: -1.5px;
@@ -2462,15 +2462,13 @@ header {
         margin-left: 6px;
         margin-top: 14px;
         line-height: 30px;
-        max-width: 379px;
-        font-size: 27px; } }
+        max-width: 446px;
+        font-size: 30.5px; } }
     @media (max-width: 500px) {
       .courses .courses-container h2 {
         margin-left: 0;
         margin-top: 30px;
-        max-width: 262px;
-        font-size: 26px;
-        max-width: 271px; } }
+        max-width: 336px; } }
   .courses .courses-container .courses-cards-wrapper {
     display: flex;
     justify-content: center;
@@ -2667,7 +2665,7 @@ header {
         .courses .courses-container .courses-cards-wrapper .card .buttons-wrapper a {
           text-transform: unset;
           font-size: 15px;
-          padding: 4px 13px; }
+          padding: 4px 14px; }
           @media (max-width: 1279px) {
             .courses .courses-container .courses-cards-wrapper .card .buttons-wrapper a {
               font-size: 11px;
@@ -2730,16 +2728,16 @@ header {
             padding: 4px 14px; }
             @media (max-width: 500px) {
               .courses .courses-container .courses-cards-wrapper .card.first-course .buttons-wrapper a:nth-child(1) {
-                font-size: 9px;
+                font-size: 12px;
                 padding: 0px 13px !important; } }
           .courses .courses-container .courses-cards-wrapper .card.first-course .buttons-wrapper a:nth-child(2) {
             background: #191819;
             font-family: "GeneralSans Light", sans-serif;
-            padding: 4px 16px; }
+            padding: 4px 14px; }
             @media (max-width: 500px) {
               .courses .courses-container .courses-cards-wrapper .card.first-course .buttons-wrapper a:nth-child(2) {
-                font-size: 9px;
-                padding: 0px 13px !important; } }
+                font-size: 12px;
+                padding: 1px 13px !important; } }
       .courses .courses-container .courses-cards-wrapper .card.second-course {
         background: #ff0000; }
         @media (max-width: 699px) {
@@ -2780,7 +2778,7 @@ header {
             gap: 20px; } }
         @media (max-width: 500px) {
           .courses .courses-container .courses-cards-wrapper .card.second-course .buttons-wrapper a {
-            font-size: 9px;
+            font-size: 12px;
             padding: 0px 13px !important; } }
         .courses .courses-container .courses-cards-wrapper .card.second-course .buttons-wrapper a:nth-child(2) {
           background: #ffffff;
@@ -3099,8 +3097,8 @@ header {
             line-height: 35px; } }
         @media (max-width: 500px) {
           .newsletter .newsletter-container .newsletter-copy h2 {
-            font-size: 27px !important;
-            max-width: 290px;
+            font-size: 30px !important;
+            max-width: 262px;
             letter-spacing: -0.5px;
             margin-top: -28px;
             line-height: 29px; } }
@@ -3274,7 +3272,7 @@ header {
         margin: 0; } }
     @media (max-width: 500px) {
       .faqs .faqs-container h2 {
-        font-size: 28px;
+        font-size: 30.5px;
         margin-left: 9px;
         max-width: 255px; } }
   .faqs .faqs-container .accordion-wrapper {
@@ -3554,16 +3552,18 @@ header {
         line-height: 33px; } }
     @media (max-width: 699px) {
       .where-do-you-fit .where-do-you-fit-container h2 {
-        font-family: "Clash Display Regular", sans-serif;
+        font-family: "Neue Montreal", sans-serif;
         text-transform: none;
-        font-size: 25px;
-        font-weight: 500;
-        margin-top: -5px; } }
+        font-size: 30.5px;
+        font-weight: 400;
+        margin-top: -5px;
+        max-width: 384px; } }
     @media (max-width: 500px) {
       .where-do-you-fit .where-do-you-fit-container h2 {
         margin-left: 4px;
         margin-top: 34px;
-        font-size: 25px; } }
+        font-size: 30.5px;
+        max-width: 280px; } }
   .where-do-you-fit .where-do-you-fit-container .courses-wrapper {
     position: relative;
     margin-top: 190px;
@@ -3752,8 +3752,8 @@ header {
               font-size: 12px; } }
           @media (max-width: 500px) {
             .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course .buttons-wrapper a {
-              padding: 0 18px;
-              font-size: 8px; } }
+              padding: 0 13px;
+              font-size: 12px; } }
           @media (max-width: 699px) {
             .where-do-you-fit .where-do-you-fit-container .courses-wrapper .course .buttons-wrapper a:nth-child(1) {
               border: 1px solid #0d0d17;
@@ -3896,8 +3896,8 @@ header {
       @media (max-width: 500px) {
         .money-back-guarantee .money-back-guarantee-container h2 {
           max-width: 250px;
-          font-size: 27px;
-          line-height: 36px; } }
+          font-size: 30px;
+          line-height: 29.2px; } }
     .money-back-guarantee .money-back-guarantee-container .mobile-btn {
       position: relative;
       z-index: 1;

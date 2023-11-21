@@ -236,9 +236,9 @@
 
 		.copy-block {
 			width: 50%;
-			padding: 0 56px 130px 60px;
+			padding: 0 56px 73px 60px;
 			@include media($custom_1440) {
-				padding: 0 56px 150px 57px;
+				padding: 0 56px 88px 57px;
 				margin-bottom: -15px;
 			}
 			@include media($custom_1279) {
@@ -343,11 +343,11 @@
 					background: #000;
 					border: 1px solid #000;
 					color: $bg-light;
-					display: inline-block;
+					// display: inline-block;
 					margin-top: -10px;
 
 					@include media($custom_1279) {
-						padding: 0 12px;
+						padding: 7px 14px;
 						font-size: 10px;
 					}
 
@@ -355,6 +355,7 @@
 						font-size: 12px;
 						margin-left: 4px;
 						padding: 0 13px;
+						display: inline-block;
 					}
 
 					@include media($custom_500) {
@@ -378,7 +379,7 @@
 
 			img {
 				object-fit: cover;
-				max-height: 700px;
+				max-height: 650px;
 				@include media($custom_1279) {
 					max-height: 500px;
 				}

@@ -73,9 +73,9 @@
 			font-size: 41px;
 			line-height: 49.6px;
 			@include media($custom_1440) {
-				max-width: 976px;
+				max-width: 1020px;
 				font-size: 39px;
-				letter-spacing: -2.3px;
+				letter-spacing: -1.5px;
 				line-height: 45px;
 			}
 
@@ -88,8 +88,8 @@
 			}
 
 			@include media($custom_699) {
-				font-size: 26px;
-				max-width: 478px;
+				font-size: 28px;
+				max-width: 501px;
 				padding: 0 20px 0 34px;
 				line-height: 28px;
 				letter-spacing: -1.5px;
