@@ -1,16 +1,3 @@
-// function to handle the slider
-/**
- * 
- * add following css style to make it work
- * .wrapper {
- *      overflow-x: auto;
-        scroll-snap-type: x mandatory;
- * }
-   .item {
-        flex: 0 0 100%;
-        scroll-snap-align: start;
-   }
- */
 function initMobileSlider(className) {
     const ourStoryList = document.querySelector(className);
     let isDragging = false;
@@ -40,33 +27,9 @@ function initMobileSlider(className) {
     });
 }
 
-initMobileSlider('.our-story-list')
-initMobileSlider('.real-results-wrapper')
-initMobileSlider('.instagram-posts-wrapper')
-
-
-// const sliderContainer = document.querySelector(".brand-logos-wrapper");
-// const slides = sliderContainer.querySelectorAll("img");
-
-// let slideIndex = 0;
-// const slideInterval = 3000; // Change slide every 3 seconds
-
-// function nextSlide() {
-//     slideIndex = (slideIndex + 1) % slides.length;
-//     showSlide(slideIndex);
-// }
-
-// function showSlide(index) {
-//     const offset = -index * 100; // Calculate the offset based on the slide index
-//     sliderContainer.style.transform = `translateX(${offset}%)`;
-// }
-
-// function startAutoplay() {
-//     showSlide(slideIndex);
-//     setInterval(nextSlide, slideInterval);
-// }
-
-// startAutoplay();
+if(document.querySelector('.our-story-list')) { initMobileSlider('.our-story-list') }
+if(document.querySelector('.real-results-wrapper')) { initMobileSlider('.real-results-wrapper') }
+if(document.querySelector('.instagram-posts-wrapper')) { initMobileSlider('.instagram-posts-wrapper') }
 
 const header = document.querySelector('header');
 const sections = document.querySelectorAll('.section');
@@ -103,3 +66,48 @@ window.addEventListener('scroll', toggleClasses);
 
 // Initial check in case some section is already in the viewport on page load
 toggleClasses();
+
+const stagesWrapper = document.querySelector('.stages-wrapper');
+const stageItems = document.querySelectorAll('.stage-item');
+let currentSlide = 0;
+let isScrolling = false;
+
+function scrollToSlide(index) {
+    if (index >= 0 && index < stageItems.length) {
+        isScrolling = true;
+        stagesWrapper.scrollTo({
+            left: stageItems[index].offsetLeft - 60,
+            behavior: 'smooth'
+        });
+        currentSlide = index;
+        setTimeout(() => {
+            isScrolling = false;
+        }, 800); // Adjust the duration of scrolling animation
+    }
+}
+
+stagesWrapper.addEventListener('wheel', (event) => {
+  if ((currentSlide === 0 && event.deltaY < 0) || (currentSlide === stageItems.length - 1 && event.deltaY > 0)) {
+    // If on the last slide and scrolling down, allow default behavior
+    return;
+  }
+
+  event.preventDefault(); // Prevent default scroll behavior
+  event.stopPropagation(); // Stop event propagation
+
+    if (!isScrolling) {
+        if (event.deltaY > 0) {
+            scrollToSlide(currentSlide + 1);
+        } else {
+            scrollToSlide(currentSlide - 1);
+        }
+    }
+});
+
+const nextButtons = document.querySelectorAll('.next-stage-btn');
+
+nextButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        scrollToSlide(index + 1);
+    });
+});

@@ -1,0 +1,55 @@
+.editing-course-grid {
+    padding: 207px 0;
+    background: #141414;
+
+    .container {
+
+        .grid-wrap {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            .grid-item {
+                width: 100%;
+                max-width: 424px;
+                margin-bottom: 17px;
+                @include media($custom_1440) {
+                    max-width: 370px;
+                }
+
+                &.grid-item-copy {
+                    background: #171017;
+                }
+
+                p {
+                    color: #FFF;
+
+                    font-family: 'Helvetica Neue Bold', sans-serif;
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%;
+                    letter-spacing: -1.68px;
+                }
+
+                a {
+                    display: block;
+                    width: fit-content;
+                    margin-top: 15px;
+                    svg {
+                        margin-left: 8px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+        }
+
+    }
+
+}

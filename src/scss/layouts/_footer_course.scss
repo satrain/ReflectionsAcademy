@@ -1,0 +1,116 @@
+.course-page-footer {
+    background: #1C1C1C;
+    padding-bottom: 40px;
+
+    .sliding-text {
+        color: #fff;
+    }
+
+    .footer-navigation {
+        padding: 0 61px;
+        margin-top: 296px;
+        display: flex;
+        gap: 165px;
+
+        .newsletter-wrapper {
+
+            p {
+                max-width: 512px;
+                color: #F1F1F1;
+
+                font-family: 'Helvetica Neue Regular', sans-serif;
+                font-size: 30.2px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30.24px;
+                letter-spacing: -0.288px;
+            }
+
+            form {
+                display: flex;
+                gap: 12px;
+                margin-top: 118px;
+
+                input {
+                    margin-right: 12px;
+                    color: #fff;
+                    font-family: 'Helvetica Neue Regular', sans-serif;
+                    font-size: 14.4px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    outline: none;
+                    background: transparent;
+                    padding: 12px 0 17px;
+                    border: unset;
+                    border-bottom: 1px solid #fff;
+
+                    &#newsletterEmail {
+                        width: 100%;
+                        max-width: 455px;
+                    }
+                }
+
+                button {
+                    padding: 16px 33px;
+                    border-radius: 100px;
+                    border: 1px solid #FFF;
+                    background: transparent;
+                    cursor: pointer;
+
+                    color: $text-light;
+
+                    text-align: center;
+                    font-family: 'Inter Regular', sans-serif;
+                    font-size: 12.2px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 12.24px;
+                }
+            }
+
+        }
+
+        .shortcut-links {
+            margin-top: 5px;
+            display: flex;
+            gap: 150px;
+
+            ul {
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #F1F1F1;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 16.341px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16.56px;
+                        letter-spacing: -0.288px;
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .footer-copyright {
+        margin-left: 61px;
+        margin-top: 90px;
+        color: #F1F1F1;
+
+        font-family: 'Inter Regular', sans-serif;
+        font-size: 11.32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 11.52px;
+        letter-spacing: -0.288px;
+    }
+
+}

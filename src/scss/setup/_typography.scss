@@ -67,6 +67,16 @@
 	src: url("../../../assets/fonts/helveticaneue.ttf");
 }
 
+@font-face {
+	font-family: "Helvetica Neue Regular";
+	src: url("../../../assets/fonts/HelveticaNeue-Roman_1.woff");
+}
+
+@font-face {
+	font-family: "Helvetica Neue Bold";
+	src: url("../../../assets/fonts/HelveticaNeueBold.ttf");
+}
+
 body {
 	font-family: $font-family;
 }

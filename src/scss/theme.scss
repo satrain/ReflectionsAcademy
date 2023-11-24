@@ -9,6 +9,7 @@
 // Layouts
 @import 'layouts/header';
 @import 'layouts/footer';
+@import 'layouts/footer_course';
 
 // Blocks
 @import 'blocks/hero_homepage';
@@ -23,3 +24,10 @@
 @import 'blocks/faqs';
 @import 'blocks/where_do_you_fit';
 @import 'blocks/money_back_guarantee';
+@import 'blocks/editing_course_hero';
+@import 'blocks/two_rows_block';
+@import 'blocks/editing_course_accordion';
+@import 'blocks/editing_course_workflow';
+@import 'blocks/editing_course_grid';
+@import 'blocks/masterclass_pricing';
+@import 'blocks/sticky_section';

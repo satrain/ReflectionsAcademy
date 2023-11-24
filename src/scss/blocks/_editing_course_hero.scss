@@ -1,0 +1,80 @@
+.editing-course-hero {
+    padding: 106px 60px 0;
+    background: url('/wp-content/uploads/2023/11/editing-course-hero-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include media(lg) {
+        padding: 106px 21px 0;
+    }
+    
+    .editing-course-hero-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @include media(lg) {
+            flex-direction: column;
+        }
+
+        .editing-course-hero-subtitle {
+            max-width: 182px;
+            color: #F1F1F1;
+
+            font-family: 'Helvetica Neue Bold', sans-serif;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 14.5px;
+            letter-spacing: -0.288px;
+            text-transform: uppercase;
+        }
+
+        .editing-course-hero-copy {
+            max-width: 552px;
+            margin-top: 4px;
+            @include media(lg) {
+                margin-top: 24px;
+            }
+            
+            p {
+                color: #F1F1F1;
+
+                font-family: 'Helvetica Neue Regular', sans-serif;
+                font-size: 31.7px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 31.68px;
+                letter-spacing: -1px;
+            }
+            
+            a {
+                display: block;
+                width: fit-content;
+                margin-top: 31px;
+                padding: 8px 16px;
+                font-family: 'Helvetica Neue Regular', sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%;
+                letter-spacing: -0.18px;
+
+                svg {
+                    margin-left: 8px;
+                }
+            }
+
+        }
+    }
+
+    .sliding-text-container {
+        margin-top: 400px;
+        @include media(lg) {
+            margin-top: 70px;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
+}
