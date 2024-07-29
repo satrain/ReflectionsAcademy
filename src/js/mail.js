@@ -1,19 +1,7 @@
 jQuery(document).ready(function($) {
     console.log('loaded')
 
-    var _dcq = _dcq || [];
-    var _dcs = _dcs || {};
-    _dcs.account = '3944391';
-  
-    (function() {
-      var dc = document.createElement('script');
-      dc.type = 'text/javascript'; dc.async = true;
-      dc.src = '//tag.getdrip.com/3944391.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(dc, s);
-    })();
-
-    $('#contactForm form').submit(function(e) {
+    $('.contact-submit').on('click', function(e) {
         e.preventDefault();
         var email = $('#emailAddress').val();
         var name = $('#yourName').val();
@@ -39,11 +27,7 @@ jQuery(document).ready(function($) {
                 message: message,
             },
             success: function(response) {
-                // $('#loader').hide();
-                // Handle the response if needed
-                // $('#formOutput').html(response);
-                console.log(response);
-                $('.form-success-message').html("Thank you for reaching out. We will email you as soon as possible.");
+                $('.form-success-message').html(response);
                 $('.form-success-message').show();
             }
         });

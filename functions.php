@@ -100,3 +100,30 @@ function create_email_post() {
 
     wp_die();
 }
+
+// Create a custom post type 'emails' using AJAX
+add_action('wp_ajax_contact_form_send_email', 'contact_form_send_email');
+add_action('wp_ajax_nopriv_contact_form_send_email', 'contact_form_send_email');
+
+function contact_form_send_email() {
+    $email = $_POST['emaiil'];
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+
+    $to = 'contact@reflections-academy.com';
+    $subject = "Contact form submission from " . $name;
+    $headers = 'From: '. $email . "\r\n" .
+        'Reply-To: ' . $email . "\r\n";
+
+    //Here put your Validation and send mail
+    $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+
+    if($sent) {
+        echo 'Thank you for reaching out. We will email you as soon as possible.';       
+    }
+    else  {
+        echo 'There was a problem sending a message. Please try again.';     
+    }
+
+    wp_die();
+}

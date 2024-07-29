@@ -61,6 +61,7 @@ get_header();
                     <textarea class="contact-message" name="contact-message" cols="30" rows="5" placeholder="Message"></textarea><br>
                     <button class="btn btn-primary btn-light-red contact-submit">Submit</button>
                 </form>
+                <div class="form-success-message"></div>
             </div>
         </div>
     </div>
