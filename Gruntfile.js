@@ -21,8 +21,6 @@ module.exports = function (grunt) {
                     'assets/js/script.min.js': [
                         'src/js/app.js',
                         'src/js/accordion.js',
-                        'src/js/mail.js',
-                        'src/js/free-bw-guide.js',
                     ],
                 },
             },

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="main-content free-bw-guide">
-        <a href="<?= get_site_url() ?>"><div class="free-bw-guide-reflections-logo">Reflections</div></a>
+        <div class="free-bw-guide-reflections-logo">Reflections</div>
         <div class="free-bw-guide-hero container">
             <div class="hero-copy">
                 <h1>Free Black & White Photo Editing Guide</h1>
@@ -23,8 +23,6 @@
             <div class="mobile-h1 free-bw-guide-mobile-logo">
                 <img src="<?= get_template_directory_uri() ?>/assets/images/reflections.svg" alt="Reflections image">
             </div>
-
-            <p>If you liked this free black & white editing guide checkout our full editing masterclass <a>here.</a></p>
         </div>
     </div>
     <?php wp_footer(); ?>

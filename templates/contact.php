@@ -56,9 +56,9 @@ get_header();
                 <p>Contact form</p>
                 <h2>Text us by submiting this form, and we'll get back to you as soon as possible.</h2>
                 <form>
-                    <input type="text" class="contact-name" name="contact-name" id="yourName" placeholder="Your name"><br>
-                    <input type="email" class="contact-email" name="contact-email" id="emailAddress" placeholder="Email"><br>
-                    <textarea class="contact-message" name="contact-message" cols="30" rows="5" id="yourMessage" placeholder="Message"></textarea><br>
+                    <input type="text" class="contact-name" name="contact-name" placeholder="Your name"><br>
+                    <input type="email" class="contact-email" name="contact-email" placeholder="Email"><br>
+                    <textarea class="contact-message" name="contact-message" cols="30" rows="5" placeholder="Message"></textarea><br>
                     <button class="btn btn-primary btn-light-red contact-submit">Submit</button>
                 </form>
             </div>
