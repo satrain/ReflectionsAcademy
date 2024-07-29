@@ -1,9 +1,26 @@
 .two-rows-block {
     padding: 77px 0 174px;
+    @include media(lg) {
+        padding: 34px 0;
+    }
 
     &.we-are-reflections {
         background: #141414;
         color: $text-light!important;
+
+        .notice {
+            margin-top: 135px!important;
+            color: #C0C0C0!important;
+
+            @include media(lg) {
+                margin-top: 25px!important;
+            }
+
+            a {
+                color: #C0C0C0!important;
+                display: inline!important;
+            }
+        }
     }
 
     &.softwers {
@@ -14,6 +31,9 @@
 
         .copy-block {
             border-right: 1px solid #000!important;
+            @include media(lg) {
+                border-right: unset!important;
+            }
         }
 
         .coordinates {
@@ -25,9 +45,24 @@
         }
 
         a {
+            font-family: 'Helvetica Neue Regular', sans-serif;
             border: 1px solid #0D0D17;
             svg {
                 fill: #000;
+            }
+        }
+
+        .item {
+            @include media(lg) {
+                flex-direction: column!important;
+            }
+        }
+    }
+
+    &.editing-course-two-rows-block {
+        .image-copy-block-wrapper {
+            @include media(lg) {
+                margin-top: 34px!important;
             }
         }
     }
@@ -43,10 +78,14 @@
             font-weight: 400;
             line-height: 18px;
             text-transform: uppercase;
+
+            @include media(lg) {
+                font-size: 15px;
+            }
         }
 
         h2 {
-            max-width: 899px;
+            max-width: 630px;
             margin-top: 18px;
             color: $text-light;
 
@@ -56,25 +95,49 @@
             font-weight: 400;
             line-height: 51.54px;
             letter-spacing: -2.5px;
+
+            @include media(lg) {
+                margin-top: 20px;
+                font-size: 32px;
+                line-height: 32px;
+                letter-spacing: -0.64px;
+            }
+
+            b {
+                @include media(lg) {
+                    font-weight: 400;
+                }
+            }
         }
 
         .image-copy-block-wrapper {
             margin-top: 150px;
 
+            @include media(lg) {
+                margin-top: 90px;
+            }
+
             .item {
 
                 display: flex;
                 justify-content: center;
-                gap: 97px;
+                gap: 33px;
 
                 @include media(lg) {
-                    flex-direction: column;
+                    flex-direction: column-reverse;
+                    gap: 34px;
                 }
 
                 img {
                     width: auto;
+                    max-width: 611px;
+                    min-height: 380px;
+                    object-fit: cover;
                     &.softwers-item-second-img {
                         background: rgba(211, 211, 211, 0.34);
+                    }
+                    @include media(lg) {
+                        width: 100%;
                     }
                 }
 
@@ -82,9 +145,27 @@
                     margin-top: 136px;
                     flex-direction: row-reverse;
 
-                    .copy-block h3 {
-                        max-width: 557px;
+                    @include media(lg) {
+                        flex-direction: column-reverse;
+                        margin-top: 68px;
                     }
+
+                    .copy-block h3 {
+                        max-width: 760px;
+                    }
+                    
+                }
+
+                &:nth-child(2n+1) {
+                    margin-top: 136px;
+
+                    @include media(lg) {
+                        margin-top: 68px;
+                    }
+                }
+
+                &:nth-child(1) {
+                    margin-top: 0;
                 }
 
                 .copy-block {
@@ -92,6 +173,11 @@
                     padding-right: 110px;
                     padding-top: 24px;
                     border-right: 1px solid rgba(255, 255, 255, 0.25);
+                    @include media(lg) {
+                        padding-right: 0;
+                        padding-top: 0;
+                        border: unset;
+                    }
 
                     .coordinates {
                         position: absolute;
@@ -107,22 +193,28 @@
                         font-weight: 400;
                         line-height: 14.69px;
                         letter-spacing: -0.288px;
+
+                        @include media(lg) {
+                            display: none;
+                        }
                     }
 
                     .item-subtitle {
                         display: block;
                         width: fit-content;
-                        color: #000;
+                        color: #fff;
                         font-family: 'Helvetica Neue Regular', sans-serif;
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 150%;
                         letter-spacing: -0.18px;
+                        padding: 0;
+                        border: unset;
                     }
 
                     h3 {
-                        max-width: 497px;
+                        max-width: 760px;
                         margin: 31px 0 43px;
                         color: $text-light;
 
@@ -132,16 +224,28 @@
                         font-weight: 400;
                         line-height: 36.82px;
                         letter-spacing: -0.82px;
+
+                        @include media(lg) {
+                            margin: 26px 0;
+                            font-size: 32px;
+                            line-height: 32px;
+                            letter-spacing: -0.64px;
+                        }
                     }
 
                     a {
+                        font-family: 'Helvetica Neue Regular', sans-serif;
                         display: block;
                         width: fit-content;
+
+                        svg {
+                            margin-left: 8px;
+                        }
                     }
 
                     .notice {
                         max-width: 529px;
-                        margin-top: 200px;
+                        margin-top: 288px;
                         color: #3E3E3E;
 
                         font-family: 'Helvetica Neue Regular', sans-serif;
@@ -150,6 +254,10 @@
                         font-weight: 400;
                         line-height: 21px;
                         letter-spacing: -0.36px;
+
+                        @include media(lg) {
+                            margin-top: 25px;
+                        }
                     }
 
                 }

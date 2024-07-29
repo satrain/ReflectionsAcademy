@@ -1,0 +1,32 @@
+.about-daniloandsharon {
+    background: #131212;
+    
+    .about-daniloandsharon-tape {
+        svg {
+            circle {
+                fill: #9CA7A1;
+            }
+        }
+    }
+
+    .about-daniloandsharon-video {
+
+        video {
+            width: 100%;
+            @include media(lg) {
+                height: 306px;
+            }
+        }
+
+    }
+
+    .about-daniloandsharon-background {
+        width: 100%;
+        height: 817px;
+        
+        background: url('/wp-content/uploads/2023/12/about-daniloandsharon-background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}

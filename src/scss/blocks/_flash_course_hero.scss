@@ -1,0 +1,54 @@
+.flash-course-hero {
+    padding: 106px 60px 0;
+    background: url('/wp-content/uploads/2023/12/flash-course-hero-background-new.png'), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+
+    @include media($custom_1440) {
+        background-position: center;
+    }
+
+    @include media(lg) {
+        padding: 206px 21px 0;
+        background: url('/wp-content/uploads/2023/12/flash-course-hero-background-mobile-new.png'), lightgray 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+    }
+
+    .editing-course-hero-wrapper {
+
+        .subtitle {
+            color: #141414;
+            max-width: 200px;
+        }
+
+        .hero-copy {
+            max-width: 441px;
+            
+            p {
+                color: #141414;
+            }
+
+            a {
+                color: #141414;
+                border: 1px solid #141414;
+            }
+
+        }
+
+    }
+
+    .sliding-text-container {
+
+        p {
+            mix-blend-mode: difference;
+            @include media(lg) {
+                line-height: 124%!important;
+            }
+        }
+
+    }
+
+}

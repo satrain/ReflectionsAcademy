@@ -1,85 +1,214 @@
-.course-page-footer {
-    background: #1C1C1C;
-    padding-bottom: 40px;
+#colophon {
+    &.course-page-footer {
+        background: #1C1C1C;
+        padding-bottom: 40px;
+        padding-top: 12px;
+        @include media(lg) {
+            padding-bottom: 16px;
+            // height: 100vh;
+        }
 
-    .sliding-text {
-        color: #fff;
-    }
+        .sliding-text {
+            color: #fff;
+            font-size: 200px;
+            line-height: 175.5px;
+            letter-spacing: -2.5px;
+            @include media($custom_1440) {
+                font-size: 11rem;
+            }
+        }
 
-    .footer-navigation {
-        padding: 0 61px;
-        margin-top: 296px;
-        display: flex;
-        gap: 165px;
+        .container {
+            .foter-navigation-hr {
+                width: 100%;
+                height: 1px;
+                margin-top: 50px;
+                background: #676767;
 
-        .newsletter-wrapper {
+                @include media(lg) {
+                    margin-top: 10px;
+                    background: $text-light;
+                }
+            }
+        }
 
-            p {
-                max-width: 512px;
-                color: #F1F1F1;
+        .footer-navigation {
+            margin-top: 51px;
+            padding: 0 61px;
+            display: flex;
+            justify-content: space-between;
+            gap: 165px;
 
-                font-family: 'Helvetica Neue Regular', sans-serif;
-                font-size: 30.2px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 30.24px;
-                letter-spacing: -0.288px;
+            @include media($custom_1279) {
+                padding: 0 20px;
+            }
+            
+            @include media(lg) {
+                flex-direction: column;
+                gap: 40px;
+                padding: 0 20px;
+                margin-top: 15px;
             }
 
-            form {
-                display: flex;
-                gap: 12px;
-                margin-top: 118px;
+            .newsletter-wrapper {
 
-                input {
-                    margin-right: 12px;
-                    color: #fff;
+                p {
+                    max-width: 512px;
+                    color: #F1F1F1;
+
                     font-family: 'Helvetica Neue Regular', sans-serif;
-                    font-size: 14.4px;
+                    font-size: 30.2px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: normal;
-                    outline: none;
-                    background: transparent;
-                    padding: 12px 0 17px;
-                    border: unset;
-                    border-bottom: 1px solid #fff;
+                    line-height: 30.24px;
+                    letter-spacing: -0.288px;
 
-                    &#newsletterEmail {
-                        width: 100%;
-                        max-width: 455px;
+                    @include media(lg) {
+                        font-size: 22.822px;
+                        line-height: 26.6px;
+                        letter-spacing: -0.078px;
                     }
                 }
 
-                button {
-                    padding: 16px 33px;
-                    border-radius: 100px;
-                    border: 1px solid #FFF;
-                    background: transparent;
-                    cursor: pointer;
+            }
 
-                    color: $text-light;
+            .shortcut-links {
+                margin-top: 5px;
+                display: flex;
+                gap: 80px;
+                
+                @include media(lg) {
+                    display: none;
+                }
 
-                    text-align: center;
-                    font-family: 'Inter Regular', sans-serif;
-                    font-size: 12.2px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 12.24px;
+                ul {
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: #F1F1F1;
+
+                            font-family: 'Helvetica Neue Regular', sans-serif;
+                            font-size: 16.341px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 16.56px;
+                            letter-spacing: -0.288px;
+                            white-space: pre;
+
+                            span {
+                                vertical-align: middle;
+                                margin-left: 3px;
+                            }
+                        }
+
+                    }
+
                 }
             }
 
+        }
+
+        #newsletterForm {
+            display: flex;
+            gap: 12px;
+            margin-top: 118px;
+
+            @include media(lg) {
+                flex-direction: column;
+                gap: 0;
+                margin-top: 29px;
+            }
+
+            input {
+                margin-right: 12px;
+                color: #fff;
+                font-family: 'Helvetica Neue Regular', sans-serif;
+                font-size: 14.4px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                outline: none;
+                background: transparent;
+                padding: 12px 0 17px;
+                border: unset;
+                border-bottom: 1px solid rgba(241, 241, 241, 0.35);
+
+                @include media(lg) {
+                    font-size: 17px;
+                }
+
+                &#newsletterName {
+                    @include media(lg) {
+                        width: 100%;
+                    }
+                }
+
+                &#newsletterEmail {
+                    width: 100%;
+                    max-width: 455px;
+                    @include media(lg) {
+                        max-width: 100%;
+                        margin-top: 16px;
+                    }
+                }
+                
+                &::placeholder {
+                    @include media(lg) {
+                        font-size: 17px;
+                    }
+                }
+            }
+
+            button {
+                padding: 16px 33px;
+                border-radius: 100px;
+                border: 1px solid rgba(241, 241, 241, 0.25);
+                background: transparent;
+                cursor: pointer;
+
+                color: $text-light;
+
+                text-align: center;
+                font-family: 'Inter Regular', sans-serif;
+                font-size: 12.2px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 12.24px;
+
+                @include media(lg) {
+                    font-family: 'Neue Montreal Regular', sans-serif;
+                    font-size: 16.073px;
+                    line-height: 16.18px;
+                    margin-top: 16px;
+                    width: 100%;
+                    border: 1px solid rgba(241, 241, 241, 0.25);
+                }
+            }
         }
 
         .shortcut-links {
             margin-top: 5px;
             display: flex;
             gap: 150px;
+            
+            @include media(lg) {
+                gap: 30px;
+                justify-content: space-between;
+                margin-top: 63px;
+                padding-bottom: 29px;
+                border-bottom: 1px solid $text-light;
+            }
 
             ul {
 
                 li {
                     list-style: none;
+                    @include media(lg) {
+                        margin-bottom: 8px;
+                    }
 
                     a {
                         text-decoration: none;
@@ -91,26 +220,50 @@
                         font-weight: 400;
                         line-height: 16.56px;
                         letter-spacing: -0.288px;
+                        
+                        @include media(lg) {
+                            font-size: 15.6px;
+                            line-height: 15.6px;
+                            letter-spacing: -0.078px;
+                        }
                     }
 
                 }
 
             }
+
+            &.hide-desktop {
+                @media screen and (min-width: 1024px) {
+                    display: none!important;
+                }
+            }
         }
 
+        .footer-copyright {
+            margin-left: 61px;
+            margin-top: 90px;
+            color: #F1F1F1;
+
+            font-family: 'Inter Regular', sans-serif;
+            font-size: 11.32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 11.52px;
+            letter-spacing: -0.288px;
+
+            @include media($custom_1279) {
+                padding-left: 20px;
+            }
+
+            @include media(lg) {
+                text-align: center;
+                margin-top: 16px;
+                margin-left: 0;
+                padding-left: 0;
+                font-size: 15.478px;
+                line-height: 15.6px;
+                letter-spacing: -0.078px;
+            }
+        }
     }
-
-    .footer-copyright {
-        margin-left: 61px;
-        margin-top: 90px;
-        color: #F1F1F1;
-
-        font-family: 'Inter Regular', sans-serif;
-        font-size: 11.32px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 11.52px;
-        letter-spacing: -0.288px;
-    }
-
 }

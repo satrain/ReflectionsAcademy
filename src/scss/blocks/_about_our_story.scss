@@ -1,0 +1,99 @@
+.about-our-story {
+    padding-top: 42px;
+    padding-bottom: 62px;
+    background: #141414;
+
+    .container {
+
+        .our-story-wrapper {
+
+            .our-story-headline {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                p {
+                    white-space: pre;
+                    color: $text-light;
+
+                    font-family: 'Helvetica Neue Bold', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 140%;
+                    letter-spacing: -0.28px;
+                    text-transform: uppercase;
+                }
+
+                .our-story-hr {
+                    width: 100%;
+                    height: 2px;
+                    background: #7C7C7C;
+                }
+
+            }
+
+            h2 {
+                margin-top: 87px;
+                margin-bottom: 152px;
+                max-width: 705px;
+                color: $text-light;
+
+                font-family: 'Helvetica Neue Bold', sans-serif;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%;
+                letter-spacing: -3.6px;
+                text-transform: uppercase;
+
+                @include media(lg) {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    font-size: 32px;
+                    letter-spacing: -1px;
+                }
+            }
+
+            .our-story-copy-image {
+                display: flex;
+                justify-content: space-between;
+                gap: 70px;
+                @include media(lg) {
+                    flex-direction: column;
+                    gap: 40px;
+                }
+                
+                .copy {
+
+                    p {
+                        color: $text-light;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 140%;
+                        letter-spacing: -0.18px;
+                    }
+
+                }
+
+                img {
+                    width: auto;
+                    object-fit: cover;
+                    align-self: flex-start;
+                    max-height: 469px;
+
+                    @include media(lg) {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

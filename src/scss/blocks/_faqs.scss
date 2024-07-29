@@ -25,19 +25,21 @@
 			padding: 0 12px;
 		}
 		span {
-			margin-bottom: 13px;
-			color: $text-light;
+			&:not(.no-style) {
+				margin-bottom: 13px;
+				color: $text-light;
 
-			font-family: "Clash Display Medium", sans-serif;
-			font-size: 13px;
-			font-style: normal;
-			font-weight: 500;
-			line-height: 14px;
-			text-transform: uppercase;
-			margin-left: 3px;
+				font-family: "Clash Display Medium", sans-serif;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 14px;
+				text-transform: uppercase;
+				margin-left: 3px;
 
-			@include media($custom_500) {
-				margin-left: 9px;
+				@include media($custom_500) {
+					margin-left: 9px;
+				}
 			}
 		}
 
@@ -83,6 +85,9 @@
 		}
 
 		.accordion-wrapper {
+			width: 100%;
+			position: relative;
+			z-index: 2;
 			margin-top: 77px;
 			@include media($custom_1440) {
 				margin-top: 76px;
@@ -173,9 +178,9 @@
 						position: absolute;
 						right: 0;
 
-						@include media($custom_500) {
-							display: none;
-						}
+						// @include media($custom_500) {
+						// 	display: none;
+						// }
 					}
 				}
 
@@ -187,6 +192,11 @@
 					transition: all 0.5s, max-height 0.3s linear;
 					@include media($custom_1279) {
 						font-size: 13px !important;
+					}
+
+					a {
+						color: #f50909;
+						text-decoration: none;
 					}
 				}
 
@@ -218,7 +228,7 @@
 			line-height: 25.154px;
 			letter-spacing: -1px;
 			text-align: center;
-			max-width: 420px;
+			max-width: 440px;
 			margin: 48px auto 0;
 			@include media($custom_1440) {
 				font-size: 17px;
@@ -241,6 +251,12 @@
 			@include media($custom_699) {
 				font-size: 15px;
 				margin-top: 29px;
+			}
+
+			a {
+				text-decoration: none;
+				color: #f50909;
+				display: block;
 			}
 		}
 	}

@@ -1,24 +1,41 @@
 .editing-course-grid {
-    padding: 207px 0;
+    padding: 107px 0 77px;
     background: #141414;
+    
+    @include media(lg) {
+        padding: 33px 0;
+    }
 
-    .container {
+    .editing-course-grid-container {
 
         .grid-wrap {
             display: flex;
             justify-content: center;
             gap: 20px;
             flex-wrap: wrap;
+            @include media(lg) {
+                gap: 5px;
+            }
             .grid-item {
                 width: 100%;
                 max-width: 424px;
+                height: 554px;
                 margin-bottom: 17px;
+                background-size: cover!important;
+                background-repeat: no-repeat!important;
+                transition: .5s;
                 @include media($custom_1440) {
                     max-width: 370px;
                 }
 
+                @include media(lg) {
+                    margin-bottom: 0;
+                    width: 32%;
+                    height: 150px;
+                }
+
                 &.grid-item-copy {
-                    background: #171017;
+                    // background: #171017;
                 }
 
                 p {
@@ -30,20 +47,112 @@
                     font-weight: 700;
                     line-height: 100%;
                     letter-spacing: -1.68px;
+
+                    @include media(lg) {
+                        font-size: 15px;
+                        letter-spacing: -0.4px;
+                    }
                 }
 
                 a {
+                    font-family: 'Helvetica Neue Regular', sans-serif;
                     display: block;
                     width: fit-content;
                     margin-top: 15px;
                     svg {
                         margin-left: 8px;
+                        @include media(lg) {
+                            display: none;
+                        }
+                    }
+
+                    @include media(lg) {
+                        font-size: 14px;
+                        padding: 4px 13px;
+                        line-height: 144%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                 }
 
                 img {
                     width: 100%;
+                    height: 100%;
                     object-fit: cover;
+                    @include media(lg) {
+                        height: 100%;
+                    }
+                }
+
+                &:nth-child(1) {
+                    background: url('/wp-content/uploads/2023/12/01.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/01R.jpg');
+                    }
+                }
+
+                &:nth-child(2) {
+                    background: url('/wp-content/uploads/2023/12/02.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/02R.png');
+                    }
+                }
+                
+                &:nth-child(3) {
+                    background: url('/wp-content/uploads/2023/12/03.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/03R.jpg');
+                    }
+                }
+
+                &:nth-child(5) {
+                    background: url('/wp-content/uploads/2023/12/04.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/04R.jpg');
+                    }
+                }
+
+                &:nth-child(6) {
+                    background: url('/wp-content/uploads/2023/12/05.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/05R.jpg');
+                    }
+                }
+
+                &:nth-child(7) {
+                    background: url('/wp-content/uploads/2023/12/06.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/06R.jpg');
+                    }
+                }
+
+                &:nth-child(8) {
+                    background: url('/wp-content/uploads/2023/12/07.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/07R.jpg');
+                    }
+                }
+
+                &:nth-child(9) {
+                    background: url('/wp-content/uploads/2023/12/08.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/08R.jpg');
+                    }
+                }
+
+                &:nth-child(10) {
+                    background: url('/wp-content/uploads/2023/12/09.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/09R.jpg');
+                    }
+                }
+
+                &:nth-child(11) {
+                    background: url('/wp-content/uploads/2023/12/10.png');
+                    &:hover {
+                        background: url('/wp-content/uploads/2023/12/10R.jpg');
+                    }
                 }
 
             }

@@ -1,0 +1,44 @@
+.about-hero {
+    position: relative;
+    background: url('/wp-content/uploads/2023/12/about-us-hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        object-fit: cover;
+    }
+
+    .about-hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 0;
+    }
+
+    .hero-wrapper {
+        position: relative;
+        justify-content: flex-end;
+        z-index: 1;
+
+        .hero-copy {
+
+        }
+
+    }
+
+    .sliding-text-container {
+        position: relative;
+        z-index: 1;
+    }
+
+}

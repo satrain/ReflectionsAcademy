@@ -1,0 +1,179 @@
+.section-contact {
+    background: #141414;
+    padding-top: 79px;
+    padding-bottom: 89px;
+
+    .container {
+
+        .section-contact-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 350px;
+            @include media(lg) {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .contact-info-social {
+
+                .contact-info {
+
+                }
+
+                .contact-socials {
+                    margin-top: 47px;
+                }
+
+                p {
+                    margin-bottom: 24px;
+
+                    color: $text-light;
+                    font-family: 'Helvetica Neue Regular', sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+
+                    @include media(lg) {
+                        margin-bottom: 10px;
+                        line-height: 100%;
+                    }
+                }
+
+                a {
+                    display: block;
+                    width: fit-content;
+
+                    color: $text-light;
+                    font-family: 'Helvetica Neue Regular', sans-serif;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    text-decoration: none;
+                }
+
+            }
+
+            .contact-form {
+                width: 48%;
+                max-width: 525px;
+                @include media(lg) {
+                    width: 100%;
+                }
+
+                p {
+                    color: $text-light;
+                    font-family: 'Helvetica Neue Regular', sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 140%;
+                    @include media(lg) {
+                        line-height: 150%;
+                        letter-spacing: -0.18px;
+                    }
+                }
+
+                h2 {
+                    color: $text-light;
+                    max-width: 409px;
+                    margin-top: 24px;
+                    font-family: 'Helvetica Neue Regular', sans-serif;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 131.5%; /* 42.08px */
+                    letter-spacing: -1px;
+                    @include media(lg) {
+                        line-height: 32px;
+                        margin-top: 10px;
+                        letter-spacing: -0.64px;
+                    }
+                }
+
+                form {
+                    margin-top: 67px;
+                    @include media(lg) {
+                        margin-top: 24px;
+                    }
+
+                    input {
+                        width: 100%;
+                        margin-bottom: 40px;
+                        outline: none;
+                        padding: 12px 0 17px;
+                        background: transparent;
+                        border: unset;
+                        border-bottom: 1px solid $text-light;
+
+                        color: $text-light;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 14.4px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        &::placeholder {
+                            color: $text-light;
+
+                            font-family: 'Helvetica Neue Regular', sans-serif;
+                            font-size: 14.4px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+
+                    textarea {
+                        width: 100%;
+                        margin-bottom: 40px;
+                        outline: none;
+                        background: transparent;
+                        border: unset;
+                        border-bottom: 1px solid $text-light;
+
+                        color: $text-light;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 14.4px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        &::placeholder {
+                            color: $text-light;
+
+                            font-family: 'Helvetica Neue Regular', sans-serif;
+                            font-size: 14.4px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+
+                    button {
+                        padding: 16px 33px;
+                        color: $text-light;
+                        
+                        text-align: center;
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 12.2px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 12.24px;
+                        
+                        background: transparent;
+                        border:  1px solid $text-light;
+                        cursor: pointer;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+}

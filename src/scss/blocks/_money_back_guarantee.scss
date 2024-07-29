@@ -24,77 +24,96 @@
 	// 	padding-bottom: 358px;
 	// }
 
-	@include media($custom_699) {
-		margin: 44px 28px;
-		border-radius: 24px;
+	@include media(lg) {
+		margin: 0;
+		border-radius: 0;
+		padding: 70px 20px;
+		margin-top: -3px;
 	}
 
-	@include media($custom_500) {
-		margin: 44px 19px;
-		padding-bottom: 30px;
+	.container {
+		@include media(lg) {
+			padding: 0!important;
+		}
+
+		.sticky-item {
+			@include media(lg) {
+				min-height: 470px !important;
+			}
+			
+			a {
+				margin-top: 0!important;
+			}
+
+		}
+
+		h2 {
+			margin-top: 102px;
+
+			@include media(lg) {
+				margin-top: 0;
+			}
+			span {
+				color: #151515;
+			}
+
+		}
 	}
 
 	.money-back-guarantee-container {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		@include media($custom_1279) {
 			padding: 0 16px;
+		}
+
+		@include media(lg) {
+			align-items: flex-start;
 		}
 
 		a {
 			text-transform: unset;
 			padding: 5px 20px;
+			font-family: 'Neue Montreal Regular', sans-serif;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 24px; /* 100% */
+			letter-spacing: -0.84px;
 
-			@include media($custom_1279) {
-				font-size: 12px;
-				padding: 3px 20px;
-			}
-
-			@include media($custom_699) {
-				display: none;
+			@include media(lg) {
+				margin-right: 0;
+				font-size: 15px
 			}
 		}
 
 		h2 {
 			@include h-3;
-			font-family: "Clash Display Medium", sans-serif !important;
+			font-family: "Neue Montreal Regular", sans-serif !important;
 			position: relative;
 			z-index: 1;
-			max-width: 538px;
-			margin-top: 52px;
+			max-width: 680px;
+			margin-top: 33px;
 			color: $text-light;
-			font-weight: 300;
-			font-size: 46px;
-			max-width: 571px;
+			font-weight: 400;
+			font-size: 50px;
+			letter-spacing: -1.5px;
+			text-align: center;
+
 			@include media($custom_1440) {
-				position: relative;
-				line-height: 47px;
-				letter-spacing: -1px;
-				font-size: 40px;
-				z-index: 1;
-				max-width: 505px;
-				margin-top: 27px;
-				color: $text-light;
-			}
-			@include media($custom_1279) {
-				font-size: 26px;
-				line-height: 29px;
-				max-width: 328px;
-				margin-top: 17px;
+				max-width: 625px;
 			}
 
-			@include media($custom_699) {
-				font-size: 36px;
-				line-height: 37px;
-				max-width: 377px;
-				margin-top: -46px;
-				margin-left: -14px;
-				text-transform: uppercase;
-			}
-
-			@include media($custom_500) {
-				max-width: 250px;
-				font-size: 30px;
+			@include media(lg) {
+				max-width: 90%;
+				font-size: 25px;
 				line-height: 29.2px;
+				max-width: 377px;
+				text-transform: uppercase;
+				text-align: left;
 			}
 		}
 

@@ -137,6 +137,7 @@
 
 			.card {
 				position: relative;
+				overflow: hidden;
 				max-width: 519px;
 				padding: 31px 20px 39px;
 				border-radius: $radius-2;
@@ -174,7 +175,21 @@
 					gap: 300px;
 				}
 
+				.card-overlay {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 0;
+					background: rgba(0, 0, 0, .57);
+					opacity: 0;
+					transition: .3s;
+				}
+
 				.card-upper {
+					position: relative;
+					z-index: 1;
 					@include media($custom_1279) {
 						margin-left: -10px;
 					}
@@ -185,6 +200,8 @@
 				}
 
 				.card-lower {
+					position: relative;
+					z-index: 1;
 					@include media($custom_1279) {
 						margin-top: -70px;
 					}
@@ -199,24 +216,25 @@
 				}
 
 				.subtitle {
+					padding: 0;
+					border: unset;
 					text-transform: unset;
 					width: fit-content;
 					@include media($custom_1440) {
-						margin-left: -3px;
-						padding: 4px 13px;
+						margin-left: 0;
+						padding: 0;
 					}
 
 					@include media($custom_1279) {
-						padding: 1px 9.5px;
-						font-size: 11px;
+						padding: 0;
 					}
 
 					@include media($custom_699) {
 						display: inline-block;
 						margin-top: 10px;
 						font-size: 14px;
-						padding: 2px 20px;
-						margin-left: 3px;
+						padding: 0;
+						margin-left: 0;
 					}
 				}
 
@@ -225,7 +243,7 @@
 					font-family: "Clash Display Medium", sans-serif;
 
 					text-transform: uppercase;
-					margin-top: 18px;
+					margin-top: 5px;
 					@include media($custom_1440) {
 						font-size: 45px;
 						line-height: 45px;
@@ -238,7 +256,6 @@
 					}
 
 					@include media($custom_699) {
-						margin-left: 3px;
 						font-size: 44px;
 						margin-top: 16px;
 						line-height: 41px;
@@ -249,6 +266,19 @@
 						line-height: 29px;
 						font-size: 27px;
 						max-width: 200px;
+					}
+
+					span {
+						display: block;
+						color: $text-light;
+
+						font-family: 'Neue Montreal Regular', sans-serif;
+						font-size: 17px;
+						font-style: normal;
+						font-weight: 400;
+						line-height: 25.2px;
+						letter-spacing: -0.36px;
+						text-transform: none;
 					}
 				}
 
@@ -274,11 +304,6 @@
 						margin-top: -58px;
 						line-height: 21px;
 						max-width: 412px;
-					}
-
-					@include media($custom_500) {
-						font-size: 9px;
-						line-height: 15px;
 					}
 				}
 
@@ -356,15 +381,8 @@
 					}
 
 					.subtitle {
-						border: 1px solid #000000;
+						border: unset;
 						color: #222222;
-
-						@include media($custom_500) {
-							margin-top: 0;
-							font-size: 10px;
-							padding: 0 8px !important;
-							margin-left: 0;
-						}
 					}
 
 					h3 {
@@ -373,6 +391,10 @@
 
 						@include media($custom_500) {
 							max-width: 200px !important;
+						}
+
+						span {
+							color: #222222!important;
 						}
 					}
 
@@ -421,6 +443,42 @@
 							}
 						}
 					}
+
+					&:hover {
+						background: url('/wp-content/uploads/2024/01/flash-masterclass-hover-image.png');
+						background-size: cover;
+						background-repeat: no-repeat;
+						transition: .3s;
+
+						.card-overlay {
+							opacity: 1;
+							transition: .5s;
+						}
+
+						.subtitle {
+							color: #fff!important;
+						}
+
+						h3 {
+							color: #fff!important;
+							span {
+								color: #fff!important;
+							}
+						}
+
+						p {
+							color: #fff!important;
+						}
+
+						.buttons-wrapper {
+							a {
+								&:nth-child(1) {
+									border: 1px solid #fff;
+									color: #fff;
+								}
+							}
+						}
+					}
 				}
 
 				&.second-course {
@@ -460,14 +518,6 @@
 							margin-top: -26px !important;
 						}
 					}
-					.subtitle {
-						@include media($custom_500) {
-							margin-top: 0;
-							font-size: 10px;
-							padding: 0 8px !important;
-							margin-left: 0;
-						}
-					}
 
 					.buttons-wrapper {
 						@include media($custom_699) {
@@ -485,6 +535,18 @@
 								background: $text-light;
 								color: #050505;
 							}
+						}
+					}
+
+					&:hover {
+						background: url('/wp-content/uploads/2024/01/photo-editing-masterclass-hover-image.png');
+						background-size: cover;
+						background-repeat: no-repeat;
+						transition: .5s;
+
+						.card-overlay {
+							opacity: 1;
+							transition: .5s;
 						}
 					}
 				}

@@ -59,6 +59,15 @@
 	}
 
 	.where-do-you-fit-container {
+		display: flex;
+		justify-content: center;
+		gap: 143px;
+
+		@include media(lg) {
+			flex-direction: column;
+			gap: 40px;
+		}
+
 		@include media($custom_699) {
 			padding: 0 11px;
 		}
@@ -66,357 +75,228 @@
 		@include media($custom_500) {
 			padding: 0 7px;
 		}
-		.subtitle {
-			padding-top: 25px;
-			border-top: 1px solid #d9d9d9;
+		.copy-form {
 
-			font-family: "GeneralSans Medium", sans-serif;
-			color: $text-light;
+			.subtitle {
+				padding-top: 25px;
 
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 18.196px;
-			letter-spacing: -0.2px;
-			margin-bottom: 25px;
+				font-family: "GeneralSans Medium", sans-serif;
+				color: $text-light;
 
-			@include media($custom_1440) {
-				font-size: 14px;
+				font-size: 16px;
 				font-weight: 400;
 				line-height: 18.196px;
 				letter-spacing: -0.2px;
 				margin-bottom: 25px;
-				margin-left: -5px;
-				margin-top: -2px;
-			}
-			@include media($custom_1279) {
-				font-size: 10px;
-				font-style: normal;
-				font-weight: 500;
-				line-height: 1px;
-				margin-bottom: 27px;
-				margin-left: 5px;
-				margin-right: 5px;
-				margin-top: -6px;
-			}
-
-			@include media($custom_699) {
-				font-size: 12px;
-				text-transform: uppercase;
-				margin-top: -3px;
-			}
-
-			@include media($custom_500) {
-				margin-left: 4px;
-				font-size: 13px;
-			}
-		}
-
-		h2 {
-			@include h-2;
-			font-family: "Clash Display Medium", sans-serif;
-			color: $text-light;
-			text-transform: uppercase;
-			max-width: 584px;
-			font-weight: 500;
-
-			@include media($custom_1440) {
-				color: $text-light;
-				text-transform: uppercase;
-				max-width: 570px;
-				font-size: 50px;
-				margin-top: -2px;
-				margin-left: -3px;
-				letter-spacing: 1.4px;
-			}
-			@include media($custom_1279) {
-				font-size: 34px;
-				max-width: 350px;
-				margin-top: -11px;
-				margin-left: 6px;
-				line-height: 33px;
-			}
-
-			@include media($custom_699) {
-				font-family: "Neue Montreal", sans-serif;
-
-				text-transform: none;
-				font-size: 30.5px;
-				font-weight: 400;
-				margin-top: -5px;
-				max-width: 304px;
-				letter-spacing: -1px;
-			}
-
-			@include media($custom_500) {
-				margin-left: 4px;
-				margin-top: 34px;
-				font-size: 30.5px;
-				max-width: 280px;
-			}
-		}
-
-		.courses-wrapper {
-			position: relative;
-			margin-top: 190px;
-			display: flex;
-			gap: 130px;
-			@include media($custom_1440) {
-				margin-top: 170px;
-				display: flex;
-				gap: 112px;
-			}
-			@include media($custom_1279) {
-				margin-top: 105px;
-				gap: 67px;
-			}
-
-			@include media($custom_699) {
-				flex-direction: column;
-				align-items: center;
-				gap: 17px;
-			}
-
-			@include media($custom_500) {
-				margin-top: 120px;
-			}
-
-			.course-separator {
-				width: 1px;
-				height: auto;
-				background: #d9d9d9;
-			}
-
-			.course {
-				position: relative;
-				max-width: 445px;
 
 				@include media($custom_1440) {
-					max-width: 390px;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18.196px;
+					letter-spacing: -0.2px;
+					margin-bottom: 25px;
+					margin-left: -5px;
+					margin-top: -2px;
+				}
+				@include media($custom_1279) {
+					font-size: 10px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 1px;
+					margin-bottom: 27px;
+					margin-left: 5px;
+					margin-right: 5px;
+					margin-top: -6px;
 				}
 
 				@include media($custom_699) {
-					background-color: $text-light;
-					max-width: 100%;
-					padding: 0 113px;
-					border-radius: 15px;
-					position: relative;
-					z-index: 999;
+					line-height: 100%;
+					margin-bottom: 13px;
+					font-size: 12px;
+					text-transform: uppercase;
+					margin-top: -3px;
 				}
 
 				@include media($custom_500) {
-					max-width: 100%;
-					width: 100%;
-					padding: 0;
+					margin-left: 0;
+					font-size: 13px;
 				}
+			}
 
-				.card-background-radial {
-					position: absolute;
-					z-index: 0;
-					width: 100%;
-					height: 85%;
-					top: 10%;
-					left: 0;
-					border-radius: 370px;
-					background: radial-gradient(
-						70.71% 70.71% at 50% 50%,
-						$primary 0%,
-						rgba(255, 89, 0, 0) 70%
-					);
-					@include media(lg) {
-						height: 68%;
-					}
-				}
+			h2 {
+				@include h-2;
+				font-family: "Clash Display Medium", sans-serif;
+				color: $text-light;
+				text-transform: uppercase;
+				max-width: 960px;
+				font-weight: 500;
 
-				h3 {
-					@include h-4;
-					font-family: "Clash Display Medium", sans-serif;
-					font-weight: 500;
-
-					text-transform: uppercase;
+				@include media($custom_1440) {
 					color: $text-light;
-					max-width: 315px;
-					@include media($custom_1440) {
-						font-size: 36px;
-						line-height: 35px;
-					}
-
-					@include media($custom_1279) {
-						font-size: 25px;
-						max-width: 200px;
-						line-height: 28px;
-						margin-left: 3px;
-					}
-					@include media($custom_699) {
-						color: red;
-						margin: 75px 0 250px -91px;
-						font-size: 42px;
-						line-height: 39px;
-					}
-
-					@include media($custom_500) {
-						margin: 43px 0 230px 13px;
-						font-size: 27px;
-						line-height: 28px;
-					}
+					text-transform: uppercase;
+					max-width: 570px;
+					font-size: 50px;
+					margin-top: -2px;
+					margin-left: -3px;
+					letter-spacing: 1.4px;
+				}
+				@include media($custom_1279) {
+					font-size: 34px;
+					max-width: 350px;
+					margin-top: -11px;
+					margin-left: 6px;
+					line-height: 33px;
 				}
 
-				p {
-					@include p-2;
-					margin-top: 20px;
-					font-size: 16px;
-					margin-bottom: 28px;
-					font-family: "GeneralSans Regular", sans-serif;
+				@include media($custom_699) {
+					font-family: "Neue Montreal", sans-serif;
+
+					text-transform: none;
+					font-size: 30.5px;
 					font-weight: 400;
-					color: #969392;
-					@include media($custom_1440) {
-						font-size: 14px;
-						margin-top: 32px;
-						margin-bottom: 28px;
-						margin-left: -5px;
-						max-width: 450px;
-					}
+					margin-top: 0;
+					max-width: 304px;
+					letter-spacing: -1px;
+					margin-bottom: 25px;
+				}
 
-					@include media($custom_1279) {
-						font-size: 10px;
-						max-width: 278px;
-						line-height: 16px;
-						margin-top: 20px;
-						margin-left: 3px;
-					}
-					@include media($custom_699) {
-						margin-left: -96px;
-						max-width: 318px;
-						line-height: 20px;
-						font-size: 12px;
-					}
+				@include media($custom_500) {
+					margin-left: 0;
+					margin-top: 0;
+					font-size: 30.5px;
+					max-width: 280px;
+				}
 
-					@include media($custom_500) {
-						padding: 0 11px;
-						margin-left: 4px;
-						font-size: 8px;
-						line-height: 15px;
+				span {
+					display: inline-block;
+					&.h-color {
+						color: #F00;
+						display: inline;
+					}
+				}
+			}
+
+			form {
+				margin-top: 244px;
+				display: flex;
+				flex-direction: column;
+				gap: 34px;
+
+				@include media(lg) {
+					margin-top: 50px;
+				}
+
+				input {
+					margin-right: 26px;
+                    color: #fff;
+                    font-family: 'Helvetica Neue Regular', sans-serif;
+                    font-size: 14.4px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    outline: none;
+                    background: transparent;
+                    padding: 12px 0 17px;
+                    border: unset;
+                    border-bottom: 1px solid #fff;
+                    
+                    @include media(lg) {
+                        border-bottom: 1px solid rgba(241, 241, 241, 0.35);
+                        font-size: 17px;
+                    }
+
+					&::placeholder {
+                        color: #999;
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 14.4px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+
+                        @include media(lg) {
+                            color: #999;
+                            font-size: 17px;
+                        }
+                    }
+				}
+
+				button {
+					display: block;
+					width: fit-content;
+					padding: 16px 33px;
+                    border-radius: 100px;
+                    border: 1px solid #FFF;
+                    background: transparent;
+                    cursor: pointer;
+
+                    color: $text-light;
+
+                    text-align: center;
+                    font-family: 'Inter Regular', sans-serif;
+                    font-size: 12.2px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 12.24px;
+                    
+                    @include media(lg) {
+                        font-family: 'Neue Montreal Regular', sans-serif;
+                        font-size: 16.073px;
+                        line-height: 16.18px;
+                        margin-top: 16px;
+                        width: 100%;
+                        border: 1px solid rgba(241, 241, 241, 0.25);
+                    }
+				}
+			}
+		}
+
+		.images {
+			position: relative;
+			z-index: 1;
+
+			img {
+				width: auto;
+				@include media(lg) {
+					width: 100%;
+				}
+
+				&:nth-child(1) {
+					margin-top: 147px;
+					@include media(lg) {
+						margin-top: 40px;
 					}
 				}
 
-				.buttons-wrapper {
-					display: flex;
-					gap: 25px;
-					@include media($custom_1440) {
-						gap: 37px;
-						margin-top: -5px;
-					}
-					@include media($custom_1279) {
-						gap: 19px;
-						margin-top: -13px;
-					}
-
-					@include media($custom_699) {
-						margin-bottom: 34px;
-						margin-top: -3px;
-						gap: 31px;
-						margin-left: -93px;
-					}
-
-					@include media($custom_500) {
-						margin-top: -15px;
-						margin-left: 13px;
-						gap: 16px;
-						margin-bottom: 20px;
-					}
-
-					a {
-						text-transform: unset;
-						@include media($custom_1440) {
-							padding: 2px 18px;
-							font-size: 14px;
-							margin-right: -7px;
-						}
-
-						@include media($custom_1279) {
-							font-size: 10px;
-							padding: 1px 16px;
-						}
-
-						@include media($custom_699) {
-							padding: 2px 25px;
-							font-size: 12px;
-						}
-
-						@include media($custom_500) {
-							padding: 0 13px;
-							font-size: 12px;
-						}
-
-						&:nth-child(1) {
-							@include media($custom_699) {
-								border: 1px solid $text-dark;
-								color: $text-dark;
-							}
-						}
-
-						&:nth-child(2) {
-							background: $primary;
-							color: $text-light;
-							border: 1px solid $primary;
-
-							@include media($custom_699) {
-								background-color: $text-dark;
-								border: 1px solid $text-dark;
-								color: $text-light;
-							}
-						}
+				&:nth-child(2) {
+					transform: translateX(89px);
+				    margin-top: 36px;
+					@include media(lg) {
+						transform: translateX(0);
 					}
 				}
-				&:last-child {
-					@include media($custom_699) {
-						background-color: #f00 !important;
-						background-image: none;
-					}
-					h3 {
-						max-width: 280px;
-						@include media($custom_1440) {
-							max-width: 239px;
-						}
+			}
 
-						@include media($custom_1279) {
-							max-width: 210px;
-						}
-						@include media($custom_699) {
-							max-width: 315px;
-							color: $text-light;
-						}
+		}
+	}
 
-						@include media($custom_500) {
-							max-width: 200px;
-						}
-					}
+	.editing-course-sticky-section {
+		background: $bg-dark;
+	}
 
-					p {
-						color: #e1e1e1;
-					}
+	&.flash-where-do-you-fit {
+		@include media(lg) {
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 35px;
+		}
 
-					.buttons-wrapper {
-						a {
-							&:nth-child(1) {
-								@include media($custom_699) {
-									border: 1px solid $text-light;
-									color: $text-light;
-								}
-							}
-
-							&:nth-child(2) {
-								background: red;
-								color: $text-light;
-								border: 1px solid $primary;
-
-								@include media($custom_699) {
-									background-color: $text-light;
-									color: $text-dark;
-									border: 1px solid $text-light;
-								}
-							}
-						}
-					}
+		.editing-course-sticky-section {
+			.sticky-item-one {
+				h2 {
+					max-width: 1070px!important;
+				}
+				p {
+					margin-top: 220px!important;
 				}
 			}
 		}

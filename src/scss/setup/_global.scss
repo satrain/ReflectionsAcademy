@@ -13,6 +13,186 @@
 	}
 }
 
+@keyframes fadeInRotate {
+	0% {
+	  opacity: 0;
+	  transform: translateX(100%) rotate(-15deg);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0) rotate(15deg);
+	}
+}
+
+@keyframes fadeOutRotate {
+	0% {
+	  opacity: 1;
+	  transform: translateX(0) rotate(15deg);
+	}
+	100% {
+	  opacity: 0;
+	  transform: translateX(100%) rotate(-15deg);
+	}
+}
+
+/* Keyframe animation definition */
+@keyframes bubbleOpen {
+	0% {
+		opacity: 0;
+		right: -100%;
+		top: 0;
+	}
+	100% {
+		opacity: 1;
+		visibility: visible;
+		right: 0;
+		top: 0;
+	}
+}
+
+/* Keyframe animation definition */
+@keyframes bubbleClose {
+	0% {
+		right: 0;
+		opacity: 1;
+		visibility: visible;
+	}
+	100% {
+		right: -100%;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes anim-lineUp {
+	0% {
+		opacity: 0;
+		transform: translateY(5rem);
+	} 
+	60% {
+		opacity: 1;
+		transform: translateY(0);
+		animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Custom timing function */
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes anim-img {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animated {
+	opacity: 0;
+	span {
+		// &:not(.h-color) {
+			display: block;
+			@include media(lg) {
+				display: inline;
+			}
+		// }
+	}
+}
+
+.animated {
+	&.active {
+		opacity: 1;
+	}
+}
+
+.img-holder {
+	overflow: hidden;
+}
+
+img {
+	&.animated {
+
+		&.active {
+			animation: .5s anim-img ease-out;
+		}
+
+	}
+}
+
+h2.active .lineUp-1 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+h2.active .lineUp-2 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: 0.05s;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+h2.active .lineUp-3 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: .1s;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+h2.active .lineUp-4 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: .2s;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+h2.active .lineUp-5 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: .3s;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+p.active .lineUp-1 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+p.active .lineUp-2 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: 0.05s;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+p.active .lineUp-3 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: .1s;
+	animation-fill-mode: forwards; /* Add this line */
+}
+p.active .lineUp-4 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: .1s;
+	animation-fill-mode: forwards; /* Add this line */
+}
+p.active .lineUp-5 {
+	opacity: 0;
+	animation: 1.3s anim-lineUp ease-out;
+	animation-delay: .1;
+	animation-fill-mode: forwards; /* Add this line */
+}
+
+// .animated {
+// 	overflow: hidden;
+// }
+
 html {
 	scroll-behavior: smooth; // can mess up with Scroll To Top, also prevents scrolling with mouse3 button, comment it out if needed
 	overflow-x: hidden;
@@ -42,6 +222,10 @@ p {
 	font-family: "GeneralSans Regular", sans-serif;
 }
 
+.header-fixed {
+	transform: translateY(0px)!important;
+}
+
 .btn {
 	@include p-2;
 
@@ -56,6 +240,60 @@ p {
 		padding: 5px 15px;
 	}
 	// text-transform: uppercase;
+	transition: .3s;
+
+	&.btn-light-red {
+		&:hover {
+			background: $primary!important;
+			border-color: $primary!important;
+			color: $text-light!important;
+			transition: .3s;
+
+			svg {
+				circle {
+					fill: #050505;
+				}
+
+				path {
+					fill: $text-light;
+				}
+			}
+		}
+	}
+
+	&.btn-light {
+		&:hover {
+			background: #191819!important;
+			border-color: #191819!important;
+			color: $text-light!important;
+			transition: .3s;
+
+			svg {
+				path {
+					fill: $text-light;
+				}
+			}
+		}
+	}
+
+	&.btn-dark {
+		&:hover {
+			background: $text-light!important;
+			border-color: $text-light!important;
+			color: #050505!important;
+			transition: .3s;
+
+			svg {
+				circle {
+					fill: #050505;
+				}
+
+				path {
+					fill: #050505;
+				}
+			}
+		}
+	}
 }
 
 .btn-primary {
@@ -78,6 +316,32 @@ p {
 	}
 }
 
+.contact-us-button {
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+	min-width: 517px;
+	padding: 16px 24px;
+
+	border-radius: 80px;
+	border: 1px solid $text-light;
+
+	color: $text-light;
+	font-family: 'Helvetica Neue Regular', sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.56px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	@include media($custom_699) {
+		min-width: unset;
+		width: 100%;
+	}
+}
+
 .sliding-text-container {
 	width: 100%;
 	.sliding-text {
@@ -95,6 +359,31 @@ p {
 		@include media($custom_699) {
 			animation-duration: 10s;
 		}
+	}
+
+	&.sliding-tape {
+
+		.sliding-text {
+			margin-top: 0;
+			color: $text-light;
+
+			font-family: 'Helvetica Neue Regular', sans-serif;
+			font-size: 14px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 140%;
+			letter-spacing: -0.28px;
+			text-transform: uppercase;
+			animation: slideText 20s linear infinite;
+
+			svg {
+				display: inline;
+				margin-left: 12px;
+				margin-right: 12px;
+				vertical-align: text-top;
+			}
+		}
+
 	}
 }
 
@@ -159,5 +448,12 @@ p {
 
 	@include media($custom_500) {
 		margin-top: 26px;
+	}
+}
+
+.fadeout-rotate {
+	animation: fadeOutRotate 0.25s ease-in-out forwards;
+	@include media(lg) {
+		animation: unset;
 	}
 }

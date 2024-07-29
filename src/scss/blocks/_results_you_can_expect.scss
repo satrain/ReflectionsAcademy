@@ -1,0 +1,72 @@
+.results-you-can-expect {
+    padding-top: 20px;
+    padding-bottom: 97px;
+    background: #141414;
+
+    @include media(lg) {
+        margin-top: -2px;
+        padding: 39px 0;
+    }
+
+    .container {
+
+        h2 {
+            margin: 0 auto 34px;
+            max-width: 793px;
+            color: $text-light;
+
+            text-align: center;
+            font-family: 'Clash Display Medium', sans-serif;
+            font-size: 60.812px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 57.73px;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+
+            @include media(lg) {
+                font-family: 'Clash Display Regular', sans-serif;
+                margin: 0;
+                font-size: 32px;
+                line-height: 32px;
+                text-align: left;
+            }
+        }
+
+        svg {
+            display: block;
+            margin: 0 auto;
+            @include media(lg) {
+                display: none;
+            }
+        }
+
+        .editing-course-grid {
+            padding: 0;
+            margin-top: 93px;
+            @include media(lg) {
+                margin-top: 55px;
+            }
+
+            .editing-course-grid-container {
+
+                .grid-wrap {
+
+                    .grid-item {
+                        background: unset;
+                        margin-bottom: 0;
+                    }
+
+                }
+
+            }
+
+            svg {
+                display: inline-block;
+                margin: unset;
+            }
+        }
+
+    }
+
+}

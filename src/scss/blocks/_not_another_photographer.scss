@@ -1,0 +1,86 @@
+.not-another-photographer {
+    padding-top: 56px;
+    padding-bottom: 88px;
+    background: #F50909;
+    @include media(lg) {
+        padding-top: 52px;
+        padding-bottom: 65px;
+    }
+
+    .container {
+
+        .not-another-photographer-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+            @include media(lg) {
+                gap: 85px;
+            }
+
+            h2 {
+                color: $text-light;
+
+                font-family: 'Helvetica Neue Bold', sans-serif;
+                font-size: 140px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 80%;
+                letter-spacing: -7px;
+                text-transform: uppercase;
+
+                @include media(lg) {
+                    font-size: 32px;
+                    line-height: 100%;
+                    letter-spacing: -2px;
+                }
+            }
+
+            .copy-image-block {
+                max-width: 392px;
+                align-self: flex-end;
+                @include media(lg) {
+                    align-self: unset;
+                }
+
+                p {
+                    color: $text-light;
+
+                    font-family: 'Helvetica Neue Bold', sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 140%;
+                    letter-spacing: -0.28px;
+                    text-transform: uppercase;
+
+                    @include media(lg) {
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-weight: 400;
+                    }
+                }
+
+                .image-wrapper {
+                    display: flex;
+                    gap: 16px;
+                    margin-top: 60px;
+                    @include media(lg) {
+                        margin-top: 30px;
+                    }
+
+                    img {
+                        width: auto;
+                        object-fit: cover;
+                        @include media(lg) {
+                            width: 48%;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

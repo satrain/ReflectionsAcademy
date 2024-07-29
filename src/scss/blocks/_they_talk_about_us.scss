@@ -45,89 +45,23 @@
 			margin-top: 13px;
 		}
 
-		@include media($custom_500) {
+		@include media(lg) {
 			margin-top: 25px;
-			gap: 35px;
-			margin-left: 36px;
+			gap: 10px;
 			margin-bottom: 10px;
 		}
 		img {
 			width: auto;
 
-			&:nth-child(1) {
-				height: 40px;
-				@include media($custom_1440) {
-					height: 30px;
-				}
-				@include media($custom_1279) {
-					height: 20px;
-					transform: translateY(7px);
-				}
-				@include media($custom_699) {
-					height: 14px;
-					transform: translate(11px, 8px);
-				}
-				@include media($custom_500) {
-					height: 12px;
-					transform: translate(6px, 8px);
-				}
+			height: 40px;
+			@include media($custom_1440) {
+				height: 30px;
 			}
-			&:nth-child(2) {
-				height: 40px;
-				@include media($custom_1440) {
-					height: 30px;
-				}
-				transform: translate(-30px);
-				@include media($custom_1279) {
-					height: 20px;
-					transform: translate(-22px, 6px);
-				}
-				@include media($custom_699) {
-					height: 14px;
-					transform: translate(1px, 8px);
-				}
-				@include media($custom_500) {
-					height: 12px;
-					transform: translate(-8px, 8px);
-				}
+			@include media($custom_1279) {
+				height: 20px;
 			}
-			&:nth-child(3) {
-				height: 40px;
-				@include media($custom_1440) {
-					height: 30px;
-				}
-				transform: translate(-30px);
-				@include media($custom_1279) {
-					height: 20px;
-					transform: translate(-22px, 6px);
-				}
-				@include media($custom_699) {
-					height: 14px;
-					transform: translate(-8px, 8px);
-				}
-				@include media($custom_500) {
-					height: 12px;
-					transform: translate(-25px, 8px);
-				}
-			}
-			&:nth-child(4) {
-				height: 40px;
-				@include media($custom_1440) {
-					height: 30px;
-				}
-				transform: translate(-67px);
-				@include media($custom_1279) {
-					height: 20px;
-					transform: translate(-47px, 6px);
-				}
-				@include media($custom_699) {
-					height: 14px;
-					transform: translate(-8px, 8px);
-				}
-				@include media($custom_500) {
-					height: 12px;
-					transform: translate(-42px, 8px);
-				}
+			@include media($custom_699) {
+				height: 14px;
 			}
 
 			@include media(lg) {

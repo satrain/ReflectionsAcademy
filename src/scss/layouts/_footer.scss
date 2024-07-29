@@ -23,10 +23,6 @@
 			margin-top: -1.5rem;
 		}
 		.sliding-text {
-			@include media($custom_1279) {
-				font-size: 7.7rem;
-			}
-
 			@include media($custom_500) {
 				font-size: 11rem;
 				margin-top: 2px;

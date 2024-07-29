@@ -1,6 +1,13 @@
 .masterclass-pricing {
     padding: 0 0 110px;
     background: #eee;
+    @include media(lg) {
+        padding: 48px 0 68px;
+    }
+
+    &.masterclass-pricing-editing-course {
+        padding-top: 60px;
+    }
 
 
     .container {
@@ -18,6 +25,10 @@
             line-height: 150%;
             letter-spacing: -0.18px;
             text-transform: uppercase;
+
+            @include media(lg) {
+                margin: 0 auto 19px;
+            }
         }
 
         h2 {
@@ -30,6 +41,12 @@
             line-height: 36.82px;
             letter-spacing: -0.82px;
             text-align: center;
+
+            @include media(lg) {
+                font-size: 32px;
+                line-height: 36.82px;
+                letter-spacing: -0.64px;
+            }
         }
 
         .cards-wrapper {
@@ -39,14 +56,21 @@
             justify-content: center;
             align-items: center;
             gap: 24px;
+            @include media(lg) {
+                margin-top: 52px;
+            }
 
             .blur-overlay {
                 position: absolute;
                 width: 110%;
                 height: 110%;
                 left: -5%;
-                backdrop-filter: blur(6px);
+                backdrop-filter: blur(2px);
                 z-index: 1;
+
+                @include media(lg) {
+                    display: none;
+                }
             }
 
             .card {
@@ -60,6 +84,11 @@
                     z-index: 2;
                     margin-top: -80px;
                     background: #F00;
+
+                    @include media(lg) {
+                        margin-top: 0;
+                    }
+
                     * {
                         color: $text-light;
                     }
@@ -90,7 +119,6 @@
 
                 ul {
                     margin-top: 20px;
-                    padding-bottom: 33px;
                     border-bottom: 1px solid #A9A9AA;
 
                     li {
@@ -116,24 +144,41 @@
 
                 }
 
-                .price {
-                    display: block;
-                    margin-top: 16px;
+                .prices-wrapper {
+                    width: 100%;
                     margin-bottom: 41px;
-                    font-family: 'Helvetica Neue Regular', sans-serif;
-                    font-size: 41px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 40px;
+                    margin-top: 16px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
-                    p {
-                        display: inline;
+                    .price {
+                        display: block;
                         font-family: 'Helvetica Neue Regular', sans-serif;
-                        font-size: 18px;
+                        font-size: 41px;
                         font-style: normal;
                         font-weight: 400;
                         line-height: 40px;
+
+                        p {
+                            display: inline;
+                            font-family: 'Helvetica Neue Regular', sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 40px;
+                        }
                     }
+
+                    .old-price {
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 29px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 40px;
+                        text-decoration: line-through;
+                    }
+
                 }
 
                 .btn-card {
@@ -154,7 +199,76 @@
                     font-weight: 400;
                     line-height: 40px;
                 }
+
+                &.not-active {
+                    @include media(lg) {
+                        display: none;
+                    }
+
+                    .btn-card {
+                        cursor: not-allowed;
+                    }
+                }
             }
+        }
+
+    }
+
+    &.flash-masterclass-pricing {
+        background: #fff;
+
+        .container {
+
+            .cards-wrapper {
+                gap: 59px;
+                @include media(lg) {
+                    flex-direction: column-reverse;
+                    gap: 48px;
+                }
+
+                .card {
+
+                    .title {
+                        color: $text-light;
+                    }
+
+                    svg {
+
+                        path {
+                            fill: $text-light;
+                        }
+
+                    }
+
+                    p {
+                        color: $text-light;
+                    }
+                    
+                    span {
+                        color: $text-light;
+                    }
+
+                    &:nth-child(1) {
+                        background: #000;
+
+                        a {
+                            background: $text-light;
+                            color: #000;
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        background: #F00;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 0;
+                    }
+
+                }
+
+            }
+
         }
 
     }

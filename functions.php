@@ -1,8 +1,18 @@
 <?php
 
 if ( ! defined( '_S_VERSION' ) ) {
-	define( '_S_VERSION', '1.0.3' );
+	define( '_S_VERSION', '2.0.0' );
 }
+
+/**
+ * include constants
+ */
+require_once 'inc/constants.php';
+
+/**
+ * include email CPT
+ */
+require_once 'inc/email-submission-cpt.php';
 
 /**
  * Add theme support
@@ -62,7 +72,60 @@ function reflections_enqueue_assets() {
     wp_enqueue_style('main_style');
 
     wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/script.min.js', array('jquery'), _S_VERSION, true );
+    wp_localize_script( 'main-script', 'ajax_object', array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    ) );
 }
 add_action( 'wp_enqueue_scripts', 'reflections_enqueue_assets' );
 
-?>
+// Create a custom post type 'emails' using AJAX
+add_action('wp_ajax_create_email_post', 'create_email_post');
+add_action('wp_ajax_nopriv_create_email_post', 'create_email_post');
+
+function create_email_post() {
+    if (isset($_POST['email'])) {
+        $email = sanitize_email($_POST['email']);
+        $post_id = wp_insert_post(array(
+            'post_title' => $email,
+            'post_type' => 'emails',
+            'post_status' => 'publish',
+        ));
+
+        if (!is_wp_error($post_id)) {
+            echo 'Successfully signed';
+        } else {
+            echo 'Error signing';
+        }
+    }
+
+    wp_die();
+}
+
+// Create a custom post type 'emails' using AJAX
+add_action('wp_ajax_contact_form_send_email', 'contact_form_send_email');
+add_action('wp_ajax_nopriv_contact_form_send_email', 'contact_form_send_email');
+function contact_form_send_email() {
+
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    $to = 'contact@reflections-academy.com';
+
+    $subject = "New message from contact form";
+
+    $headers = 'From: '. $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n";
+
+    $sent = wp_mail($to, $subject, strip_tags($message), $headers);
+
+    if($sent) {
+        echo 'Successfully sent a message. Thank you';
+    }
+    else {
+        echo 'Error trying to send a message';
+    }
+
+    wp_die();
+
+}

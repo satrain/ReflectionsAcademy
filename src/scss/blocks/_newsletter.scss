@@ -1,6 +1,7 @@
 .newsletter {
 	background: $primary;
-	padding-top: 65px;
+	padding-top: 99px;
+	padding-bottom: 0;
 	@include media($custom_1440) {
 		padding-top: 60px;
 	}
@@ -21,6 +22,7 @@
 	.newsletter-container {
 		display: flex;
 		justify-content: flex-start;
+		align-items: flex-end;
 		gap: 81px;
 		@include media($custom_1440) {
 			gap: 75px;
@@ -37,10 +39,17 @@
 		}
 
 		.newsletter-copy {
+			width: 55%;
 			margin-top: 70px;
+			margin-bottom: 60px;
 			@include media($custom_1279) {
 				margin-top: 0;
 				margin-bottom: 15px;
+			}
+
+			@include media(lg) {
+				width: 100%;
+				margin-bottom: 0;
 			}
 
 			h2 {
@@ -48,34 +57,21 @@
 				font-family: "Clash Display Medium", sans-serif !important;
 				text-transform: uppercase;
 				color: $text-light;
-				max-width: 579px;
-				margin-bottom: 34px;
+				max-width: 245px;
+				margin-bottom: 93px;
+				font-size: 56px!important;
+				line-height: 47px!important;
 
-				@include media($custom_1440) {
-					text-transform: uppercase;
-					color: $text-light;
-					max-width: 510px;
-					margin-bottom: 34px;
-					margin-top: -10px;
-					font-size: 35px;
-					line-height: 39px;
-					letter-spacing: 0.5px;
-				}
-
-				@include media($custom_1279) {
-					font-size: 22px;
-					max-width: 326px;
-					margin-top: 20px;
-					margin-left: 15px;
-					line-height: 29px;
+				@include media(lg) {
+					margin-bottom: 50px;
 				}
 
 				@include media($custom_699) {
-					font-size: 34px;
+					font-size: 34px!important;
 					max-width: 351px;
 					margin-top: -23px;
 					margin-left: 4px;
-					line-height: 35px;
+					line-height: 35px!important;
 				}
 
 				@include media($custom_500) {
@@ -83,7 +79,11 @@
 					max-width: 262px;
 					letter-spacing: -0.5px;
 					margin-top: -28px;
-					line-height: 29px;
+					line-height: 29px!important;
+				}
+
+				span {
+					color: #000;
 				}
 			}
 
@@ -94,40 +94,47 @@
 					margin-left: 15px;
 				}
 
+				@include media(lg) {
+					flex-direction: column;
+					margin-left: 0;
+				}
+
 				input {
 					color: $text-light;
 					background: transparent;
-					padding: 2px 22px;
+					padding: 12px 0 17px;
+					margin-right: 21px;
 
-					font-size: 21px;
+					font-size: 14.4px;
+					font-style: normal;
 					font-weight: 400;
-					line-height: 25.2px;
-					letter-spacing: -0.36px;
-					border-radius: 40px;
-					border: 1px solid $text-light;
+					line-height: normal;
+					border: unset;
+					border-bottom: 1px solid $text-light;
 					outline: none;
-					width: 75%;
-					@include media($custom_1440) {
-						color: $text-light;
-						background: transparent;
-						padding: 2px 17px;
 
-						font-size: 13px;
-						font-weight: 400;
-						line-height: 25.2px;
-						letter-spacing: -0.36px;
-						border-radius: 40px;
-						border: 1px solid $text-light;
-						outline: none;
-					}
-					@include media($custom_1279) {
-						font-size: 17px;
-						line-height: 21px;
-						padding: 1px 15px;
+					&#freeGuideName {
+						width: 100%;
+						max-width: 223px;
+
+						@include media($custom_1440) {
+							max-width: 200px;
+						}
+						@include media(lg) {
+							max-width: unset;
+						}
 					}
 
-					@include media($custom_699) {
-						display: none;
+					&#freeGuideEmail {
+						width: 100%;
+						max-width: 316px;
+
+						@include media($custom_1440) {
+							max-width: 265px;
+						} 
+						@include media(lg) {
+							max-width: unset;
+						}
 					}
 
 					&::placeholder {
@@ -142,22 +149,23 @@
 				button {
 					cursor: pointer;
 					text-transform: unset;
-					margin-left: 27.5px;
+					background: transparent;
+					color: $text-light;
+
 					@include media($custom_1279) {
-						margin-left: 9px;
 						padding: 1px 15px;
 						font-size: 11px;
 					}
 
 					@include media($custom_699) {
-						margin-left: -14px;
+						margin-left: 0;
 					}
 
 					@include media($custom_500) {
-						margin-left: -11px;
-						margin-top: 5px;
+						margin-left: 0;
+						margin-top: 25px;
 						padding: 5px 15px;
-						font-size: 18px;
+						font-size: 15px;
 					}
 				}
 			}

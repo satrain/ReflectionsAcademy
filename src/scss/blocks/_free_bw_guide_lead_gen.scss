@@ -1,0 +1,297 @@
+.landing-hero {
+    width: 100%;
+    height: 100%;
+    padding: 30px 75px 50px;
+    background: url('/wp-content/uploads/2023/10/reflections-academy-hero-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        font-family: 'Clash Display Regular', sans-serif;
+        color: #FFF;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0.09px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .hero-title > img {
+        width: 100%;
+        mix-blend-mode: difference;
+    }
+
+    .hero-subtitle {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .hero-subtitle p {
+
+        color: #E3E3E3;
+        font-family: 'Neue Montreal Regular', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: -0.09px;
+        text-transform: lowercase;
+    }
+
+    .hero-subtitle p:nth-child(2) {
+        font-family: 'Clash Display Regular', sans-serif;
+        text-transform: uppercase;
+    }
+
+    .hero-subtitle p img {
+        vertical-align: middle;
+        margin-left: 5px;
+        width: 208.425px;
+        height: 12.274px;
+    }
+
+    .launching-soon {
+        border-radius: 40px;
+        border: 1px solid #FCFCFC;
+        padding: 5px 21px;
+        margin-right: 12px;
+
+        color: #FCFCFC;
+
+        font-family: 'Clash Display Regular', sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.2px;
+        letter-spacing: -0.36px;
+        text-transform: uppercase;
+        cursor: default;
+    }
+
+    .year {
+        border-radius: 40px;
+        border: 1px solid #FCFCFC;
+        background: #FCFCFC;
+        padding: 5px 21px;
+
+        color: #0D0D17;
+
+        font-family: 'Clash Display Medium', sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25.2px;
+        letter-spacing: -0.36px;
+        cursor: default;
+    }
+
+    .hero-form > img {
+        max-width: 310px;
+        width: 100%;
+    }
+
+    .hero-form > p {
+        color: #FFF;
+
+        font-family: 'GeneralSans Light', sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: -0.18px;
+
+        margin: 44px 0 27px;
+        max-width: 415px;
+    }
+
+    .hero-form > h2 {
+        max-width: 380px;
+        margin-top: 16px;
+        margin-bottom: 27px;
+        color: #FFF;
+
+        font-family: 'GeneralSans Light', sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 107.143% */
+        letter-spacing: -0.84px;
+    }
+
+    #newsletterForm {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .newsletter-input-holder {
+        border-radius: 16px;
+        background: #F6F6F6;
+        padding: 12px 27px;
+        width: 100%;
+        max-width: 395px;
+    }
+
+    .newsletter-input-holder svg {
+        margin-right: 12px;
+        margin-bottom: -2px;
+    }
+
+    .newsletter-email-btn-wrapper {
+        display: flex;
+        gap: 12px;
+    }
+
+    .newsletter-input-holder input {
+        width: 90%;
+        color: #000;
+        background: transparent;
+
+        font-family: 'Neue Montreal Regular', sans-serif;
+        font-size: 15.786px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: .5;
+        border: none;
+        outline: unset;
+    }
+
+    #newsletterSubmit {
+        border-radius: 16px;
+        background: #000;
+        padding: 12px 45px;
+
+        color: #FFF;
+
+        font-family: 'Neue Montreal Regular', sans-serif;
+        font-size: 15.786px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        outline: unset;
+        border: none;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+    #newsletterSubmit:hover {
+        opacity: .7;
+        transition: .3s;
+    }
+
+    #formOutput {
+        color: #FFF;
+
+        font-family: 'Neue Montreal Regular', sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: -0.105px;
+        margin-top: 10px;
+    }
+
+    .mobile-h1 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .landing-hero {
+        padding: 34px 20px 70px;
+        background-position: 38% 50%!important;
+        height: 100%;
+    
+        h1 {
+            font-size: 16px;
+            line-height: 18px;
+            letter-spacing: 0.08px;
+            margin-bottom: 12px;
+            margin-top: 34px;
+        }
+
+        .hero-subtitle {
+            margin-top: 0;
+        }
+
+        .hero-subtitle > p > span {
+            display: none;
+        }
+
+        .hero-subtitle > p:nth-child(1) img {
+            margin-left: 0;
+            vertical-align: unset;
+            width: 66%!important;
+            height: 54%;
+        }
+
+        .hero-subtitle p:nth-child(2) {
+            mix-blend-mode: difference;
+        }
+
+        .hero-subtitle p {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .hero-subtitle > p:nth-child(1) img {
+            width: 80%;
+        }
+
+        .launching-soon {
+            display: block;
+            width: fit-content;
+            margin-bottom: 11.71px;
+        }
+
+        .year {
+            display: block;
+            width: fit-content;
+        }
+
+        .hero-form > h2 {
+            margin-bottom: 16px;
+            margin-top: 32px;
+            
+        }
+
+        .hero-form > p {
+            margin-top: 0;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: -0.16px;
+        }
+
+
+        #newsletterForm {
+            flex-direction: column;
+            gap: 17px;
+        }
+
+        .newsletter-email-btn-wrapper {
+            flex-direction: column;
+        }
+
+        .mobile-h1 {
+            display: inline-block;
+        }
+
+        .desktop-h1 {
+            display: none;
+        }
+
+        .newsletter-input-holder {
+            padding: 3px 27px;
+        }
+    }
+}

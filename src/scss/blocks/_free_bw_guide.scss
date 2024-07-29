@@ -1,0 +1,129 @@
+.free-bw-guide {
+    width: 100vw;
+    height: 100vh;
+
+    background: url('/wp-content/uploads/2023/11/free-bw-guide-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+.free-bw-guide-reflections-logo {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 5px 21px;
+    width: fit-content;
+    border-radius: 40px;
+    border: 1px solid #FFF;
+
+    color: #FFF;
+
+    font-family: 'Clash Display Regular', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+    letter-spacing: -0.36px;
+    text-transform: uppercase;
+}
+
+.free-bw-guide .container {
+    padding: 30px 140px;
+}
+
+.free-bw-guide h1 {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #FFF;
+
+    font-family: 'Clash Display Medium', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 53px; /* 88.333% */
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.free-bw-guide .container .hero-copy p {
+    max-width: 765px;
+    text-align: center;
+    margin: 15px auto 40px;
+    color: #fff;
+
+    font-family: 'GeneralSans Light', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20.696px; /* 114.977% */
+    letter-spacing: -0.2px;
+    text-align: center;
+}
+
+.free-bw-guide .video-holder {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.free-bw-guide-mobile-logo {
+    display: none;
+}
+
+.waitlist-thank-you .free-bw-guide-hero {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center!important;
+}
+
+.waitlist-thank-you .free-bw-guide-hero a {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .free-bw-guide .container {
+        padding: 30px 20px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .free-bw-guide-reflections-logo {
+        display: none;
+    }
+
+    .free-bw-guide h1 {
+        font-size: 32px;
+        line-height: 35px;
+        text-align: left;
+    }
+
+    .free-bw-guide .container .hero-copy p {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .free-bw-guide .video-holder {
+        margin-top: 0;
+    }
+
+    .free-bw-guide-mobile-logo {
+        margin-top: 0;
+        display: block;
+    }
+
+    .free-bw-guide-mobile-logo img {
+        width: 100%;
+    }
+
+    .waitlist-thank-you .free-bw-guide-hero a {
+        margin: 20px 0 0;
+    }
+}

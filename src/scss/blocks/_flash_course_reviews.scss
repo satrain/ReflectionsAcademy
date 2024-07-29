@@ -1,0 +1,166 @@
+.flash-course-reviews {
+    margin-top: -10px;
+    padding: 68px 0;
+    background: #f00;
+
+    .container {
+        position: relative;
+        padding: 0;
+        padding-left: 60px;
+        display: flex;
+        justify-content: space-between;
+        @include media(lg) {
+            padding-left: 20px;
+            padding-right: 20px;
+            flex-direction: column;
+        }
+
+        .reviews-copy {
+            width: 93%;
+
+            @include media(lg) {
+                width: 100%;
+            }
+
+            a {
+
+            }
+
+            h2 {
+                margin-top: 22px;
+                max-width: 495px;
+                color: $text-light;
+
+                font-family: 'Helvetica Neue Regular', sans-serif;
+                font-size: 41px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 36.82px;
+                letter-spacing: -0.82px;
+            }
+
+        }
+
+        .reviews-wrapper {
+            width: 100%;
+            max-width: 865px;
+            margin-left: 230px;
+            overflow-x: hidden;
+            @include media($custom_1440) {
+                margin-left: 140px;
+            }
+
+            @include media(lg) {
+                overflow-x: scroll;
+                margin-left: 0;
+                margin-top: 40px;
+            }
+
+            .reviews-slider {
+                display: flex;
+                gap: 50px;
+                scroll-behavior: smooth;
+                transition: .3s;
+
+                @include media(lg) {
+                    width: 100%!important;
+                }
+
+                .slide {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    flex: 0 0 auto;
+                    width: 50%;
+                    max-width: 407px;
+
+                    padding: 49px 26px 34px;
+                    border-radius: 36px;
+                    border: 1px solid #FFF;
+                    
+                    background: $text-light;
+                    transition: .3s;
+
+                    @include media(lg) {
+                        width: 100%;
+                    }
+
+                    p {
+                        color: #212121;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 27px;
+                        letter-spacing: -0.2px;
+                    }
+
+                    a {
+                        display: block;
+                        margin-top: 80px;
+                        color: #212121;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 27px;
+                        letter-spacing: -0.2px;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+
+        }
+
+        .slider-navigation {
+            position: absolute;
+            left: 60px;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+            @include media(lg) {
+                display: none;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60px;
+                height: 60px;
+                border-radius: 48px;
+                background: transparent;
+                border: 1px solid #F5F5FF;
+                cursor: pointer;
+                transition: .3s;
+
+                &:hover {
+                    background: #f5f5ff;
+                    transition: .3s;
+
+                    svg {
+                        path {
+                            fill: black;
+                            transition: .3s;
+                        }
+                    }
+                }
+
+                svg {
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

@@ -85,7 +85,9 @@
 				line-height: 84px;
 			}
 			span {
-				color: $primary;
+				&.h-color {
+					color: $primary;
+				}
 				font-family: "Clash Display Medium", sans-serif;
 				@include media($custom_1279) {
 					font-size: 96px;
@@ -186,21 +188,15 @@
 				letter-spacing: -0.6px;
 			}
 
-			@include media($custom_699) {
-				text-align: left;
-				max-width: 458px;
-				font-size: 25.8px;
-				margin-left: -1px;
-				line-height: 28.5px;
-				margin: 0;
-			}
-
-			@include media($custom_500) {
-				max-width: 271px;
-				font-size: 24px;
-				line-height: 30px;
-				margin-left: -2px;
+			@include media(lg) {
+				font-family: "Neue Montreal Regular", sans-serif;
+				max-width: 298px;
+				font-size: 30px;
+				line-height: 30.5px;
+				letter-spacing: -0.6px;
 				margin-top: -1px;
+				text-align: left;
+				margin-left: 0;
 			}
 		}
 

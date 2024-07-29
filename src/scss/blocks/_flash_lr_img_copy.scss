@@ -1,0 +1,234 @@
+.flash-lr-img-copy {
+    background: #141414;
+    padding: 119px 0 136px;
+    @include media(lg) {
+        padding: 34px 0 50px;
+    }
+
+    &.flash-lr-img-copy-light {
+        background: $text-light;
+
+        h2 {
+            color: #141414!important;
+
+            @include media(lg) {
+                color: $text-light!important;
+            }
+        }
+
+        svg {
+            &.reflections-logo {
+                path {
+                    @include media(lg) {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+
+        @include media(lg) {
+            background: #141414;
+        }
+
+    }
+
+    .container {
+
+        .flash-lr-img-copy-wrapper {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 60px;
+
+            @include media(lg) {
+                flex-direction: column;
+                gap: 35px;
+            }
+
+            img {
+                width: 100%;
+                max-width: 239px;
+                @include media(lg) {
+                    max-width: 141px;
+                }
+
+                &.flash-lr-img-2 {
+                    margin-top: 190px;
+                    @include media(lg) {
+                        align-self: flex-end;
+                        margin-top: 0;
+                    }
+                }
+
+            }
+
+            .flash-lr-copy {
+                margin-top: 135px;
+                @include media(lg) {
+                    margin-top: 0;
+                }
+
+                svg {
+                    display: block;
+                    margin: 0 auto;
+                    @include media(lg) {
+                        display: none;
+                    }
+
+                    &.reflections-logo {
+                        display: block;
+                    }
+                }
+
+                h2 {
+                    max-width: 727px;
+                    margin-top: 41.5px;
+                    margin-bottom: 39px;
+
+                    color: $text-light;
+
+                    text-align: center;
+                    font-family: 'Clash Display Medium', sans-serif;
+                    font-size: 60.812px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 57.73px;
+                    letter-spacing: -1px;
+                    text-transform: uppercase;
+
+                    @include media($custom_1440) {
+                        font-size: 48.812px;
+                        line-height: 53.73px;
+                    }
+
+                    @include media(lg) {
+                        max-width: 353px;
+                        font-size: 32px;
+                        line-height: 30px;
+
+                        font-family: 'Clash Display Regular', sans-serif;
+                    }
+                }
+
+                a {
+                    display: block;
+                    width: fit-content;
+
+                    border: 1px solid #F00;
+                    background: #F00;
+                    margin: 0 auto;
+
+                    svg {
+                        display: unset;
+                        margin: unset;
+                        margin-left: 8px;
+                    }
+                }
+
+            }
+
+        }
+
+        .what-you-will-learn-wrapper {
+            margin-top: 148px;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding-top: 24px;
+
+            @include media(lg) {
+                border-top: unset;
+                border-bottom: unset;
+                margin-top: 42px;
+                padding-top: 0;
+            }
+
+            .items {
+                column-count: 3;
+
+                @include media(lg) {
+                    column-count: 1;
+                }
+
+                .item {
+                    display: flex;
+                    align-items: center;
+                    gap: 36px;
+                    margin-bottom: 24px;
+
+                    @include media(lg) {
+                        border-top: 1px solid #f1f1f1;
+                        margin: 0;
+                        padding: 15px 0;
+                        gap: 27px;
+                    }
+
+                    &:last-child {
+                        border-bottom: 1px solid #f1f1f1;
+                    }
+
+                    span {
+                        border-radius: 100px;
+                        background: #000;
+                        margin-left: 0!important;
+                        margin-top: 0!important;
+
+                        padding: 8px 20px;
+
+                        color: $text-light;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 17.631px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 23.66px;
+                        letter-spacing: 0.455px;
+                        text-transform: uppercase;
+
+                        &.hide-desktop {
+                            background: unset;
+                            padding: 0;
+                            border-radius: unset;
+
+                            color: #f1f1f1;
+                            font-family: 'Neue Montreal Regular', sans-serif;
+                            font-size: 29.981px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 31.2px;
+                            letter-spacing: -0.078px;
+                        }
+                    }
+
+                    p {
+                        color: #020202;
+
+                        font-family: 'Helvetica Neue Regular', sans-serif;
+                        font-size: 17.631px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 23.66px;
+                        letter-spacing: 0.455px;
+                        text-transform: uppercase;
+
+                        @include media($custom_1440) {
+                            font-size: 14.631px;
+                            line-height: 20.66px;
+                        }
+
+                        @include media(lg) {
+                            color: #f1f1f1;
+                            font-size: 16.4px;
+                            line-height: 18.02px;
+                            letter-spacing: -0.078px;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
